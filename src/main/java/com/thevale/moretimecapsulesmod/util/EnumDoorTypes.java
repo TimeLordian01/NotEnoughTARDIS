@@ -42,6 +42,14 @@ SHALKA(state -> {
                 case BOTH : return 100.0;
                 default:return 0.0;
             }
+        }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
+    WARDROBE(state -> {
+            switch(state) {
+            case CLOSED: return 0.0D;
+                case ONE: return -100.0;
+                case BOTH : return 100.0;
+                default:return 0.0;
+            }
         }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH);
 
 

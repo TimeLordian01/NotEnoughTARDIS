@@ -29,6 +29,7 @@ public class ValeBlocks {
     public static ExteriorBlock exterior_shalka = register(new ExteriorBlock(),"exterior_shalka",null,false);
     public static ExteriorBlock exterior_ptored = register(new ExteriorBlock(),"exterior_ptored",null,false);
     public static ExteriorBlock exterior_fenix = register(new ExteriorBlock(),"exterior_fenix",null,false);
+    public static ExteriorBlock exterior_wardrobe = register(new ExteriorBlock(),"exterior_wardrobe",null,false);
 
     @SubscribeEvent
     public static void register(RegistryEvent.Register<Block> event) {
