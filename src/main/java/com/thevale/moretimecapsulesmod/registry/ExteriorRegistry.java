@@ -5,11 +5,9 @@ import com.thevale.moretimecapsulesmod.blocks.ValeBlocks;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
 import net.minecraft.util.ResourceLocation;
 import net.tardis.mod.exterior.TwoBlockBasicExterior;
-import net.tardis.mod.registries.TardisRegistries;
+
 
 public class ExteriorRegistry{
-
-    public static TwoBlockBasicExterior TELE2;
 
     public static void register(){
             net.tardis.mod.exterior.ExteriorRegistry.register(new ResourceLocation(Moretimecapsulesmod.MODID,"shalka"),

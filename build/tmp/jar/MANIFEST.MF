@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Specification-Title: moretimecapsulesmod
-Specification-Vendor: moretimecapsulesmodsareus
-Specification-Version: 1
 Implementation-Title: moretimecapsulesmod
 Implementation-Version: 1.0
+Specification-Vendor: moretimecapsulesmodsareus
+Specification-Title: moretimecapsulesmod
+Implementation-Timestamp: 2021-01-10T01:23:08+0000
+Specification-Version: 1
 Implementation-Vendor: moretimecapsulesmodsareus
-Implementation-Timestamp: 2021-01-09T19:26:43+0000
 
