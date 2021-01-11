@@ -4,7 +4,10 @@ package com.thevale.moretimecapsulesmod.client.models.interiordoors;// Made with
 
 
 import com.mojang.blaze3d.platform.GlStateManager;
+import com.thevale.moretimecapsulesmod.client.models.exteriors.WardrobeExterior;
+import com.thevale.moretimecapsulesmod.client.renders.exteriors.WardrobeRender;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.model.Model;
 import net.minecraft.client.renderer.model.ModelBox;
@@ -12,9 +15,10 @@ import net.minecraft.util.ResourceLocation;
 import net.tardis.mod.client.models.interiordoors.IInteriorDoorRenderer;
 import net.tardis.mod.entity.DoorEntity;
 import net.tardis.mod.enums.EnumDoorState;
+import net.tardis.mod.helper.TardisHelper;
+import net.tardis.mod.tileentities.ConsoleTile;
 
 public class WardrobeInteriorDoorModel extends Model implements IInteriorDoorRenderer {
-	public static final ResourceLocation TEXTURE = new ResourceLocation("moretimecapsulesmod", "textures/exteriors/wardrobe_oak_variant.png");
 	private final RendererModel LeftDoor;
 	private final RendererModel Walls;
 	private final RendererModel RightDoor;
@@ -86,7 +90,14 @@ public class WardrobeInteriorDoorModel extends Model implements IInteriorDoorRen
         GlStateManager.popMatrix();
     }
 
-	public ResourceLocation getTexture() {
-        return TEXTURE;
+	@Override
+    public ResourceLocation getTexture() {
+        ConsoleTile tile = TardisHelper.getConsoleInWorld(Minecraft.getInstance().world).orElse(null);
+        if(tile != null) {
+            int index = tile.getExteriorManager().getExteriorVariant();
+            if(tile.getExterior().getVariants() != null && index < tile.getExterior().getVariants().length)
+                return tile.getExterior().getVariants()[index].getTexture();
+        }
+        return WardrobeRender.TEXTURE;
     }
 }

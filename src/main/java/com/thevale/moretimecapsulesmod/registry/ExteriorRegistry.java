@@ -2,6 +2,7 @@ package com.thevale.moretimecapsulesmod.registry;
 
 import com.thevale.moretimecapsulesmod.Moretimecapsulesmod;
 import com.thevale.moretimecapsulesmod.blocks.ValeBlocks;
+import com.thevale.moretimecapsulesmod.texturevariants.TextureVariants;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
 import net.minecraft.util.ResourceLocation;
 import net.tardis.mod.exterior.TwoBlockBasicExterior;
@@ -17,7 +18,7 @@ public class ExteriorRegistry{
             net.tardis.mod.exterior.ExteriorRegistry.register(new ResourceLocation(Moretimecapsulesmod.MODID,"fenix"),
                 new TwoBlockBasicExterior(() -> ValeBlocks.exterior_fenix.getDefaultState(),true, EnumDoorTypes.FENIX,new ResourceLocation(Moretimecapsulesmod.MODID,"textures/gui/exteriors/fenixexterior.png")));
             net.tardis.mod.exterior.ExteriorRegistry.register(new ResourceLocation(Moretimecapsulesmod.MODID,"wardrobe"),
-                new TwoBlockBasicExterior(() -> ValeBlocks.exterior_wardrobe.getDefaultState(),true, EnumDoorTypes.WARDROBE,new ResourceLocation(Moretimecapsulesmod.MODID,"textures/gui/exteriors/wardrobeexterior.png")));
+                new TwoBlockBasicExterior(() -> ValeBlocks.exterior_wardrobe.getDefaultState(),true, EnumDoorTypes.WARDROBE,new ResourceLocation(Moretimecapsulesmod.MODID,"textures/gui/exteriors/wardrobeexterior.png"), TextureVariants.WARDROBE));
 
     }
 }
