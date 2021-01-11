@@ -10,6 +10,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ObjectHolder;
+import net.tardis.mod.blocks.ConsoleBlock;
 import net.tardis.mod.blocks.ExteriorBlock;
 import net.tardis.mod.items.TItemProperties;
 import net.tardis.mod.misc.INeedItem;
@@ -30,6 +31,9 @@ public class ValeBlocks {
     public static ExteriorBlock exterior_ptored = register(new ExteriorBlock(),"exterior_ptored",null,false);
     public static ExteriorBlock exterior_fenix = register(new ExteriorBlock(),"exterior_fenix",null,false);
     public static ExteriorBlock exterior_wardrobe = register(new ExteriorBlock(),"exterior_wardrobe",null,false);
+    public static ExteriorBlock exterior_elevator = register(new ExteriorBlock(),"exterior_elevator",null,false);
+    public static ExteriorBlock exterior_komix = register(new ExteriorBlock(),"exterior_komix",null,false);
+    public static ExteriorBlock exterior_organ = register(new ExteriorBlock(),"exterior_organ",null,false);
 
     @SubscribeEvent
     public static void register(RegistryEvent.Register<Block> event) {

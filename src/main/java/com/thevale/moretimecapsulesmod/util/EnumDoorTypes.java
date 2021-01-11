@@ -50,6 +50,30 @@ SHALKA(state -> {
                 case BOTH : return 100.0;
                 default:return 0.0;
             }
+        }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
+       ELEVATOR(state -> {
+            switch(state) {
+            case CLOSED: return 0.0D;
+                case ONE: return -15.0D;
+                case BOTH : return -15.0D;
+                default:return 0.0;
+            }
+        }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
+    KOMIX(state -> {
+            switch(state) {
+            case CLOSED: return 0.0D;
+                case ONE: return 85.0D;
+                case BOTH : return -85.0D;
+                default:return 0.0;
+            }
+        }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
+        ORGAN(state -> {
+            switch(state) {
+            case CLOSED: return 0.0D;
+                case ONE: return 45.0D;
+                case BOTH : return 90.0D;
+                default:return 0.0;
+            }
         }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH);
 
 

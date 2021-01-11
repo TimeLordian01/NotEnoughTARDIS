@@ -298,16 +298,16 @@ public void render(ExteriorTile tile) {
         GlStateManager.scalef(0.7F, 0.7F, 0.7F);
         switch(state) {
         case ONE:
-            this.r_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.SHALKA.getRotationForState(EnumDoorState.ONE));
-            this.l_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.SHALKA.getRotationForState(EnumDoorState.CLOSED));
+            this.r_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.FENIX.getRotationForState(EnumDoorState.ONE));
+            this.l_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.FENIX.getRotationForState(EnumDoorState.CLOSED));
             break;
         case BOTH:
-            this.r_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.SHALKA.getRotationForState(EnumDoorState.ONE));
-            this.l_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.SHALKA.getRotationForState(EnumDoorState.BOTH));
+        	this.r_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.FENIX.getRotationForState(EnumDoorState.ONE));
+            this.l_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.FENIX.getRotationForState(EnumDoorState.BOTH));
             break;
         case CLOSED:
-            this.r_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.SHALKA.getRotationForState(EnumDoorState.CLOSED));
-            this.l_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.SHALKA.getRotationForState(EnumDoorState.CLOSED));
+            this.r_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.FENIX.getRotationForState(EnumDoorState.CLOSED));
+            this.l_door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.FENIX.getRotationForState(EnumDoorState.CLOSED));
         }
 		this.box_body.render(0.0625F);
         this.boti.render(0.0625F);

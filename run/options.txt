@@ -17,7 +17,7 @@ touchscreen:false
 fullscreen:false
 bobView:true
 mouseSensitivity:0.5
-fov:0.35
+fov:0.25
 gamma:1.0
 renderDistance:12
 guiScale:0
