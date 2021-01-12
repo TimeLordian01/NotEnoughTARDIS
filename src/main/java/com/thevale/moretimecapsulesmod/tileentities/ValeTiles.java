@@ -27,6 +27,11 @@ public class ValeTiles {
     public static TileEntityType<ElevatorTile>exterior_elevator = register(ElevatorTile::new,"exterior_elevator", ValeBlocks.exterior_elevator);
     public static TileEntityType<KomixTile>exterior_komix = register(KomixTile::new,"exterior_komix", ValeBlocks.exterior_komix);
     public static TileEntityType<OrganTile>exterior_organ = register(OrganTile::new,"exterior_organ", ValeBlocks.exterior_organ);
+    public static TileEntityType<CanonFiveTile>exterior_canon05 = register(CanonFiveTile::new,"exterior_canonfive", ValeBlocks.exterior_canon05);
+
+
+
+
     @SubscribeEvent
     public static void register(RegistryEvent.Register<TileEntityType<?>> event) {
         for(TileEntityType<?> type : TYPES) {

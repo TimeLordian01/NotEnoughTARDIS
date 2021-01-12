@@ -31,6 +31,8 @@ public class ModelRegistry {
         EnumDoorTypes.KOMIX.setInteriorDoorModel(new InteriorModernPoliceBoxModel());
         ClientRegistry.bindTileEntitySpecialRenderer(OrganTile.class , new OrganRender());
         EnumDoorTypes.ORGAN.setInteriorDoorModel(new OrganInnerDoors());
+        ClientRegistry.bindTileEntitySpecialRenderer(CanonFiveTile.class , new CanonFiveRender());
+        EnumDoorTypes.CANON05.setInteriorDoorModel(new CanonInteriorDoor05());
     }
 
 }
