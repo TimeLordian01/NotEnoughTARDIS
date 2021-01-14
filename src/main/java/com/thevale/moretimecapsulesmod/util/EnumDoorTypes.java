@@ -27,22 +27,6 @@ SHALKA(state -> {
                 default:return 0.0;
             }
         }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
-    FENIX(state -> {
-            switch(state) {
-            case CLOSED: return 0.0D;
-                case ONE: return 85.0;
-                case BOTH : return -85.0;
-                default:return 0.0;
-            }
-        }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
-   CLASSICINTERIORDOOR(state -> {
-            switch(state) {
-            case CLOSED: return 0.0D;
-                case ONE: return -100.0;
-                case BOTH : return 100.0;
-                default:return 0.0;
-            }
-        }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
     WARDROBE(state -> {
             switch(state) {
             case CLOSED: return 0.0D;
@@ -56,14 +40,6 @@ SHALKA(state -> {
             case CLOSED: return 0.0D;
                 case ONE: return -15.0D;
                 case BOTH : return -15.0D;
-                default:return 0.0;
-            }
-        }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
-    KOMIX(state -> {
-            switch(state) {
-            case CLOSED: return 0.0D;
-                case ONE: return 85.0D;
-                case BOTH : return -85.0D;
                 default:return 0.0;
             }
         }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),

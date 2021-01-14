@@ -21,14 +21,10 @@ public class ModelRegistry {
         EnumDoorTypes.SHALKA.setInteriorDoorModel(new ShalkaInteriorDoor());
         ClientRegistry.bindTileEntitySpecialRenderer(PtoredTile.class , new PtoredRender());
         EnumDoorTypes.PTORED.setInteriorDoorModel(new Ptoredinteriordoor());
-        ClientRegistry.bindTileEntitySpecialRenderer(FenixTile.class , new FenixRender());
-        EnumDoorTypes.FENIX.setInteriorDoorModel(new Classic_Interiordoor());
         ClientRegistry.bindTileEntitySpecialRenderer(WardrobeTile.class , new WardrobeRender());
         EnumDoorTypes.WARDROBE.setInteriorDoorModel(new WardrobeInteriorDoorModel());
         ClientRegistry.bindTileEntitySpecialRenderer(ElevatorTile.class , new ElevatorRender());
         EnumDoorTypes.ELEVATOR.setInteriorDoorModel(new Elevator_Two_InteriorDoors());
-        ClientRegistry.bindTileEntitySpecialRenderer(KomixTile.class , new KomixRender());
-        EnumDoorTypes.KOMIX.setInteriorDoorModel(new InteriorModernPoliceBoxModel());
         ClientRegistry.bindTileEntitySpecialRenderer(OrganTile.class , new OrganRender());
         EnumDoorTypes.ORGAN.setInteriorDoorModel(new OrganInnerDoors());
         ClientRegistry.bindTileEntitySpecialRenderer(CanonFiveTile.class , new CanonFiveRender());

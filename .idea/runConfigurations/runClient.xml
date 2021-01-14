@@ -7,7 +7,7 @@
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$\run"/>
     <module name="moretimecapsulesmod.main"/>
     <envs>
-      <env name="MOD_CLASSES" value="examplemod%%$PROJECT_DIR$\build\resources\main;examplemod%%$PROJECT_DIR$\build\classes\java\main"/>
+      <env name="MOD_CLASSES" value="moretimecapsulesmod%%$PROJECT_DIR$\build\resources\main;moretimecapsulesmod%%$PROJECT_DIR$\build\classes\java\main"/>
       <env name="MCP_MAPPINGS" value="snapshot_20190719-1.14.3"/>
       <env name="MCP_VERSION" value="20190829.143755"/>
       <env name="FORGE_VERSION" value="28.2.23"/>

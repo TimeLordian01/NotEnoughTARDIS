@@ -2,9 +2,7 @@ package com.thevale.moretimecapsulesmod.client.renders.exteriors;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.thevale.moretimecapsulesmod.client.models.exteriors.Elevator_TwoExterior;
-import com.thevale.moretimecapsulesmod.client.models.exteriors.Fenix_Exterior;
 import com.thevale.moretimecapsulesmod.tileentities.ElevatorTile;
-import com.thevale.moretimecapsulesmod.tileentities.FenixTile;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ResourceLocation;
 import net.tardis.mod.client.renderers.exteriors.ExteriorRenderer;
