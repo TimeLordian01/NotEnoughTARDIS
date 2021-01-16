@@ -9,8 +9,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.tardis.mod.client.models.interiordoors.InteriorModernPoliceBoxModel;
-import net.tardis.mod.client.models.interiordoors.TTCapsuleInteriorModel;
 
 @Mod.EventBusSubscriber(value = Dist.CLIENT, modid = "moretimecapsulesmod", bus = Mod.EventBusSubscriber.Bus.MOD)
 
@@ -27,8 +25,8 @@ public class ModelRegistry {
         EnumDoorTypes.ELEVATOR.setInteriorDoorModel(new Elevator_Two_InteriorDoors());
         ClientRegistry.bindTileEntitySpecialRenderer(OrganTile.class , new OrganRender());
         EnumDoorTypes.ORGAN.setInteriorDoorModel(new OrganInnerDoors());
-        ClientRegistry.bindTileEntitySpecialRenderer(CanonFiveTile.class , new CanonFiveRender());
-        EnumDoorTypes.CANON05.setInteriorDoorModel(new CanonInteriorDoor05());
+        ClientRegistry.bindTileEntitySpecialRenderer(FiveTile.class , new FiveRender());
+        EnumDoorTypes.CANON05.setInteriorDoorModel(new FiveInteriorDoor());
     }
 
 }

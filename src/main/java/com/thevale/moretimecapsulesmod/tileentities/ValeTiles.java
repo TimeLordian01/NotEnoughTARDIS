@@ -10,7 +10,6 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.tardis.mod.blocks.TileBlock;
-import net.tardis.mod.tileentities.TTiles;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +24,7 @@ public class ValeTiles {
     public static TileEntityType<WardrobeTile>exterior_wardrobe = register(WardrobeTile::new,"exterior_wardrobe", ValeBlocks.exterior_wardrobe);
     public static TileEntityType<ElevatorTile>exterior_elevator = register(ElevatorTile::new,"exterior_elevator", ValeBlocks.exterior_elevator);
     public static TileEntityType<OrganTile>exterior_organ = register(OrganTile::new,"exterior_organ", ValeBlocks.exterior_organ);
-    public static TileEntityType<CanonFiveTile>exterior_canon05 = register(CanonFiveTile::new,"exterior_canonfive", ValeBlocks.exterior_canon05);
+    public static TileEntityType<FiveTile>exterior_canon05 = register(FiveTile::new,"exterior_canonfive", ValeBlocks.exterior_canon05);
 
 
 

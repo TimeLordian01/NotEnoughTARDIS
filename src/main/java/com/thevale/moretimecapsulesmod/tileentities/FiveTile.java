@@ -6,12 +6,12 @@ import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.tardis.mod.tileentities.exteriors.ExteriorTile;
 
-public class CanonFiveTile extends ExteriorTile {
+public class FiveTile extends ExteriorTile {
 
     public static final AxisAlignedBB RENDER = new AxisAlignedBB(-1, -1, -1, 2, 2, 2);
-    public CanonFiveTile() { super(ValeTiles.exterior_canon05); }
+    public FiveTile() { super(ValeTiles.exterior_canon05); }
 
-    public CanonFiveTile(TileEntityType<?> tileEntityTypeIn) {
+    public FiveTile(TileEntityType<?> tileEntityTypeIn) {
         super(tileEntityTypeIn);
     }
 

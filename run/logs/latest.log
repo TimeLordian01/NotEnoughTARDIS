@@ -1,32 +1,32 @@
-[16Jan2021 17:35:55.801] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20190829.143755, --fml.mcVersion, 1.14.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 28.2.23, --version, MOD_DEV, --assetIndex, 1.14, --assetsDir, C:\Users\timel\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[16Jan2021 17:35:55.810] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 4.1.0+62+5bfa59b starting: java version 1.8.0_275 by Amazon.com Inc.
-[16Jan2021 17:35:56.377] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[16Jan2021 17:35:59.080] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\timel\.gradle\caches\forge_gradle\assets, --assetIndex, 1.14, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[16Jan2021 17:36:05.861] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[16Jan2021 17:36:26.240] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
-[16Jan2021 17:36:26.328] [Client thread/INFO] [net.minecraft.client.Minecraft/]: LWJGL Version: 3.2.2 build 10
-[16Jan2021 17:36:29.393] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Removed resource pack mod_resources from options because it doesn't seem to exist anymore
-[16Jan2021 17:36:30.718] [modloading-worker-3/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 28.2.23, for MC 1.14.4 with MCP 20190829.143755
-[16Jan2021 17:36:30.718] [modloading-worker-3/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v28.2.23 Initialized
-[16Jan2021 17:36:36.072] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
-[16Jan2021 17:36:36.075] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
-[16Jan2021 17:36:36.077] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
-[16Jan2021 17:36:36.078] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
-[16Jan2021 17:36:36.081] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
-[16Jan2021 17:36:36.089] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
-[16Jan2021 17:36:36.122] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity tardis:dalek
-[16Jan2021 17:36:36.125] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
-[16Jan2021 17:36:36.128] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity tardis:bessie
-[16Jan2021 17:36:36.131] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
-[16Jan2021 17:36:45.785] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
-[16Jan2021 17:36:47.981] [Server-Worker-3/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file C:\Users\timel\Desktop\Minecraft Modding\moretimecapsulesmod\run\config\tardis-common.toml is not correct. Correcting
-[16Jan2021 17:36:48.384] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[16Jan2021 17:36:48.540] [Server-Worker-3/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Dispatching synchronous work after COMMON_SETUP: 1 jobs
-[16Jan2021 17:36:48.675] [Server-Worker-3/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Synchronous work queue completed in 00:00:00.127
-[16Jan2021 17:36:48.681] [modloading-worker-2/INFO] [com.thevale.moretimecapsulesmod.Moretimecapsulesmod/]: Got game settings net.minecraft.client.GameSettings@4c3ef000
-[16Jan2021 17:36:49.384] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 28.2.23 Target: null
-[16Jan2021 17:36:49.385] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moretimecapsulesmod] Starting version check at https://github.com/TimeLordian01/MoreTimeCapsulesMod
-[16Jan2021 17:36:49.977] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+[16Jan2021 22:51:24.361] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20190829.143755, --fml.mcVersion, 1.14.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 28.2.23, --version, MOD_DEV, --assetIndex, 1.14, --assetsDir, C:\Users\timel\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[16Jan2021 22:51:24.378] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 4.1.0+62+5bfa59b starting: java version 1.8.0_275 by Amazon.com Inc.
+[16Jan2021 22:51:26.380] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[16Jan2021 22:51:30.361] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\timel\.gradle\caches\forge_gradle\assets, --assetIndex, 1.14, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[16Jan2021 22:51:41.044] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[16Jan2021 22:52:13.538] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[16Jan2021 22:52:13.659] [Client thread/INFO] [net.minecraft.client.Minecraft/]: LWJGL Version: 3.2.2 build 10
+[16Jan2021 22:52:18.656] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Removed resource pack mod_resources from options because it doesn't seem to exist anymore
+[16Jan2021 22:52:20.324] [modloading-worker-2/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 28.2.23, for MC 1.14.4 with MCP 20190829.143755
+[16Jan2021 22:52:20.324] [modloading-worker-2/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v28.2.23 Initialized
+[16Jan2021 22:52:26.804] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16Jan2021 22:52:26.806] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16Jan2021 22:52:26.807] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16Jan2021 22:52:26.808] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16Jan2021 22:52:26.849] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16Jan2021 22:52:26.855] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16Jan2021 22:52:26.861] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity tardis:dalek
+[16Jan2021 22:52:26.866] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16Jan2021 22:52:26.870] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity tardis:bessie
+[16Jan2021 22:52:26.871] [modloading-worker-1/WARN] [net.minecraft.entity.EntityType/]: No data fixer registered for entity 
+[16Jan2021 22:52:35.376] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[16Jan2021 22:52:42.389] [Server-Worker-1/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file C:\Users\timel\Desktop\Minecraft Modding\moretimecapsulesmod\run\config\tardis-common.toml is not correct. Correcting
+[16Jan2021 22:52:42.907] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[16Jan2021 22:52:43.418] [Server-Worker-1/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Dispatching synchronous work after COMMON_SETUP: 1 jobs
+[16Jan2021 22:52:43.558] [Server-Worker-1/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Synchronous work queue completed in 00:00:00.131
+[16Jan2021 22:52:43.561] [modloading-worker-0/INFO] [com.thevale.moretimecapsulesmod.Moretimecapsulesmod/]: Got game settings net.minecraft.client.GameSettings@51e1453f
+[16Jan2021 22:52:44.368] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 28.2.23 Target: null
+[16Jan2021 22:52:44.368] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moretimecapsulesmod] Starting version check at https://github.com/TimeLordian01/MoreTimeCapsulesMod
+[16Jan2021 22:52:45.359] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 7 column 1 path $
 	at com.google.gson.Gson.fromJson(Gson.java:899) ~[gson-2.8.0.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:852) ~[gson-2.8.0.jar:?]
@@ -41,81 +41,84 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[gson-2.8.0.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:887) ~[gson-2.8.0.jar:?]
 	... 6 more
-[16Jan2021 17:36:50.017] [Server-Worker-3/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Dispatching synchronous work after SIDED_SETUP: 1 jobs
-[16Jan2021 17:36:50.138] [Server-Worker-3/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Synchronous work queue completed in 00:00:00.119
-[16Jan2021 17:37:00.509] [Server-Worker-1/WARN] [net.minecraft.client.renderer.texture.AtlasTexture/]: Texture tardis:blocks/cube_glow with size 20x20 limits mip level from 4 to 2
-[16Jan2021 17:37:02.794] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
-[16Jan2021 17:37:02.946] [Client thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: tardis:communicator_steam
-[16Jan2021 17:37:03.090] [Client thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
-[16Jan2021 17:37:03.091] [Client thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
-[16Jan2021 17:37:03.507] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x1024 textures-atlas
-[16Jan2021 17:37:04.730] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/particle-atlas
-[16Jan2021 17:37:04.732] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/painting-atlas
-[16Jan2021 17:37:04.733] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128 textures/mob_effect-atlas
-[16Jan2021 17:37:05.328] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[16Jan2021 17:39:31.064] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[16Jan2021 17:39:31.066] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[16Jan2021 17:39:31.068] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[16Jan2021 17:39:31.070] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[16Jan2021 17:39:31.073] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[16Jan2021 17:39:31.266] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.14.4
-[16Jan2021 17:39:31.267] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
-[16Jan2021 17:39:31.524] [Server thread/INFO] [net.minecraftforge.common.DimensionManager/DIMS]: Registered dimension tardis:vortex of type tardis:vortex and id 3
-[16Jan2021 17:39:31.525] [Server thread/INFO] [net.minecraftforge.common.DimensionManager/DIMS]: Registered dimension tardis:380df991-f603-344c-a090-369bad2a924a of type tardis:tardis and id 4
-[16Jan2021 17:39:31.539] [Server thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this SERVER instance
-[16Jan2021 17:39:32.079] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.14.4-28.2.23_mapped_snapshot_20190719-1.14.3-recomp.jar, main, TardisMod-1-14-1.4.1-Release_mapped_snapshot_20190719-1.14.3.jar
-[16Jan2021 17:39:36.388] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
-[16Jan2021 17:39:38.476] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 824 advancements
-[16Jan2021 17:39:39.088] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[16Jan2021 17:39:40.190] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[16Jan2021 17:39:40.190] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[16Jan2021 17:39:40.191] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[16Jan2021 17:39:40.611] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
-[16Jan2021 17:39:40.732] [Server thread/INFO] [com.thevale.moretimecapsulesmod.Moretimecapsulesmod/]: HELLO from server starting
-[16Jan2021 17:39:40.755] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 1653 ms
-[16Jan2021 17:39:41.668] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (vortex): All chunks are saved
-[16Jan2021 17:39:41.670] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[16Jan2021 17:39:41.670] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[16Jan2021 17:39:44.007] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
-[16Jan2021 17:39:44.194] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@4183cc97
-[16Jan2021 17:39:44.318] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:e8f6d117] logged in with entity id 19 at (0.5, 133.0, -9.5)
-[16Jan2021 17:39:44.342] [Client thread/ERROR] [net.minecraftforge.fml.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
-[16Jan2021 17:39:44.363] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[16Jan2021 17:39:44.897] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[16Jan2021 17:39:44.922] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
-[16Jan2021 17:39:45.087] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[16Jan2021 17:39:45.179] [Client thread/WARN] [net.minecraft.client.network.play.ClientPlayNetHandler/]: Unknown custom packet identifier: tardis:main_channel
-[16Jan2021 17:39:45.181] [Client thread/WARN] [net.minecraft.client.network.play.ClientPlayNetHandler/]: Unknown custom packet identifier: tardis:main_channel
-[16Jan2021 17:39:45.182] [Client thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 0 advancements
-[16Jan2021 17:39:45.540] [Server thread/ERROR] [net.minecraftforge.fml.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
-[16Jan2021 17:39:58.574] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[16Jan2021 17:39:58.579] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
-[16Jan2021 17:39:58.626] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[16Jan2021 17:40:05.969] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[16Jan2021 17:40:05.975] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
-[16Jan2021 17:40:06.226] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[16Jan2021 17:40:18.878] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[16Jan2021 17:40:18.885] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
-[16Jan2021 17:40:18.962] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[16Jan2021 17:40:25.984] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[16Jan2021 17:40:25.990] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
-[16Jan2021 17:40:26.155] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[16Jan2021 17:40:36.271] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[16Jan2021 17:40:36.276] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
-[16Jan2021 17:40:36.307] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[16Jan2021 17:40:40.555] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[16Jan2021 17:40:40.565] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
-[16Jan2021 17:40:40.665] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[16Jan2021 17:40:41.506] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
-[16Jan2021 17:40:41.506] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[16Jan2021 17:40:41.515] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
-[16Jan2021 17:40:41.567] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[16Jan2021 17:40:41.568] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[16Jan2021 17:40:41.568] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[16Jan2021 17:40:41.568] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
-[16Jan2021 17:40:41.584] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (380df991-f603-344c-a090-369bad2a924a): All chunks are saved
-[16Jan2021 17:40:41.585] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
-[16Jan2021 17:40:41.586] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[16Jan2021 17:40:41.607] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (380df991-f603-344c-a090-369bad2a924a): All chunks are saved
-[16Jan2021 17:40:41.608] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[16Jan2021 17:40:43.317] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[16Jan2021 22:52:45.801] [Server-Worker-1/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Dispatching synchronous work after SIDED_SETUP: 1 jobs
+[16Jan2021 22:52:46.658] [Server-Worker-1/INFO] [net.minecraftforge.fml.DeferredWorkQueue/LOADING]: Synchronous work queue completed in 00:00:00.857
+[16Jan2021 22:53:06.839] [Server-Worker-3/WARN] [net.minecraft.client.renderer.texture.AtlasTexture/]: Texture tardis:blocks/cube_glow with size 20x20 limits mip level from 4 to 2
+[16Jan2021 22:53:10.274] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[16Jan2021 22:53:10.501] [Client thread/WARN] [net.minecraft.client.audio.SoundEngine/]: Missing sound for event: tardis:communicator_steam
+[16Jan2021 22:53:10.786] [Client thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[16Jan2021 22:53:10.788] [Client thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[16Jan2021 22:53:11.386] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x1024 textures-atlas
+[16Jan2021 22:53:13.854] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/particle-atlas
+[16Jan2021 22:53:13.860] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/painting-atlas
+[16Jan2021 22:53:13.860] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128 textures/mob_effect-atlas
+[16Jan2021 22:53:15.992] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[16Jan2021 22:53:20.551] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[16Jan2021 22:53:20.553] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16Jan2021 22:53:20.555] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16Jan2021 22:53:20.557] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[16Jan2021 22:53:20.559] [Client thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16Jan2021 22:53:23.056] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.14.4
+[16Jan2021 22:53:23.057] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Generating keypair
+[16Jan2021 22:53:23.462] [Server thread/INFO] [net.minecraftforge.common.DimensionManager/DIMS]: Registered dimension tardis:vortex of type tardis:vortex and id 3
+[16Jan2021 22:53:23.462] [Server thread/INFO] [net.minecraftforge.common.DimensionManager/DIMS]: Registered dimension tardis:380df991-f603-344c-a090-369bad2a924a of type tardis:tardis and id 4
+[16Jan2021 22:53:23.485] [Server thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this SERVER instance
+[16Jan2021 22:53:23.979] [Server thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.14.4-28.2.23_mapped_snapshot_20190719-1.14.3-recomp.jar, main, TardisMod-1-14-1.4.1-Release_mapped_snapshot_20190719-1.14.3.jar
+[16Jan2021 22:53:28.720] [Server thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 6 recipes
+[16Jan2021 22:53:34.009] [Server thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 824 advancements
+[16Jan2021 22:53:34.903] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[16Jan2021 22:53:36.475] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[16Jan2021 22:53:36.475] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[16Jan2021 22:53:36.476] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[16Jan2021 22:53:36.476] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[16Jan2021 22:53:37.073] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[16Jan2021 22:53:39.252] [Server thread/INFO] [com.thevale.moretimecapsulesmod.Moretimecapsulesmod/]: HELLO from server starting
+[16Jan2021 22:53:39.308] [Client thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 4365 ms
+[16Jan2021 22:53:40.892] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16Jan2021 22:53:40.893] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (vortex): All chunks are saved
+[16Jan2021 22:53:40.894] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16Jan2021 22:53:44.723] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[16Jan2021 22:53:44.962] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@32b08c80
+[16Jan2021 22:53:45.501] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:983dc855] logged in with entity id 19 at (0.5902134813719989, 133.0, -8.893524674495225)
+[16Jan2021 22:53:45.594] [Client thread/ERROR] [net.minecraftforge.fml.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
+[16Jan2021 22:53:45.634] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[16Jan2021 22:53:46.476] [Server thread/ERROR] [net.minecraftforge.fml.network.simple.IndexedMessageCodec/SIMPLENET]: Received empty payload on channel fml:handshake
+[16Jan2021 22:53:46.525] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[16Jan2021 22:53:47.045] [Client thread/WARN] [net.minecraft.client.network.play.ClientPlayNetHandler/]: Unknown custom packet identifier: tardis:main_channel
+[16Jan2021 22:53:47.047] [Client thread/WARN] [net.minecraft.client.network.play.ClientPlayNetHandler/]: Unknown custom packet identifier: tardis:main_channel
+[16Jan2021 22:53:47.051] [Client thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 0 advancements
+[16Jan2021 22:53:47.894] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
+[16Jan2021 22:53:48.628] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[16Jan2021 22:53:50.152] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4432ms or 88 ticks behind
+[16Jan2021 22:54:23.967] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Stone Age]
+[16Jan2021 22:54:24.006] [Client thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev has made the advancement [Stone Age]
+[16Jan2021 22:54:24.007] [Client thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 19 advancements
+[16Jan2021 22:54:28.783] [Client thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 23 advancements
+[16Jan2021 22:54:38.406] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[16Jan2021 22:54:38.415] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
+[16Jan2021 22:54:38.736] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[16Jan2021 22:54:43.388] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[16Jan2021 22:54:43.411] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
+[16Jan2021 22:54:43.444] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[16Jan2021 22:54:55.009] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[16Jan2021 22:54:55.018] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
+[16Jan2021 22:54:55.187] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[16Jan2021 22:55:12.233] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[16Jan2021 22:55:12.240] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
+[16Jan2021 22:55:12.269] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[16Jan2021 22:55:53.871] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[16Jan2021 22:55:53.878] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
+[16Jan2021 22:55:53.926] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[16Jan2021 22:55:56.721] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[16Jan2021 22:55:56.721] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[16Jan2021 22:55:56.733] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[16Jan2021 22:55:56.774] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[16Jan2021 22:55:56.775] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[16Jan2021 22:55:56.775] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[16Jan2021 22:55:56.775] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/tardis:380df991-f603-344c-a090-369bad2a924a
+[16Jan2021 22:55:56.791] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (380df991-f603-344c-a090-369bad2a924a): All chunks are saved
+[16Jan2021 22:55:56.791] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'New World'/minecraft:overworld
+[16Jan2021 22:55:56.793] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[16Jan2021 22:55:56.812] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (380df991-f603-344c-a090-369bad2a924a): All chunks are saved
+[16Jan2021 22:55:56.816] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[16Jan2021 22:55:57.648] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
