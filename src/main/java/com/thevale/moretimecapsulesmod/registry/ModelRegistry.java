@@ -1,4 +1,4 @@
-package com.thevale.moretimecapsulesmod.client;
+package com.thevale.moretimecapsulesmod.registry;
 
 import com.thevale.moretimecapsulesmod.client.models.interiordoors.*;
 import com.thevale.moretimecapsulesmod.client.renders.exteriors.*;

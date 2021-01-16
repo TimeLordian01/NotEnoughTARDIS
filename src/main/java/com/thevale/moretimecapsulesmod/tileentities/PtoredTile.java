@@ -1,5 +1,6 @@
 package com.thevale.moretimecapsulesmod.tileentities;
 
+import com.thevale.moretimecapsulesmod.tileentities.ValeTiles;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -7,10 +8,8 @@ import net.tardis.mod.tileentities.exteriors.ExteriorTile;
 
 public class PtoredTile extends ExteriorTile {
 
-public static final AxisAlignedBB RENDER = new AxisAlignedBB(-1, -1, -1, 2, 2, 2);
-public PtoredTile() {
-    super(ValeTiles.exterior_ptored);
-}
+    public static final AxisAlignedBB RENDER = new AxisAlignedBB(-1, -1, -1, 2, 2, 2);
+    public PtoredTile() { super(ValeTiles.exterior_ptored); }
 
     public PtoredTile(TileEntityType<?> tileEntityTypeIn) {
         super(tileEntityTypeIn);
@@ -27,6 +26,10 @@ public PtoredTile() {
             }
         }
         return new AxisAlignedBB(0, 0, 0, 0, 0, 0);
-        }
     }
 
+    @Override
+    public AxisAlignedBB getRenderBoundingBox() {
+        return RENDER.offset(this.getPos());
+    }
+}

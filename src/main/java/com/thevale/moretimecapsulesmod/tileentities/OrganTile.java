@@ -1,5 +1,6 @@
 package com.thevale.moretimecapsulesmod.tileentities;
 
+import com.thevale.moretimecapsulesmod.tileentities.ValeTiles;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -7,10 +8,8 @@ import net.tardis.mod.tileentities.exteriors.ExteriorTile;
 
 public class OrganTile extends ExteriorTile {
 
-public static final AxisAlignedBB RENDER = new AxisAlignedBB(-1, -1, -1, 2, 2, 2);
-public OrganTile() {
-    super(ValeTiles.exterior_organ);
-}
+    public static final AxisAlignedBB RENDER = new AxisAlignedBB(-1, -1, -1, 2, 2, 2);
+    public OrganTile() { super(ValeTiles.exterior_organ); }
 
     public OrganTile(TileEntityType<?> tileEntityTypeIn) {
         super(tileEntityTypeIn);
@@ -27,6 +26,10 @@ public OrganTile() {
             }
         }
         return new AxisAlignedBB(0, 0, 0, 0, 0, 0);
-        }
     }
 
+    @Override
+    public AxisAlignedBB getRenderBoundingBox() {
+        return RENDER.offset(this.getPos());
+    }
+}
