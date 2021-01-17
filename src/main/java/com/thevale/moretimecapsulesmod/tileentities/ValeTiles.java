@@ -25,6 +25,7 @@ public class ValeTiles {
     public static TileEntityType<ElevatorTile>exterior_elevator = register(ElevatorTile::new,"exterior_elevator", ValeBlocks.exterior_elevator);
     public static TileEntityType<OrganTile>exterior_organ = register(OrganTile::new,"exterior_organ", ValeBlocks.exterior_organ);
     public static TileEntityType<FiveTile>exterior_canon05 = register(FiveTile::new,"exterior_canonfive", ValeBlocks.exterior_canon05);
+    public static TileEntityType<PortalTile>exterior_portal = register(PortalTile::new,"exterior_portal", ValeBlocks.exterior_portal);
 
 
 

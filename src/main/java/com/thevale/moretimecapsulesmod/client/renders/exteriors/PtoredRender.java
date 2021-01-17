@@ -20,7 +20,6 @@ public static WorldText TEXT = new WorldText(0.87F, 0.125F, 0.015F, 0x000000);
         GlStateManager.translated(0, -1, 0);
         Minecraft.getInstance().getTextureManager().bindTexture(TEXTURE);
         MODEL.render(tile);
-
         GlStateManager.popMatrix();
     }
 }

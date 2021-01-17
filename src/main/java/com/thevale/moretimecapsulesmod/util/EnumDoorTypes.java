@@ -58,6 +58,14 @@ SHALKA(state -> {
                 case BOTH : return -90.0D;
                 default:return 0.0;
             }
+        }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
+    PORTAL(state -> {
+            switch(state) {
+            case CLOSED: return 0.0D;
+                case ONE: return 90.0D;
+                case BOTH : return -90.0D;
+                default:return 0.0;
+            }
         }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH);
 
 

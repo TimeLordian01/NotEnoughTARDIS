@@ -27,6 +27,8 @@ public class ModelRegistry {
         EnumDoorTypes.ORGAN.setInteriorDoorModel(new OrganInnerDoors());
         ClientRegistry.bindTileEntitySpecialRenderer(FiveTile.class , new FiveRender());
         EnumDoorTypes.CANON05.setInteriorDoorModel(new FiveInteriorDoor());
+        ClientRegistry.bindTileEntitySpecialRenderer(PortalTile.class , new PortalRender());
+        EnumDoorTypes.PORTAL.setInteriorDoorModel(new Portalinteriordoor());
     }
 
 }

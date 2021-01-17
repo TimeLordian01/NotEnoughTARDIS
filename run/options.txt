@@ -17,7 +17,7 @@ touchscreen:false
 fullscreen:false
 bobView:true
 mouseSensitivity:0.5
-fov:0.25
+fov:0.0
 gamma:1.0
 renderDistance:12
 guiScale:0
@@ -90,7 +90,7 @@ key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
 key_key.tardis.snap:key.keyboard.h
 soundCategory_master:0.08609272
-soundCategory_music:0.6690141
+soundCategory_music:0.0
 soundCategory_record:0.24823944
 soundCategory_weather:0.0
 soundCategory_block:1.0
