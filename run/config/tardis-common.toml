@@ -84,3 +84,13 @@
 		#Toggle whether sonics can ink Squids
 		ink_squid = true
 
+["World Gen"]
+	#Chance config
+	tardis_chance = 100
+
+["Machines Configuration"]
+	#Defines how much Forge Energy is needed for 1 Artron Unit
+	#Used to balance out the Artron Converter Block
+	#This is a float value, allows for decimals
+	FEtoAURate = 1000.0
+

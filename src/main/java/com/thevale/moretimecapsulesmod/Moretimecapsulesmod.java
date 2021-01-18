@@ -39,6 +39,7 @@ public class Moretimecapsulesmod {
 
     private void setup(final FMLCommonSetupEvent event) {
         TardisRegistries.registerRegisters(() -> ExteriorRegistry.register());
+
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

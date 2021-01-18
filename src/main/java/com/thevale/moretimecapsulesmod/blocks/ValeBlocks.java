@@ -27,6 +27,7 @@ public class ValeBlocks {
     public static List<Item> ITEMS = new ArrayList<Item>();
     public static List<Block> BLOCKS = new ArrayList<Block>();
 
+    //Exteriors
     public static ExteriorBlock exterior_shalka = register(new ExteriorBlock(),"exterior_shalka",null,false);
     public static ExteriorBlock exterior_ptored = register(new ExteriorBlock(),"exterior_ptored",null,false);
     public static ExteriorBlock exterior_wardrobe = register(new ExteriorBlock(),"exterior_wardrobe",null,false);
@@ -34,6 +35,12 @@ public class ValeBlocks {
     public static ExteriorBlock exterior_organ = register(new ExteriorBlock(),"exterior_organ",null,false);
     public static ExteriorBlock exterior_canon05 = register(new ExteriorBlock(),"exterior_canon05",null,false);
     public static ExteriorBlock exterior_portal = register(new ExteriorBlock(),"exterior_portal",null,false);
+
+    //Consoles
+    public static VConsoleBlock console_vale = register(new VConsoleBlock(),"console_vale", null, false);
+
+
+
 
     @SubscribeEvent
     public static void register(RegistryEvent.Register<Block> event) {

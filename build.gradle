@@ -92,7 +92,7 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.14.4-28.2.23'
-    implementation fg.deobf("com.gitlab.Spectre0987:TardisMod-1-14:1.4.1-Release")
+    implementation fg.deobf("com.gitlab.Spectre0987:TardisMod-1-14:master-SNAPSHOT")
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
     // compile "some.group:artifact:version"

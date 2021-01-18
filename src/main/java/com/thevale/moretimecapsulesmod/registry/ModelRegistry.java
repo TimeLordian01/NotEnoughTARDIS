@@ -1,8 +1,10 @@
 package com.thevale.moretimecapsulesmod.registry;
 
 import com.thevale.moretimecapsulesmod.client.models.interiordoors.*;
+import com.thevale.moretimecapsulesmod.client.renders.consoles.ValeConsoleRender;
 import com.thevale.moretimecapsulesmod.client.renders.exteriors.*;
 import com.thevale.moretimecapsulesmod.tileentities.*;
+import com.thevale.moretimecapsulesmod.tileentities.consoles.ValeConsoleTile;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -15,6 +17,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class ModelRegistry {
     @SubscribeEvent
     public static void Register(FMLClientSetupEvent event) {
+        //Exteriors
         ClientRegistry.bindTileEntitySpecialRenderer(ShalkaTile.class , new ShalkaRender());
         EnumDoorTypes.SHALKA.setInteriorDoorModel(new ShalkaInteriorDoor());
         ClientRegistry.bindTileEntitySpecialRenderer(PtoredTile.class , new PtoredRender());
@@ -29,6 +32,9 @@ public class ModelRegistry {
         EnumDoorTypes.CANON05.setInteriorDoorModel(new FiveInteriorDoor());
         ClientRegistry.bindTileEntitySpecialRenderer(PortalTile.class , new PortalRender());
         EnumDoorTypes.PORTAL.setInteriorDoorModel(new Portalinteriordoor());
+
+        //Consoles
+        ClientRegistry.bindTileEntitySpecialRenderer(ValeConsoleTile.class, new ValeConsoleRender());
     }
 
 }

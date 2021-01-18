@@ -1,5 +1,9 @@
 
 ["Client Settings"]
+	#List entity ids that will be blacklisted from rendering in the Tardis Monitor Scanner Mode
+	#Seperate every entry except the last one with commas
+	#To blacklist all entities from a mod, use YourModId:*
+	scannerBlacklistedEntities = [""]
 	#Toggle whether to render the external scanner on the Tardis Monitor Block
 	externalMonitor = true
 	#List block ids that will be blacklisted from rendering in the Tardis Monitor Scanner Mode

@@ -3,6 +3,7 @@ package com.thevale.moretimecapsulesmod.tileentities;
 
 import com.thevale.moretimecapsulesmod.Moretimecapsulesmod;
 import com.thevale.moretimecapsulesmod.blocks.ValeBlocks;
+import com.thevale.moretimecapsulesmod.tileentities.consoles.ValeConsoleTile;
 import net.minecraft.block.Block;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
@@ -19,6 +20,7 @@ import java.util.function.Supplier;
 public class ValeTiles {
     public static List<TileEntityType<?>> TYPES = new ArrayList<TileEntityType<?>>();
 
+    //exteriors
     public static TileEntityType<ShalkaTile>exterior_shalka = register(ShalkaTile::new,"exterior_shalka", ValeBlocks.exterior_shalka);
     public static TileEntityType<PtoredTile>exterior_ptored = register(PtoredTile::new,"exterior_ptored", ValeBlocks.exterior_ptored);
     public static TileEntityType<WardrobeTile>exterior_wardrobe = register(WardrobeTile::new,"exterior_wardrobe", ValeBlocks.exterior_wardrobe);
@@ -27,6 +29,8 @@ public class ValeTiles {
     public static TileEntityType<FiveTile>exterior_canon05 = register(FiveTile::new,"exterior_canonfive", ValeBlocks.exterior_canon05);
     public static TileEntityType<PortalTile>exterior_portal = register(PortalTile::new,"exterior_portal", ValeBlocks.exterior_portal);
 
+    //consoles
+    public static TileEntityType<ValeConsoleTile>console_vale = register(ValeConsoleTile::new,"console_vale", ValeBlocks.console_vale);
 
 
 
