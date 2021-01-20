@@ -39,7 +39,7 @@ public class ValeBlocks {
     //Consoles
     public static VConsoleBlock console_vale = register(new VConsoleBlock(),"console_vale", null, false);
     public static VConsoleBlock console_coral2 = register(new VConsoleBlock(),"console_coral2", null, false);
-
+    public static VConsoleBlock console_smith = register(new VConsoleBlock(),"console_smith", null, false);
 
 
 

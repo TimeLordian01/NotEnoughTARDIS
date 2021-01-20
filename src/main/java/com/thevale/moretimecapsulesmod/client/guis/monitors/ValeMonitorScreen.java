@@ -8,7 +8,7 @@ import net.tardis.mod.sounds.TSounds;
 
 public class ValeMonitorScreen extends BaseMonitorScreen {
 
-    public static final ResourceLocation TEXTURE = new ResourceLocation("moretimecapsulesmod", "textures/gui/monitors/.png");
+    public static final ResourceLocation TEXTURE = new ResourceLocation("moretimecapsulesmod", "textures/gui/monitors/valeconsole.png");
 
     public ValeMonitorScreen() {
     }

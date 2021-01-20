@@ -2,10 +2,12 @@ package com.thevale.moretimecapsulesmod.registry;
 
 import com.thevale.moretimecapsulesmod.client.models.interiordoors.*;
 import com.thevale.moretimecapsulesmod.client.renders.consoles.CoralConsoleRender;
+import com.thevale.moretimecapsulesmod.client.renders.consoles.SmithConsoleRender;
 import com.thevale.moretimecapsulesmod.client.renders.consoles.ValeConsoleRender;
 import com.thevale.moretimecapsulesmod.client.renders.exteriors.*;
 import com.thevale.moretimecapsulesmod.tileentities.*;
 import com.thevale.moretimecapsulesmod.tileentities.consoles.CoralConsoleTile;
+import com.thevale.moretimecapsulesmod.tileentities.consoles.SmithConsoleTile;
 import com.thevale.moretimecapsulesmod.tileentities.consoles.ValeConsoleTile;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
 import net.minecraftforge.api.distmarker.Dist;
@@ -38,6 +40,7 @@ public class ModelRegistry {
         //Consoles
         ClientRegistry.bindTileEntitySpecialRenderer(ValeConsoleTile.class, new ValeConsoleRender());
         ClientRegistry.bindTileEntitySpecialRenderer(CoralConsoleTile.class, new CoralConsoleRender());
+        ClientRegistry.bindTileEntitySpecialRenderer(SmithConsoleTile.class, new SmithConsoleRender());
     }
 
 }
