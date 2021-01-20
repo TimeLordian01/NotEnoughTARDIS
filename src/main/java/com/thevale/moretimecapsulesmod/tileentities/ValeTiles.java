@@ -3,6 +3,7 @@ package com.thevale.moretimecapsulesmod.tileentities;
 
 import com.thevale.moretimecapsulesmod.Moretimecapsulesmod;
 import com.thevale.moretimecapsulesmod.blocks.ValeBlocks;
+import com.thevale.moretimecapsulesmod.tileentities.consoles.CoralConsoleTile;
 import com.thevale.moretimecapsulesmod.tileentities.consoles.ValeConsoleTile;
 import net.minecraft.block.Block;
 import net.minecraft.tileentity.TileEntity;
@@ -31,6 +32,7 @@ public class ValeTiles {
 
     //consoles
     public static TileEntityType<ValeConsoleTile>console_vale = register(ValeConsoleTile::new,"console_vale", ValeBlocks.console_vale);
+    public static TileEntityType<CoralConsoleTile>console_coral2 = register(CoralConsoleTile::new,"console_coral2", ValeBlocks.console_coral2);
 
 
 

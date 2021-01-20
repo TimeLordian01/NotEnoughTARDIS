@@ -17,6 +17,8 @@ import net.tardis.mod.registries.TardisRegistries;
 public class VConsoles implements IRegisterable<Console> {
 
     public static Console VALE;
+    public static Console CORAL2;
+
 
     @Override
     public Console setRegistryName(ResourceLocation resourceLocation) {
@@ -32,9 +34,11 @@ public class VConsoles implements IRegisterable<Console> {
     public static void eventBusSubscriber(FMLCommonSetupEvent event) {
         TardisRegistries.registerRegisters(() -> {
             VALE = register(new Console(() -> ValeBlocks.console_vale.getDefaultState(), new ResourceLocation(Moretimecapsulesmod.MODID,"textures/gui/consoles/valeconsole.png")), "vale", new ResourceLocation(Moretimecapsulesmod.MODID,"vale"));
+            CORAL2 = register(new Console(() -> ValeBlocks.console_coral2.getDefaultState(), new ResourceLocation(Moretimecapsulesmod.MODID,"textures/gui/consoles/coralconsole.png")), "coral2", new ResourceLocation(Moretimecapsulesmod.MODID,"coral2"));
 
 
         });
+
     }
 
     private static Console register(Console console, String name, ResourceLocation resourceLocation) {

@@ -1489,6 +1489,7 @@ public class ValeConsoleModel extends Model {
 			this.doorcontrol.offsetY = door.getOpenState() == EnumDoorState.CLOSED ? -0.0F : -0.055F;
 		});
 
+
 		IncModControl inc = tile.getControl(IncModControl.class);
 		this.Switch.rotateAngleX = (float) Math.toRadians(((inc.index / (float)IncModControl.COORD_MODS.length) * 100.0F) - 50.0F);
 
