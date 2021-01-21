@@ -1,5 +1,6 @@
 package com.thevale.moretimecapsulesmod.client.guis.monitors;
 
+import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.SimpleSound;
 import net.minecraft.util.ResourceLocation;
@@ -13,18 +14,18 @@ public class SmithMonitorScreen extends BaseMonitorScreen {
     public SmithMonitorScreen() {
     }
 
-    @Override
-    public void renderMonitor() {
-        Minecraft.getInstance().getTextureManager().bindTexture(TEXTURE);
-        this.renderBackground();
-        int guiWidth = 255;
-        int guiHeight = 182;
-        this.blit(this.width / 2 - guiWidth / 2, this.height / 2 - guiHeight / 2, 0, 0, guiWidth, guiHeight);
-    }
-
     protected void init() {
         super.init();
-        Minecraft.getInstance().getSoundHandler().play(SimpleSound.master(TSounds.EYE_MONITOR_INTERACT, 1.0F));
+        Minecraft.getInstance().getSoundHandler().play(SimpleSound.master(TSounds.EYE_MONITOR_INTERACT.get(), 1.0F));
+    }
+
+    @Override
+    public void renderMonitor(MatrixStack matrixStack) {
+        Minecraft.getInstance().getTextureManager().bindTexture(TEXTURE);
+        this.renderBackground(matrixStack);
+        int guiWidth = 255;
+        int guiHeight = 182;
+        this.blit(matrixStack, this.width / 2 - guiWidth / 2, this.height / 2 - guiHeight / 2, 0, 0, guiWidth, guiHeight);
     }
 
     @Override

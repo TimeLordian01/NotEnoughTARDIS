@@ -1,9 +1,12 @@
 package com.thevale.moretimecapsulesmod;
 
+import com.thevale.moretimecapsulesmod.blocks.ValeBlocks;
 import com.thevale.moretimecapsulesmod.registry.ExteriorRegistry;
+import com.thevale.moretimecapsulesmod.tileentities.ValeTiles;
 import net.minecraft.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
@@ -29,17 +32,14 @@ public class Moretimecapsulesmod {
     public static final String MODID = "moretimecapsulesmod";
 
     public Moretimecapsulesmod() {
-        // Register the com.thevale.moretimecapsulesmod.setup method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        MinecraftForge.EVENT_BUS.register(this);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
-    }
-
-    private void setup(final FMLCommonSetupEvent event) {
-        TardisRegistries.registerRegisters(() -> ExteriorRegistry.register());
-
+        IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ValeBlocks.BLOCKS.register(modBus);
+        ValeTiles.TILES.register(modBus);
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

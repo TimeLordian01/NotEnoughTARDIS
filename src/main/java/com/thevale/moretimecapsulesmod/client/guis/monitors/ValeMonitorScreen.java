@@ -1,5 +1,6 @@
 package com.thevale.moretimecapsulesmod.client.guis.monitors;
 
+import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.SimpleSound;
 import net.minecraft.util.ResourceLocation;
@@ -10,21 +11,18 @@ public class ValeMonitorScreen extends BaseMonitorScreen {
 
     public static final ResourceLocation TEXTURE = new ResourceLocation("moretimecapsulesmod", "textures/gui/monitors/valeconsole.png");
 
-    public ValeMonitorScreen() {
+    protected void init() {
+        super.init();
+        Minecraft.getInstance().getSoundHandler().play(SimpleSound.master(TSounds.EYE_MONITOR_INTERACT.get(), 1.0F));
     }
 
     @Override
-    public void renderMonitor() {
+    public void renderMonitor(MatrixStack matrixStack) {
         Minecraft.getInstance().getTextureManager().bindTexture(TEXTURE);
-        this.renderBackground();
+        this.renderBackground(matrixStack);
         int guiWidth = 255;
         int guiHeight = 182;
-        this.blit(this.width / 2 - guiWidth / 2, this.height / 2 - guiHeight / 2, 0, 0, guiWidth, guiHeight);
-    }
-
-    protected void init() {
-        super.init();
-        Minecraft.getInstance().getSoundHandler().play(SimpleSound.master(TSounds.EYE_MONITOR_INTERACT, 1.0F));
+        this.blit(matrixStack, this.width / 2 - guiWidth / 2, this.height / 2 - guiHeight / 2, 0, 0, guiWidth, guiHeight);;
     }
 
     @Override

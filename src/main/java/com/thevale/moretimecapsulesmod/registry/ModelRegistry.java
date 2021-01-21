@@ -1,5 +1,7 @@
 package com.thevale.moretimecapsulesmod.registry;
 
+import com.thevale.moretimecapsulesmod.Moretimecapsulesmod;
+import com.thevale.moretimecapsulesmod.blocks.ValeBlocks;
 import com.thevale.moretimecapsulesmod.client.models.interiordoors.*;
 import com.thevale.moretimecapsulesmod.client.renders.consoles.CoralConsoleRender;
 import com.thevale.moretimecapsulesmod.client.renders.consoles.SmithConsoleRender;
@@ -10,37 +12,46 @@ import com.thevale.moretimecapsulesmod.tileentities.consoles.CoralConsoleTile;
 import com.thevale.moretimecapsulesmod.tileentities.consoles.SmithConsoleTile;
 import com.thevale.moretimecapsulesmod.tileentities.consoles.ValeConsoleTile;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-@Mod.EventBusSubscriber(value = Dist.CLIENT, modid = "moretimecapsulesmod", bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(value = Dist.CLIENT, modid = Moretimecapsulesmod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 
 public class ModelRegistry {
     @SubscribeEvent
     public static void Register(FMLClientSetupEvent event) {
+        // Render Stuff
+        event.enqueueWork(() -> {
+            RenderTypeLookup.setRenderLayer(ValeBlocks.console_vale.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ValeBlocks.console_smith.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ValeBlocks.console_coral2.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ValeBlocks.exterior_wardrobe.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ValeBlocks.exterior_shalka.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ValeBlocks.exterior_ptored.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ValeBlocks.exterior_organ.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ValeBlocks.exterior_canon05.get(), RenderType.getTranslucent());
+                });
         //Exteriors
-        ClientRegistry.bindTileEntitySpecialRenderer(ShalkaTile.class , new ShalkaRender());
+        ClientRegistry.bindTileEntityRenderer(ValeTiles.exterior_shalka.get(), ShalkaRender::new);
         EnumDoorTypes.SHALKA.setInteriorDoorModel(new ShalkaInteriorDoor());
-        ClientRegistry.bindTileEntitySpecialRenderer(PtoredTile.class , new PtoredRender());
+        ClientRegistry.bindTileEntityRenderer(ValeTiles.exterior_ptored.get(), PtoredRender::new);
         EnumDoorTypes.PTORED.setInteriorDoorModel(new Ptoredinteriordoor());
-        ClientRegistry.bindTileEntitySpecialRenderer(WardrobeTile.class , new WardrobeRender());
+        ClientRegistry.bindTileEntityRenderer(ValeTiles.exterior_wardrobe.get(), WardrobeRender::new);
         EnumDoorTypes.WARDROBE.setInteriorDoorModel(new WardrobeInteriorDoorModel());
-        ClientRegistry.bindTileEntitySpecialRenderer(ElevatorTile.class , new ElevatorRender());
-        EnumDoorTypes.ELEVATOR.setInteriorDoorModel(new Elevator_Two_InteriorDoors());
-        ClientRegistry.bindTileEntitySpecialRenderer(OrganTile.class , new OrganRender());
+        ClientRegistry.bindTileEntityRenderer(ValeTiles.exterior_organ.get(), OrganRender::new);
         EnumDoorTypes.ORGAN.setInteriorDoorModel(new OrganInnerDoors());
-        ClientRegistry.bindTileEntitySpecialRenderer(FiveTile.class , new FiveRender());
+        ClientRegistry.bindTileEntityRenderer(ValeTiles.exterior_canon05.get(), FiveRender::new);
         EnumDoorTypes.CANON05.setInteriorDoorModel(new FiveInteriorDoor());
-        ClientRegistry.bindTileEntitySpecialRenderer(PortalTile.class , new PortalRender());
-        EnumDoorTypes.PORTAL.setInteriorDoorModel(new Portalinteriordoor());
 
         //Consoles
-        ClientRegistry.bindTileEntitySpecialRenderer(ValeConsoleTile.class, new ValeConsoleRender());
-        ClientRegistry.bindTileEntitySpecialRenderer(CoralConsoleTile.class, new CoralConsoleRender());
-        ClientRegistry.bindTileEntitySpecialRenderer(SmithConsoleTile.class, new SmithConsoleRender());
+        ClientRegistry.bindTileEntityRenderer(ValeTiles.console_vale.get(), ValeConsoleRender::new);
+        ClientRegistry.bindTileEntityRenderer(ValeTiles.console_coral2.get(), CoralConsoleRender::new);
+        ClientRegistry.bindTileEntityRenderer(ValeTiles.console_smith.get(), SmithConsoleRender::new);
     }
 
 }

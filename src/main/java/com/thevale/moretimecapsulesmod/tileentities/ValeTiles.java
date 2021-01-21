@@ -9,51 +9,35 @@ import com.thevale.moretimecapsulesmod.tileentities.consoles.ValeConsoleTile;
 import net.minecraft.block.Block;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.tardis.mod.blocks.TileBlock;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Supplier;
+import com.google.common.base.Supplier;
 
-@Mod.EventBusSubscriber(modid = Moretimecapsulesmod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ValeTiles {
-    public static List<TileEntityType<?>> TYPES = new ArrayList<TileEntityType<?>>();
+    public static final DeferredRegister<TileEntityType<?>> TILES = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, Moretimecapsulesmod.MODID);
+    //Exteriors
+    public static RegistryObject<TileEntityType<OrganTile>> exterior_organ = TILES.register("exterior_organ", () -> registerTiles(OrganTile::new, ValeBlocks.exterior_organ.get()));
+    public static RegistryObject<TileEntityType<FiveTile>> exterior_canon05 = TILES.register("exterior_canon05", () -> registerTiles(FiveTile::new, ValeBlocks.exterior_canon05.get()));
+    public static RegistryObject<TileEntityType<PtoredTile>> exterior_ptored = TILES.register("exterior_ptored", () -> registerTiles(PtoredTile::new, ValeBlocks.exterior_ptored.get()));
+    public static RegistryObject<TileEntityType<ShalkaTile>> exterior_shalka = TILES.register("exterior_shalka", () -> registerTiles(ShalkaTile::new, ValeBlocks.exterior_shalka.get()));
+    public static RegistryObject<TileEntityType<WardrobeTile>> exterior_wardrobe = TILES.register("exterior_wardrobe", () -> registerTiles(WardrobeTile::new, ValeBlocks.exterior_wardrobe.get()));
+    //Consoles
+    public static RegistryObject<TileEntityType<ValeConsoleTile>> console_vale = TILES.register("console_vale", () -> registerTiles(ValeConsoleTile::new, ValeBlocks.console_vale.get()));
+    public static RegistryObject<TileEntityType<CoralConsoleTile>> console_coral2 = TILES.register("console_coral2", () -> registerTiles(CoralConsoleTile::new, ValeBlocks.console_coral2.get()));
+    public static RegistryObject<TileEntityType<SmithConsoleTile>> console_smith = TILES.register("console_smith", () -> registerTiles(SmithConsoleTile::new, ValeBlocks.console_smith.get()));
 
-    //exteriors
-    public static TileEntityType<ShalkaTile>exterior_shalka = register(ShalkaTile::new,"exterior_shalka", ValeBlocks.exterior_shalka);
-    public static TileEntityType<PtoredTile>exterior_ptored = register(PtoredTile::new,"exterior_ptored", ValeBlocks.exterior_ptored);
-    public static TileEntityType<WardrobeTile>exterior_wardrobe = register(WardrobeTile::new,"exterior_wardrobe", ValeBlocks.exterior_wardrobe);
-    public static TileEntityType<ElevatorTile>exterior_elevator = register(ElevatorTile::new,"exterior_elevator", ValeBlocks.exterior_elevator);
-    public static TileEntityType<OrganTile>exterior_organ = register(OrganTile::new,"exterior_organ", ValeBlocks.exterior_organ);
-    public static TileEntityType<FiveTile>exterior_canon05 = register(FiveTile::new,"exterior_canonfive", ValeBlocks.exterior_canon05);
-    public static TileEntityType<PortalTile>exterior_portal = register(PortalTile::new,"exterior_portal", ValeBlocks.exterior_portal);
-
-    //consoles
-    public static TileEntityType<ValeConsoleTile>console_vale = register(ValeConsoleTile::new,"console_vale", ValeBlocks.console_vale);
-    public static TileEntityType<CoralConsoleTile>console_coral2 = register(CoralConsoleTile::new,"console_coral2", ValeBlocks.console_coral2);
-     public static TileEntityType<SmithConsoleTile>console_smith = register(SmithConsoleTile::new,"console_smith", ValeBlocks.console_smith);
-
-
-
-    @SubscribeEvent
-    public static void register(RegistryEvent.Register<TileEntityType<?>> event) {
-        for(TileEntityType<?> type : TYPES) {
-            event.getRegistry().register(type);
-        }
-    }
-
-    public static <T extends TileEntity> TileEntityType<T> register(Supplier<T> tile, String name, Block... validBlock) {
+    private static <T extends TileEntity> TileEntityType<T> registerTiles(Supplier<T> tile, Block... validBlock) {
         TileEntityType<T> type = TileEntityType.Builder.create(tile, validBlock).build(null);
-        type.setRegistryName(Moretimecapsulesmod.MODID, name);
-        TYPES.add(type);
-        for(Block block : validBlock) {
-            if(block instanceof TileBlock) {
-                ((TileBlock)block).setTileEntity(type);
+
+        for (Block block : validBlock) {
+            if (block instanceof TileBlock) {
+                ((TileBlock) block).setTileEntity(type);
             }
         }
+
         return type;
     }
 }

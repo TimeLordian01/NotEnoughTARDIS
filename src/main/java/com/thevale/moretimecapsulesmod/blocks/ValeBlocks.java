@@ -1,6 +1,7 @@
 package com.thevale.moretimecapsulesmod.blocks;
 
 import com.thevale.moretimecapsulesmod.Moretimecapsulesmod;
+import com.thevale.moretimecapsulesmod.items.ValeItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -8,69 +9,59 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ObjectHolder;
 import net.tardis.mod.blocks.ConsoleBlock;
 import net.tardis.mod.blocks.ExteriorBlock;
+import net.tardis.mod.itemgroups.TItemGroups;
 import net.tardis.mod.items.TItemProperties;
+import net.tardis.mod.items.TItems;
 import net.tardis.mod.misc.INeedItem;
 
 import java.util.ArrayList;
 import java.util.List;
-
-
-@ObjectHolder("moretimecapsulesmod")
-@Mod.EventBusSubscriber(modid="moretimecapsulesmod",bus= Mod.EventBusSubscriber.Bus.MOD)
-
+import java.util.function.Supplier;
 
 public class ValeBlocks {
-    public static List<Item> ITEMS = new ArrayList<Item>();
-    public static List<Block> BLOCKS = new ArrayList<Block>();
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Moretimecapsulesmod.MODID);
 
     //Exteriors
-    public static ExteriorBlock exterior_shalka = register(new ExteriorBlock(),"exterior_shalka",null,false);
-    public static ExteriorBlock exterior_ptored = register(new ExteriorBlock(),"exterior_ptored",null,false);
-    public static ExteriorBlock exterior_wardrobe = register(new ExteriorBlock(),"exterior_wardrobe",null,false);
-    public static ExteriorBlock exterior_elevator = register(new ExteriorBlock(),"exterior_elevator",null,false);
-    public static ExteriorBlock exterior_organ = register(new ExteriorBlock(),"exterior_organ",null,false);
-    public static ExteriorBlock exterior_canon05 = register(new ExteriorBlock(),"exterior_canon05",null,false);
-    public static ExteriorBlock exterior_portal = register(new ExteriorBlock(),"exterior_portal",null,false);
+    public static RegistryObject<Block> exterior_shalka = register("exterior_shalka", () -> setUpBlock(new ExteriorBlock()), false);
+    public static RegistryObject<Block> exterior_ptored = register("exterior_ptored", () -> setUpBlock(new ExteriorBlock()), false);
+    public static RegistryObject<Block> exterior_wardrobe = register("exterior_wardrobe", () -> setUpBlock(new ExteriorBlock()), false);
+    public static RegistryObject<Block> exterior_organ = register("exterior_organ", () -> setUpBlock(new ExteriorBlock()), false);
+    public static RegistryObject<Block> exterior_canon05 = register("exterior_canon05", () -> setUpBlock(new ExteriorBlock()), false);
 
     //Consoles
-    public static VConsoleBlock console_vale = register(new VConsoleBlock(),"console_vale", null, false);
-    public static VConsoleBlock console_coral2 = register(new VConsoleBlock(),"console_coral2", null, false);
-    public static VConsoleBlock console_smith = register(new VConsoleBlock(),"console_smith", null, false);
+    public static RegistryObject<Block> console_vale = register("console_vale", () -> setUpBlock(new VConsoleBlock()), false);
+    public static RegistryObject<Block> console_coral2 = register("console_coral2", () -> setUpBlock(new VConsoleBlock()), false);
+    public static RegistryObject<Block> console_smith = register("console_smith", () -> setUpBlock(new VConsoleBlock()), false);
 
-
-
-    @SubscribeEvent
-    public static void register(RegistryEvent.Register<Block> event) {
-        for(Block block : BLOCKS) {
-            event.getRegistry().registerAll(block);
-        }
-    }
-
-    public static <T extends Block> T register(T block, String name, ItemGroup group, boolean hasItem) {
-        ResourceLocation loc = new ResourceLocation(Moretimecapsulesmod.MODID, name);
-        block.setRegistryName(loc);
-
-        if(hasItem) {
-            if(block instanceof INeedItem) {
-                ITEMS.add(((INeedItem)block).getItem().setRegistryName(loc));
-            }
-            else ITEMS.add(new BlockItem(block, TItemProperties.BLOCK.group(group)).setRegistryName(loc));
-        }
-
-        BLOCKS.add(block);
-
+    private static Block setUpBlock(Block block) {
         return block;
     }
 
-    public static <T extends Block> T register(T block, String name, ItemGroup group){
-        return register(block, name, group, true);
+    public static <T extends Block> RegistryObject<T> register(String id, Supplier<T> blockSupplier, ItemGroup itemGroup) {
+        RegistryObject<T> registryObject = BLOCKS.register(id, blockSupplier);
+        ValeItems.ITEMS.register(id, () -> new BlockItem(registryObject.get(), (new Item.Properties()).group(itemGroup)));
+        return registryObject;
     }
 
-    public static <T extends Block> T register(T block, String name) {
-        return register(block, name, null);
+    public static <T extends Block> RegistryObject<T> register(String id, Supplier<T> blockSupplier) {
+        RegistryObject<T> registryObject = BLOCKS.register(id, blockSupplier);
+        ValeItems.ITEMS.register(id, () -> new BlockItem(registryObject.get(), (new Item.Properties()).group(TItemGroups.FUTURE)));
+        return registryObject;
+    }
+
+    public static <T extends Block> RegistryObject<T> register(String id, Supplier<T> blockSupplier, boolean hasItem) {
+        RegistryObject<T> registryObject = BLOCKS.register(id, blockSupplier);
+        if (hasItem && blockSupplier.get() instanceof INeedItem) {
+            ValeItems.ITEMS.register(id, () -> ((INeedItem)blockSupplier.get()).getItem());
+        }
+
+        return registryObject;
     }
 }
