@@ -28,7 +28,8 @@ public class CoralConsoleRender extends TileEntityRenderer<CoralConsoleTile> {
 	public void render(CoralConsoleTile tileEntityIn, float partialTicks, MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int combinedLightIn, int combinedOverlayIn) {
 		matrixStackIn.push();
 		float scale = 0.0625F;
-		matrixStackIn.scale(1.15F, 1.255F, 1.15F);
+		matrixStackIn.translate(0.5, 1.6, 0.5);
+		matrixStackIn.scale((float) 1.15, (float) 1.255, (float) 1.15);
 		matrixStackIn.rotate(Vector3f.XP.rotationDegrees(180));
 		Minecraft.getInstance().getItemRenderer().renderItem(tileEntityIn.getSonicItem(), ItemCameraTransforms.TransformType.NONE, combinedLightIn, combinedOverlayIn, matrixStackIn, bufferIn);
 		MODEL.render(tileEntityIn, scale, matrixStackIn, bufferIn.getBuffer(RenderType.getEntityTranslucent(TEXTURE )), combinedLightIn, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);

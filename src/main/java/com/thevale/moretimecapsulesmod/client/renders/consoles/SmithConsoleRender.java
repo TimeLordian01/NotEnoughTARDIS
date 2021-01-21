@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.tileentity.TileEntityRenderer;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.vector.Vector3f;
 
 public class SmithConsoleRender extends TileEntityRenderer<SmithConsoleTile> {
 
@@ -27,6 +28,10 @@ public class SmithConsoleRender extends TileEntityRenderer<SmithConsoleTile> {
 	public void render(SmithConsoleTile tileEntityIn, float partialTicks, MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int combinedLightIn, int combinedOverlayIn) {
 		matrixStackIn.push();
 		float scale = 0.0625F;
+		matrixStackIn.scale((float) 1.15, (float) 1.15, (float) 1.15);
+		matrixStackIn.rotate(Vector3f.XP.rotationDegrees(180));
+		matrixStackIn.rotate(Vector3f.YP.rotationDegrees(180));
+		matrixStackIn.translate(-0.5, -1.68, 0.5);
 		Minecraft.getInstance().getItemRenderer().renderItem(tileEntityIn.getSonicItem(), ItemCameraTransforms.TransformType.NONE, combinedLightIn, combinedOverlayIn, matrixStackIn, bufferIn);
 		MODEL.render(tileEntityIn, scale, matrixStackIn, bufferIn.getBuffer(RenderType.getEntityTranslucent(TEXTURE )), combinedLightIn, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
 		matrixStackIn.pop();

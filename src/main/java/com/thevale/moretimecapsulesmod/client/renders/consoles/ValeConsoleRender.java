@@ -29,8 +29,8 @@ public class ValeConsoleRender extends TileEntityRenderer<ValeConsoleTile> {
 		matrixStackIn.push();
 		float scale = 1F;
 		matrixStackIn.rotate(Vector3f.ZP.rotationDegrees(180));
-		matrixStackIn.translate(-0.498, -1.9, 0.439);
-		matrixStackIn.scale(1.25F,1.25F,1.25F);
+		matrixStackIn.translate(-0.5, -1.74, 0.5);
+		matrixStackIn.scale((float) 1.15, (float) 1.15, (float) 1.15);
 		Minecraft.getInstance().getItemRenderer().renderItem(tileEntityIn.getSonicItem(), ItemCameraTransforms.TransformType.NONE, combinedLightIn, combinedOverlayIn, matrixStackIn, bufferIn);
 		MODEL.render(tileEntityIn, scale, matrixStackIn, bufferIn.getBuffer(RenderType.getEntityTranslucent(TEXTURE )), combinedLightIn, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
 		matrixStackIn.pop();
