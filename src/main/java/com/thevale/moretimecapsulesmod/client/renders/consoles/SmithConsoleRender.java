@@ -32,8 +32,13 @@ public class SmithConsoleRender extends TileEntityRenderer<SmithConsoleTile> {
 		matrixStackIn.rotate(Vector3f.XP.rotationDegrees(180));
 		matrixStackIn.rotate(Vector3f.YP.rotationDegrees(180));
 		matrixStackIn.translate(-0.5, -1.68, 0.5);
-		Minecraft.getInstance().getItemRenderer().renderItem(tileEntityIn.getSonicItem(), ItemCameraTransforms.TransformType.NONE, combinedLightIn, combinedOverlayIn, matrixStackIn, bufferIn);
 		MODEL.render(tileEntityIn, scale, matrixStackIn, bufferIn.getBuffer(RenderType.getEntityTranslucent(TEXTURE )), combinedLightIn, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
+		matrixStackIn.pop();
+		matrixStackIn.push();
+		matrixStackIn.translate(1.525, 0.9,0.775);
+		matrixStackIn.scale((float) 0.5, (float) 0.5, (float) 0.5);
+		matrixStackIn.rotate(Vector3f.XP.rotationDegrees(90));
+		Minecraft.getInstance().getItemRenderer().renderItem(tileEntityIn.getSonicItem(), ItemCameraTransforms.TransformType.NONE, combinedLightIn, combinedOverlayIn, matrixStackIn, bufferIn);
 		matrixStackIn.pop();
 	}
 }
