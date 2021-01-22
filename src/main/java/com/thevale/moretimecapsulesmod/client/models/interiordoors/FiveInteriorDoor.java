@@ -219,10 +219,6 @@ public class FiveInteriorDoor extends EntityModel<Entity> implements IInteriorDo
 
 	@Override
 	public void render(DoorEntity door, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay) {
-		Right_Door.render(matrixStack, buffer, packedLight, packedOverlay);
-		Left_Door.render(matrixStack, buffer, packedLight, packedOverlay);
-		CallSignsLight.render(matrixStack, buffer, packedLight, packedOverlay);
-		Shell.render(matrixStack, buffer, packedLight, packedOverlay);
 		EnumDoorState state = door.getOpenState();
 		matrixStack.push();
 		matrixStack.translate(0.0D, 0.75D, 0.1D);

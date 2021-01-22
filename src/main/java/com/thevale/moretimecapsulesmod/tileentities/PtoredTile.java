@@ -18,17 +18,13 @@ public class PtoredTile extends ExteriorTile {
                 case WEST: return new AxisAlignedBB(-0.1, -1, 0, 0.5, 1, 1);
                 default: return new AxisAlignedBB(0, 0, -0.1, 1, 2, 0.5);
             }
+        } else {
+            return new AxisAlignedBB(0, 0, 0, 0, 0, 0);
         }
-        return new AxisAlignedBB(0, 0, 0, 0, 0, 0);
     }
 
     @Override
     public AxisAlignedBB getRenderBoundingBox() {
         return RENDER.offset(this.getPos());
-    }
-
-    @Override
-    public void tick() {
-
     }
 }

@@ -26,9 +26,4 @@ public class OrganTile extends ExteriorTile {
     public AxisAlignedBB getRenderBoundingBox() {
         return RENDER.offset(this.getPos());
     }
-
-    @Override
-    public void tick() {
-
-    }
 }

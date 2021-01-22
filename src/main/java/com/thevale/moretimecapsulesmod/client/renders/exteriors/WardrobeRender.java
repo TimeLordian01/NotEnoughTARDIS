@@ -35,6 +35,6 @@ public static WorldText TEXT = new WorldText(0.87F, 0.125F, 0.015F, 0x000000);
         IVertexBuilder ivertexbuilder = iRenderTypeBuffer.getBuffer(TRenderTypes.getTardis(texture));
         MODEL.render(tile, 0.25F, matrixStack, ivertexbuilder, i, i1, v1);
 
-        GlStateManager.popMatrix();
+        matrixStack.pop();
     }
 }
