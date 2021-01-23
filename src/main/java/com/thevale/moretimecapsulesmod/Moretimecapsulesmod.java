@@ -1,6 +1,7 @@
 package com.thevale.moretimecapsulesmod;
 
 import com.thevale.moretimecapsulesmod.blocks.ValeBlocks;
+import com.thevale.moretimecapsulesmod.registry.ConsoleRegistry;
 import com.thevale.moretimecapsulesmod.registry.ExteriorRegistry;
 import com.thevale.moretimecapsulesmod.tileentities.ValeTiles;
 import net.minecraft.block.Block;
@@ -27,7 +28,7 @@ public class Moretimecapsulesmod {
     // Directly reference a log4j logger.
     public static IProxy proxy = DistExecutor.runForDist(()-> () -> new ClientProxy(), () -> () -> new ServerProxy());
 
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public static final String MODID = "moretimecapsulesmod";
 
@@ -39,6 +40,7 @@ public class Moretimecapsulesmod {
         MinecraftForge.EVENT_BUS.register(this);
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         ValeBlocks.BLOCKS.register(modBus);
+        ConsoleRegistry.CONSOLES.register(modBus);
         ValeTiles.TILES.register(modBus);
     }
 

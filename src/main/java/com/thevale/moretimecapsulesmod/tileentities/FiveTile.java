@@ -27,4 +27,10 @@ public class FiveTile extends ExteriorTile {
     public AxisAlignedBB getRenderBoundingBox() {
         return RENDER.offset(this.getPos());
     }
+
+    @Override
+    public void tick() {
+        super.tick();
+
+    }
 }

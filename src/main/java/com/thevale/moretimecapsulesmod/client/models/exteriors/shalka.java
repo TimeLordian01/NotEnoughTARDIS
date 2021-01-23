@@ -8,12 +8,11 @@ import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.Entity;
-import net.tardis.mod.client.models.IBotiModel;
 import net.tardis.mod.client.models.exteriors.ExteriorModel;
 import net.tardis.mod.enums.EnumDoorState;
 import net.tardis.mod.tileentities.exteriors.ExteriorTile;
 
-public class shalka extends ExteriorModel implements IBotiModel {
+public class shalka extends ExteriorModel {
 	private final ModelRenderer Shell;
 	private final ModelRenderer Base;
 	private final ModelRenderer PCB;
@@ -320,21 +319,5 @@ public class shalka extends ExteriorModel implements IBotiModel {
 	@Override
 	public void render(MatrixStack matrixStackIn, IVertexBuilder bufferIn, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float alpha) {
 
-	}
-
-	@Override
-	public void renderBoti(float v, boolean b, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float v1, float v2, float v3, float alpha) {
-		matrixStack.push();
-		matrixStack.scale(0.5F, 0.5F, 0.5F);
-		this.boti.render(matrixStack, buffer, packedLight, packedOverlay, 1.0F, 1.0F, 1.0F, alpha);
-		matrixStack.pop();
-	}
-
-	@Override
-	public void renderOverwrite(BotiContext context, MatrixStack matrixStack) {
-		matrixStack.push();
-		matrixStack.scale(0.5F, 0.5F, 0.5F);
-		BotiContextExterior cont = (BotiContextExterior)context;
-		matrixStack.pop();
 	}
 }
