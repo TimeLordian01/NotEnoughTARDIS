@@ -7,6 +7,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.thevale.moretimecapsulesmod.client.renders.exteriors.PtoredRender;
 import com.thevale.moretimecapsulesmod.client.renders.exteriors.WardrobeRender;
+import com.thevale.moretimecapsulesmod.tileentities.exteriors.WardrobeTile;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.model.EntityModel;
@@ -120,10 +121,9 @@ public class WardrobeInteriorDoorModel extends EntityModel<Entity> implements II
 		ConsoleTile tile = TardisHelper.getConsoleInWorld(Minecraft.getInstance().world).orElse(null);
 		if (tile != null) {
 			int index = tile.getExteriorManager().getExteriorVariant();
-			TexVariant[] vars = tile.getTextureVariants();
-			if (vars != null && index < vars.length) {
-				return vars[index].getTexture();
-			}
+			if (tile.getExteriorType().getVariants() != null && index < tile.getExteriorType().getVariants().length)
+				return tile.getExteriorType().getVariants()[index].getTexture();
+
 		}
 		return WardrobeRender.TEXTURE;
 	}

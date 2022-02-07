@@ -109,14 +109,8 @@ public class Ptoredinteriordoormodel extends EntityModel<Entity> implements IInt
     @Override
     public ResourceLocation getTexture() {
         ConsoleTile tile = TardisHelper.getConsoleInWorld(Minecraft.getInstance().world).orElse(null);
-        if (tile != null) {
-            int index = tile.getExteriorManager().getExteriorVariant();
-            TexVariant[] vars = tile.getTextureVariants();
-            if (vars != null && index < vars.length) {
-                return vars[index].getTexture();
-            }
-        }
-        return PtoredRender.TEXTURE;
+        ResourceLocation TEXTURE = new ResourceLocation("moretimecapsulesmod","textures/interiordoor/ptoredinterior.png");
+        return TEXTURE;
     }
 
     @Override

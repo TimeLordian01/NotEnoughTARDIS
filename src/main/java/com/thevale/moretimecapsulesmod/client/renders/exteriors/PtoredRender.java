@@ -1,12 +1,15 @@
 package com.thevale.moretimecapsulesmod.client.renders.exteriors;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.thevale.moretimecapsulesmod.client.models.exteriors.PTORed;
 import com.thevale.moretimecapsulesmod.tileentities.exteriors.PtoredTile;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.util.ResourceLocation;
+import net.tardis.mod.client.TRenderTypes;
 import net.tardis.mod.client.renderers.exteriors.ExteriorRenderer;
 import net.tardis.mod.misc.WorldText;
 
@@ -21,10 +24,17 @@ public static WorldText TEXT = new WorldText(0.87F, 0.125F, 0.015F, 0x000000);
     }
 
     @Override
-    public void renderExterior(PtoredTile ptoredTile, float v, MatrixStack matrixStack, IRenderTypeBuffer iRenderTypeBuffer, int i, int i1, float v1) {
-        matrixStack.push();
-        matrixStack.translate(0, -1, 0);
-        MODEL.render(ptoredTile, 0.25F, matrixStack, iRenderTypeBuffer.getBuffer(RenderType.getEntityCutoutNoCull(TEXTURE)), i, i1, v1);
-        matrixStack.pop();
+    public void renderExterior(PtoredTile tile, float partialTicks, MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int combinedLightIn, int combinedOverlayIn, float alpha) {
+        matrixStackIn.push();
+        matrixStackIn.translate(0, -1, 0);
+
+        ResourceLocation texture = TEXTURE;
+        if(tile.getVariant() != null)
+            texture = tile.getVariant().getTexture();
+        IVertexBuilder ivertexbuilder = bufferIn.getBuffer(TRenderTypes.getTardis(texture));
+
+
+        MODEL.render(tile, 0.25F, matrixStackIn, ivertexbuilder, combinedLightIn, OverlayTexture.NO_OVERLAY, alpha);
+        matrixStackIn.pop();
     }
 }

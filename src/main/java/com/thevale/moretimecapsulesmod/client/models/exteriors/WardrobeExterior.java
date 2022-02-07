@@ -6,11 +6,20 @@ package com.thevale.moretimecapsulesmod.client.models.exteriors;// Made with Blo
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.thevale.moretimecapsulesmod.client.renders.exteriors.WardrobeRender;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.math.vector.Vector3f;
+import net.tardis.mod.client.TRenderTypes;
 import net.tardis.mod.client.models.exteriors.ExteriorModel;
+import net.tardis.mod.client.renderers.boti.BOTIRenderer;
+import net.tardis.mod.client.renderers.boti.PortalInfo;
+import net.tardis.mod.client.renderers.exteriors.ExteriorRenderer;
 import net.tardis.mod.enums.EnumDoorState;
+import net.tardis.mod.enums.EnumMatterState;
+import net.tardis.mod.helper.Helper;
+import net.tardis.mod.helper.WorldHelper;
 import net.tardis.mod.tileentities.exteriors.ExteriorTile;
 
 public class WardrobeExterior extends ExteriorModel {
@@ -111,6 +120,46 @@ public class WardrobeExterior extends ExteriorModel {
 		boti.render(matrixStack, buffer, packedLight, packedOverlay);
 		matrixStack.pop();
 	}
+	/*
+	@Override
+	public void renderBoti(ExteriorTile exterior, float scale, MatrixStack matrixStack, IVertexBuilder buffer,
+						   int packedLight, int packedOverlay, float alpha) {
+		if(exterior.getBotiWorld() != null && exterior.getMatterState() == EnumMatterState.SOLID && exterior.getOpen() != EnumDoorState.CLOSED) {
+
+			PortalInfo info = new PortalInfo();
+
+			info.setPosition(exterior.getPos());
+			info.setWorldShell(exterior.getBotiWorld());
+
+			info.setTranslate(matrix -> {
+				matrix.translate(-0.5, 0, -0.5);
+				ExteriorRenderer.applyTransforms(matrix, exterior);
+				matrix.translate(0, 0.125, 0);
+			});
+
+			info.setTranslatePortal(matrix -> {
+				matrix.rotate(Vector3f.ZN.rotationDegrees(180));
+				matrix.rotate(Vector3f.YP.rotationDegrees(WorldHelper.getAngleFromFacing(exterior.getBotiWorld().getPortalDirection())));
+				matrix.translate(-0.5, -0.21875, -0.6);
+			});
+
+			info.setRenderPortal((matrix, buf) -> {
+				matrix.push();
+				matrix.scale(0.25F, 0.25F, 0.25F);
+				this.boti.render(matrix, buf.getBuffer(TRenderTypes.getTardis(Helper.getVariantTextureOr(exterior.getVariant(), WardrobeRender.TEXTURE))), packedLight, packedOverlay);
+				matrix.pop();
+			});
+
+			info.setRenderDoor((matrix, buf) -> {
+				matrix.push();
+				matrix.scale(0.25F, 0.25F, 0.25F);
+				this.boti.render(matrix, buf.getBuffer(TRenderTypes.getTardis(Helper.getVariantTextureOr(exterior.getVariant(), WardrobeRender.TEXTURE))), packedLight, packedOverlay);
+				matrix.pop();
+			});
+			BOTIRenderer.addPortal(info);
+		}
+	}
+	*/
 
 	@Override
 	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
