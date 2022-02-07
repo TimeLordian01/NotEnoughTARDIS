@@ -32,8 +32,6 @@ public static WorldText TEXT = new WorldText(0.87F, 0.125F, 0.015F, 0x000000);
         if(tile.getVariant() != null)
             texture = tile.getVariant().getTexture();
         IVertexBuilder ivertexbuilder = bufferIn.getBuffer(TRenderTypes.getTardis(texture));
-
-
         MODEL.render(tile, 0.25F, matrixStackIn, ivertexbuilder, combinedLightIn, OverlayTexture.NO_OVERLAY, alpha);
         matrixStackIn.pop();
     }

@@ -1,4 +1,10 @@
 {
+  "tardis:vortex/root": {
+    "criteria": {
+      "0": "2022-02-07 16:12:32 +0000"
+    },
+    "done": true
+  },
   "tardis:tardis_mod": {
     "criteria": {
       "tardis_mod": "2022-02-07 02:05:15 +0000"

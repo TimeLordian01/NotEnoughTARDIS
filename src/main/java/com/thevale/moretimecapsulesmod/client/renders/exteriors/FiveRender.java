@@ -7,6 +7,7 @@ import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.util.ResourceLocation;
+import net.tardis.mod.client.TRenderTypes;
 import net.tardis.mod.client.renderers.exteriors.ExteriorRenderer;
 import net.tardis.mod.misc.WorldText;
 
@@ -21,10 +22,13 @@ public class FiveRender extends ExteriorRenderer<FiveTile> {
     }
 
     @Override
-    public void renderExterior(FiveTile tile, float v, MatrixStack matrixStack, IRenderTypeBuffer iRenderTypeBuffer, int i, int i1, float v1) {
-        matrixStack.push();
-        matrixStack.translate(0, -1, 0);
-        MODEL.render(tile, 0.25F, matrixStack, iRenderTypeBuffer.getBuffer(RenderType.getEntityCutoutNoCull(TEXTURE)), i, i1, v1);
-        matrixStack.pop();
+    public void renderExterior(FiveTile tile, float partialTicks, MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int combinedLightIn, int combinedOverlayIn, float alpha) {
+        matrixStackIn.push();
+        matrixStackIn.translate(0, -1, 0);
+        ResourceLocation texture = TEXTURE;
+        if(tile.getVariant() != null)
+            texture = tile.getVariant().getTexture();
+        MODEL.render(tile, 1.0F, matrixStackIn, bufferIn.getBuffer(TRenderTypes.getTardis(texture)), combinedLightIn, combinedOverlayIn, alpha);
+        matrixStackIn.pop();
     }
 }
