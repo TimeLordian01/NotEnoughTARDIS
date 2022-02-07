@@ -4,16 +4,11 @@ package com.thevale.moretimecapsulesmod.client.models.consoles;// Made with Bloc
 
 
 import com.mojang.blaze3d.matrix.MatrixStack;
-import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.thevale.moretimecapsulesmod.tileentities.consoles.CoralConsoleTile;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
-import net.minecraft.client.renderer.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.Entity;
-import net.minecraft.util.Direction;
 import net.minecraft.util.math.vector.Vector3f;
 import net.tardis.mod.client.models.TileModel;
 import net.tardis.mod.controls.*;
@@ -2633,7 +2628,8 @@ public class CoralConsole extends EntityModel<Entity> implements TileModel<Coral
 
 	@Override
 	public void render(CoralConsoleTile tile, float v, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, float v1, float v2, float v3, float v4) {
-		net.tardis.mod.controls.RandomiserControl randomiserControl = tile.getControl(RandomiserControl.class);
+		/*
+		RandomiserControl randomiserControl = tile.getControl(RandomiserControl.class);
 		this.Wheel.rotateAngleX = (float) Math.toRadians(randomiserControl.getAnimationProgress() * 720.0F );
 
 		HandbrakeControl handbrake = tile.getControl(HandbrakeControl.class);
@@ -2656,7 +2652,7 @@ public class CoralConsole extends EntityModel<Entity> implements TileModel<Coral
 		this.Upper.rotationPointY = 0.275f - ((float)Math.cos((double)tile.flightTicks * 0.1D)) * 0.275F;
 		this.Lower.rotationPointY = - 0.275f + (float)Math.cos((double)tile.flightTicks * 0.1D) * 0.275F;
 
-       /* //Stabalizer
+
        tile.getSubsystem(StabilizerSubsystem.class).ifPresent(sys ->{
        			if (sys.isActivated()) {
        				PumoHandle4.offsetY = -0.1355F;
@@ -2666,11 +2662,11 @@ public class CoralConsole extends EntityModel<Entity> implements TileModel<Coral
        				PumoHandle4.offsetZ = -0.0F;
        			} System.out.println(sys.isActivated());
        		}
-       );*/
+       );
 
 		net.tardis.mod.controls.RandomiserControl random = tile.getControl(RandomiserControl.class);
 		float randomOff = random.getAnimationTicks() == 0 ? 0 : 0.006F;
-		//this.random_but_1.offsetY = this.random_but_6.offsetY = this.random_but_8.offsetY = randomOff;
+
 
 
 		ThrottleControl throttleA = tile.getControl(ThrottleControl.class);
@@ -2683,14 +2679,14 @@ public class CoralConsole extends EntityModel<Entity> implements TileModel<Coral
 		this.SmallLever.rotateAngleX = (float) Math.toRadians(((inc.index / (float)IncModControl.COORD_MODS.length) * -180f) - 20f);
 
 		XControl x = tile.getControl(XControl.class);
-		//this.x.offsetY = x.getAnimationTicks() == 0 ? 0 : 0.006F;
+
 
 		YControl y = tile.getControl(YControl.class);
-		//this.y.offsetY = y.getAnimationTicks() == 0 ? 0 : 0.006F;
+;
 
 		ZControl z = tile.getControl(ZControl.class);
-		//this.z.offsetY = z.getAnimationTicks() == 0 ? 0 : 0.006F;
 
+		*/
 		AllConsole.render(matrixStack, iVertexBuilder, i, i1);
 
 		matrixStack.push();

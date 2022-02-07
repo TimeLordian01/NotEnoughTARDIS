@@ -1,5 +1,0 @@
-Args: "--inJar", "C:\Users\haydn\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.0.0\forge-1.16.5-36.0.0-injected.jar", "--outJar", "C:\Users\haydn\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.0.0_mapped_snapshot_20201028-1.16.3\forge-1.16.5-36.0.0_mapped_snapshot_20201028-1.16.3.jar", "--logFile", "accesstransform.log", "--atFile", "A:\Modding\MoreTimeCapsulesMod\build\_atJar_5\parent_at.cfg"
-Classpath: C:\Users\haydn\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\1.0.5\accesstransformers-1.0.5-fatjar.jar
-WorkDir: A:\Modding\MoreTimeCapsulesMod\build\_atJar_5
-Main: net.minecraftforge.accesstransformer.TransformerProcessor
-====================================

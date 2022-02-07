@@ -54,6 +54,6 @@ TARDIS Exterior Expansion Pack for The New TARDIS Mod 1.14
 [[dependencies.moretimecapsulesmod]]
     modId="tardis"
     mandatory=true
-    versionRange="[0.1]"
+    versionRange="[0.1,]"
     ordering="AFTER"
     side="BOTH"

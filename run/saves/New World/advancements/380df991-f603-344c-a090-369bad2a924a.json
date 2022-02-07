@@ -1,0 +1,21 @@
+{
+  "tardis:tardis_mod": {
+    "criteria": {
+      "tardis_mod": "2022-02-07 02:05:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2022-02-07 02:04:58 +0000"
+    },
+    "done": false
+  },
+  "tardis:obtain_tardis": {
+    "criteria": {
+      "obtain_tardis": "2022-02-07 02:05:15 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 2586
+}

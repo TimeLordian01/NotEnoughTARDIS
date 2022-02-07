@@ -3,19 +3,12 @@ package com.thevale.moretimecapsulesmod.client.models.consoles;// Made with Bloc
 // Paste this class into your mod and generate all required imports
 
 import com.mojang.blaze3d.matrix.MatrixStack;
-import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.thevale.moretimecapsulesmod.tileentities.consoles.ValeConsoleTile;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.model.EntityModel;
-import net.minecraft.client.renderer.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.Entity;
-import net.minecraft.util.Direction;
-import net.minecraft.util.math.vector.Vector3f;
 import net.tardis.mod.client.models.TileModel;
-import net.tardis.mod.controls.*;
-import net.tardis.mod.enums.EnumDoorState;
 
 public class ValeConsoleModel extends EntityModel<Entity> implements TileModel<ValeConsoleTile> {
 	private final ModelRenderer MainBase;
@@ -1441,10 +1434,9 @@ public class ValeConsoleModel extends EntityModel<Entity> implements TileModel<V
 	}
 
 	@Override
-	public void render(ValeConsoleTile tile, float v, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, float v1, float v2, float v3, float v4) {
-		net.tardis.mod.controls.RandomiserControl randomiserControl = tile.getControl(net.tardis.mod.controls.RandomiserControl.class);
-		this.RandomiserControl.rotateAngleY = (float) Math.toRadians(randomiserControl.getAnimationProgress() * 720.0F );
+	public void render(ValeConsoleTile consoleTile, float v, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, float v1, float v2, float v3, float v4) {
 
+	/*
 		HandbrakeControl handbrake = tile.getControl(HandbrakeControl.class);
 		if (!handbrake.isFree()) {
 			handbrakelever.rotationPointZ = -0.1F;
@@ -1502,7 +1494,7 @@ public class ValeConsoleModel extends EntityModel<Entity> implements TileModel<V
 
 		ZControl z = tile.getControl(ZControl.class);
 		//this.z.offsetY = z.getAnimationTicks() == 0 ? 0 : 0.006F;
-
+		*/
 		MainBase.render(matrixStack, iVertexBuilder, i, i1);
 
 		//TODO Find out wtf this below is

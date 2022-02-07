@@ -1,9 +1,9 @@
 package com.thevale.moretimecapsulesmod;
 
-import com.thevale.moretimecapsulesmod.blocks.ValeBlocks;
-import com.thevale.moretimecapsulesmod.registry.ConsoleRegistry;
-import com.thevale.moretimecapsulesmod.registry.ExteriorRegistry;
-import com.thevale.moretimecapsulesmod.tileentities.ValeTiles;
+import com.thevale.moretimecapsulesmod.proxy.ClientProxy;
+import com.thevale.moretimecapsulesmod.proxy.IProxy;
+import com.thevale.moretimecapsulesmod.proxy.ServerProxy;
+import com.thevale.moretimecapsulesmod.registries.*;
 import net.minecraft.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -16,9 +16,6 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.thevale.moretimecapsulesmod.proxy.ClientProxy;
-import com.thevale.moretimecapsulesmod.proxy.IProxy;
-import com.thevale.moretimecapsulesmod.proxy.ServerProxy;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Moretimecapsulesmod.MODID)
@@ -38,8 +35,10 @@ public class Moretimecapsulesmod {
         MinecraftForge.EVENT_BUS.register(this);
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         ValeBlocks.BLOCKS.register(modBus);
-        ConsoleRegistry.CONSOLES.register(modBus);
+        ValeItems.ITEMS.register(modBus);
         ValeTiles.TILES.register(modBus);
+        ExteriorRegistry.EXTERIORS.register(modBus);
+        ConsoleRegistry.CONSOLES.register(modBus);
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

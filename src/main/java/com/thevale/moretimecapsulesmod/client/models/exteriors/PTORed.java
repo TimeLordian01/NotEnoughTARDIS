@@ -96,6 +96,7 @@ public class PTORed extends ExteriorModel {
 				this.DoorL.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.CLOSED));
 		}
 		Chassis.render(matrixStack, buffer, packedLight, packedOverlay);
+		matrixStack.pop();
 	}
 
 	@Override

@@ -1,7 +1,6 @@
 package com.thevale.moretimecapsulesmod.client.renders.consoles;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
-import com.mojang.blaze3d.platform.GlStateManager;
 import com.thevale.moretimecapsulesmod.Moretimecapsulesmod;
 import com.thevale.moretimecapsulesmod.client.models.consoles.CoralConsole;
 import com.thevale.moretimecapsulesmod.tileentities.consoles.CoralConsoleTile;

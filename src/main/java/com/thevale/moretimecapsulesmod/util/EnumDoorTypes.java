@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum EnumDoorTypes implements IDoorType {
 
-SHALKA(state -> {
+    SHALKA(state -> {
             switch(state) {
             case CLOSED: return 0.0D;
                 case ONE: return 85.0;
@@ -35,14 +35,6 @@ SHALKA(state -> {
                 default:return 0.0;
             }
         }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
-       ELEVATOR(state -> {
-            switch(state) {
-            case CLOSED: return 0.0D;
-                case ONE: return -15.0D;
-                case BOTH : return -15.0D;
-                default:return 0.0;
-            }
-        }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
         ORGAN(state -> {
             switch(state) {
             case CLOSED: return 0.0D;
@@ -52,14 +44,6 @@ SHALKA(state -> {
             }
         }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
     CANON05(state -> {
-            switch(state) {
-            case CLOSED: return 0.0D;
-                case ONE: return 90.0D;
-                case BOTH : return -90.0D;
-                default:return 0.0;
-            }
-        }, EnumDoorState.CLOSED, EnumDoorState.ONE, EnumDoorState.BOTH),
-    PORTAL(state -> {
             switch(state) {
             case CLOSED: return 0.0D;
                 case ONE: return 90.0D;

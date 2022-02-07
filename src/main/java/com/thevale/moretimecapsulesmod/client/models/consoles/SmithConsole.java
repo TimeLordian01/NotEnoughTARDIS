@@ -9,11 +9,8 @@ import com.thevale.moretimecapsulesmod.tileentities.consoles.SmithConsoleTile;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.Entity;
-import net.minecraft.util.Direction;
 import net.minecraft.util.math.vector.Vector3f;
 import net.tardis.mod.client.models.TileModel;
-import net.tardis.mod.controls.*;
-import net.tardis.mod.enums.EnumDoorState;
 
 public class SmithConsole extends EntityModel<Entity> implements TileModel<SmithConsoleTile> {
 	private final ModelRenderer EntireModel;
@@ -2997,7 +2994,8 @@ public class SmithConsole extends EntityModel<Entity> implements TileModel<Smith
 
 	@Override
 	public void render(SmithConsoleTile tile, float v, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, float v1, float v2, float v3, float v4) {
-		net.tardis.mod.controls.RandomiserControl randomiserControl = tile.getControl(RandomiserControl.class);
+		/*
+		RandomiserControl randomiserControl = tile.getControl(RandomiserControl.class);
 		this.bone91.rotateAngleY = (float) Math.toRadians(randomiserControl.getAnimationProgress() * 720.0F );
 
 		HandbrakeControl handbrake = tile.getControl(HandbrakeControl.class);
@@ -3016,21 +3014,21 @@ public class SmithConsole extends EntityModel<Entity> implements TileModel<Smith
 
 		LandingTypeControl landingTypeControl = tile.getControl(LandingTypeControl.class);
 
-       /* //Stabalizer
+
        tile.getSubsystem(StabilizerSubsystem.class).ifPresent(sys ->{
        			if (sys.isActivated()) {
-       				PumoHandle4.offsetY = -0.1355F;
-       				PumoHandle4.offsetZ = -0.035F;
+       				Pump4.rotateAngleY = -0.1355F;
+       				Pump4.rotateAngleZ = -0.035F;
 				} else{
-       				PumoHandle4.offsetY = -0.0F;
-       				PumoHandle4.offsetZ = -0.0F;
+       				Pump4.rotateAngleY = -0.0F;
+       				Pump4.rotateAngleZ = -0.0F;
        			} System.out.println(sys.isActivated());
        		}
-       );*/
+       );
 
 		net.tardis.mod.controls.RandomiserControl random = tile.getControl(RandomiserControl.class);
 		float randomOff = random.getAnimationTicks() == 0 ? 0 : 0.006F;
-		//this.random_but_1.offsetY = this.random_but_6.offsetY = this.random_but_8.offsetY = randomOff;
+
 
 
 		ThrottleControl throttleA = tile.getControl(ThrottleControl.class);
@@ -3043,14 +3041,14 @@ public class SmithConsole extends EntityModel<Entity> implements TileModel<Smith
 		this.Handle2.rotateAngleZ = (float) Math.toRadians(((inc.index / (float)IncModControl.COORD_MODS.length) * -180f) - 20f);
 
 		XControl x = tile.getControl(XControl.class);
-		//this.x.offsetY = x.getAnimationTicks() == 0 ? 0 : 0.006F;
+
 
 		YControl y = tile.getControl(YControl.class);
-		//this.y.offsetY = y.getAnimationTicks() == 0 ? 0 : 0.006F;
+
 
 		ZControl z = tile.getControl(ZControl.class);
-		//this.z.offsetY = z.getAnimationTicks() == 0 ? 0 : 0.006F;
 
+		*/
 		EntireModel.render(matrixStack, iVertexBuilder, i, i1);
 
 		matrixStack.push();

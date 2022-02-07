@@ -1,7 +1,7 @@
 package com.thevale.moretimecapsulesmod.tileentities.consoles;
 
 
-import com.thevale.moretimecapsulesmod.tileentities.ValeTiles;
+import com.thevale.moretimecapsulesmod.registries.ValeTiles;
 import net.minecraft.entity.EntitySize;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.math.AxisAlignedBB;

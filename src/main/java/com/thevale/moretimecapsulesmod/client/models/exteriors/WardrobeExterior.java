@@ -88,6 +88,7 @@ public class WardrobeExterior extends ExteriorModel {
 
 	@Override
 	public void render(ExteriorTile tile, float v, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float v1) {
+		matrixStack.push();
 		EnumDoorState state = tile.getOpen();
 		matrixStack.translate(0.0D, -0.75D, 0.0D);
 		matrixStack.scale(1.5F, 1.5F, 1.5F);

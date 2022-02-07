@@ -1,11 +1,8 @@
 package com.thevale.moretimecapsulesmod.client.renders.exteriors;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
-import com.mojang.blaze3d.platform.GlStateManager;
 import com.thevale.moretimecapsulesmod.client.models.exteriors.OrganExterior;
-import com.thevale.moretimecapsulesmod.client.models.exteriors.PTORed;
-import com.thevale.moretimecapsulesmod.tileentities.OrganTile;
-import com.thevale.moretimecapsulesmod.tileentities.PtoredTile;
+import com.thevale.moretimecapsulesmod.tileentities.exteriors.OrganTile;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.RenderType;
