@@ -15,9 +15,9 @@ import net.tardis.mod.misc.WorldText;
 
 
 public class PtoredRender extends ExteriorRenderer<PtoredTile> {
-public static final ResourceLocation TEXTURE = new ResourceLocation("moretimecapsulesmod","textures/exteriors/ptored.png");
-public static PTORed MODEL = new PTORed();
-public static WorldText TEXT = new WorldText(0.87F, 0.125F, 0.015F, 0x000000);
+
+    public static final ResourceLocation TEXTURE = new ResourceLocation("moretimecapsulesmod","textures/exteriors/ptored.png");
+    public static PTORed MODEL = new PTORed();
 
     public PtoredRender(TileEntityRendererDispatcher rendererDispatcherIn) {
         super(rendererDispatcherIn);

@@ -77,30 +77,26 @@ public class PTORed extends ExteriorModel {
 	}
 
 	@Override
-	public void render(ExteriorTile tile, float v, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float v1) {
+	public void render(ExteriorTile tile, float scale, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float alpha) {
 		EnumDoorState state = tile.getOpen();
 		matrixStack.push();
 		matrixStack.translate(0.0D, 0.55, 0.0D);
 		matrixStack.scale(0.65F, 0.65F, 0.65F);
 		switch(state) {
 			case ONE:
-				this.DoorR.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.ONE));
-				this.DoorL.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.CLOSED));
+				this.DoorR.rotateAngleY = (float) Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.ONE));
+				this.DoorL.rotateAngleY = (float) Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.CLOSED));
 				break;
 			case BOTH:
-				this.DoorR.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.ONE));
-				this.DoorL.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.BOTH));
+				this.DoorR.rotateAngleY = (float) Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.ONE));
+				this.DoorL.rotateAngleY = (float) Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.BOTH));
 				break;
 			case CLOSED:
-				this.DoorR.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.CLOSED));
-				this.DoorL.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.CLOSED));
+				this.DoorR.rotateAngleY = (float) Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.CLOSED));
+				this.DoorL.rotateAngleY = (float) Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.CLOSED));
 		}
-		Chassis.render(matrixStack, buffer, packedLight, packedOverlay);
+		Chassis.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
 		matrixStack.pop();
-	}
-
-	@Override
-	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 	}
 
 	@Override

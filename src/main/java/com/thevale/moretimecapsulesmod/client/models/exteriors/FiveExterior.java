@@ -403,7 +403,7 @@ public class FiveExterior extends ExteriorModel {
 	}
 
 	@Override
-	public void render(ExteriorTile tile, float v, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float v1) {
+	public void render(ExteriorTile tile, float scale, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float alpha) {
 		EnumDoorState state = tile.getOpen();
 		matrixStack.push();
 		matrixStack.translate(0.0D, 0.75, 0.0D);
@@ -427,15 +427,15 @@ public class FiveExterior extends ExteriorModel {
 				this.Right_Door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.CANON05.getRotationForState(EnumDoorState.CLOSED));
 				this.RightWindow.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.CANON05.getRotationForState(EnumDoorState.CLOSED));
 		}
-		Right_Door.render(matrixStack, buffer, packedLight, packedOverlay);
-		Left_Door.render(matrixStack, buffer, packedLight, packedOverlay);
-		CallSignsLight.render(matrixStack, buffer, packedLight, packedOverlay);
-		ShellWindows.render(matrixStack, buffer, packedLight, packedOverlay);
-		Lamp.render(matrixStack, buffer, packedLight, packedOverlay);
-		Shell.render(matrixStack, buffer, packedLight, packedOverlay);
-		boti.render(matrixStack, buffer, packedLight, packedOverlay);
-		LeftWindow.render(matrixStack, buffer, packedLight, packedOverlay);
-		RightWindow.render(matrixStack, buffer, packedLight, packedOverlay);
+		Right_Door.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		Left_Door.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		CallSignsLight.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		ShellWindows.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		Lamp.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		Shell.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		boti.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		LeftWindow.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		RightWindow.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
 		matrixStack.pop();
 	}
 

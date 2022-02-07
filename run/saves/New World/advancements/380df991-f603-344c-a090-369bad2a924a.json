@@ -1,26 +1,67 @@
 {
-  "tardis:vortex/root": {
+  "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
-      "0": "2022-02-07 16:12:32 +0000"
+      "in_water": "2022-02-07 21:40:16 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2022-02-07 21:40:16 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/composter": {
+    "criteria": {
+      "has_wood_slab": "2022-02-07 21:52:34 +0300"
     },
     "done": true
   },
   "tardis:tardis_mod": {
     "criteria": {
-      "tardis_mod": "2022-02-07 02:05:15 +0000"
+      "tardis_mod": "2022-02-07 20:34:04 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2022-02-07 21:40:16 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2022-02-07 21:40:16 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2022-02-07 21:40:16 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2022-02-07 21:40:16 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_wood_slab": "2022-02-07 21:52:34 +0300"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:forest": "2022-02-07 11:30:19 +0000",
-      "minecraft:plains": "2022-02-07 02:04:58 +0000"
+      "minecraft:taiga": "2022-02-07 20:33:39 +0300"
     },
     "done": false
   },
   "tardis:obtain_tardis": {
     "criteria": {
-      "obtain_tardis": "2022-02-07 02:05:15 +0000"
+      "obtain_tardis": "2022-02-07 20:34:04 +0300"
     },
     "done": true
   },

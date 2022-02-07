@@ -96,7 +96,7 @@ public class WardrobeExterior extends ExteriorModel {
 	}
 
 	@Override
-	public void render(ExteriorTile tile, float v, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float v1) {
+	public void render(ExteriorTile tile, float scale, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float alpha) {
 		matrixStack.push();
 		EnumDoorState state = tile.getOpen();
 		matrixStack.translate(0.0D, -0.75D, 0.0D);
@@ -114,10 +114,10 @@ public class WardrobeExterior extends ExteriorModel {
 				this.RightDoor.rotateAngleY = (float) Math.toRadians(EnumDoorTypes.WARDROBE.getRotationForState(EnumDoorState.CLOSED));
 				this.LeftDoor.rotateAngleY = (float) Math.toRadians(EnumDoorTypes.WARDROBE.getRotationForState(EnumDoorState.CLOSED));
 		}
-		LeftDoor.render(matrixStack, buffer, packedLight, packedOverlay);
-		Walls.render(matrixStack, buffer, packedLight, packedOverlay);
-		RightDoor.render(matrixStack, buffer, packedLight, packedOverlay);
-		boti.render(matrixStack, buffer, packedLight, packedOverlay);
+		LeftDoor.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		Walls.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		RightDoor.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		boti.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
 		matrixStack.pop();
 	}
 	/*

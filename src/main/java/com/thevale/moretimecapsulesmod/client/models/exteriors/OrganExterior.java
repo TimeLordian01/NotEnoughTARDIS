@@ -240,7 +240,7 @@ public class OrganExterior extends ExteriorModel {
 
 
 	@Override
-	public void render(ExteriorTile tile, float v, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float v1){
+	public void render(ExteriorTile tile, float scale, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float alpha){
 		EnumDoorState state = tile.getOpen();
 		matrixStack.push();
 		matrixStack.rotate(Vector3f.YP.rotationDegrees(180));
@@ -254,9 +254,9 @@ public class OrganExterior extends ExteriorModel {
 			case CLOSED:
 				this.Door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.ORGAN.getRotationForState(EnumDoorState.CLOSED));
 		}
-		this.bb_main.render(matrixStack, buffer, packedLight, packedOverlay);
-		this.bb_main2.render(matrixStack, buffer, packedLight, packedOverlay);
-		this.Door.render(matrixStack, buffer, packedLight, packedOverlay);
+		this.bb_main.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		this.bb_main2.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
+		this.Door.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
 		matrixStack.pop();
 	}
 
