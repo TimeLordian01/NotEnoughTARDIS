@@ -40,7 +40,7 @@ public class ModelRegistry {
         ClientRegistry.bindTileEntityRenderer(ValeTiles.exterior_shalka.get(), ShalkaRender::new);
         EnumDoorTypes.SHALKA.setInteriorDoorModel(new ShalkaInteriorDoor());
         ClientRegistry.bindTileEntityRenderer(ValeTiles.exterior_ptored.get(), PtoredRender::new);
-        EnumDoorTypes.PTORED.setInteriorDoorModel(new Ptoredinteriordoor());
+        EnumDoorTypes.PTORED.setInteriorDoorModel(new Ptoredinteriordoormodel());
         ClientRegistry.bindTileEntityRenderer(ValeTiles.exterior_wardrobe.get(), WardrobeRender::new);
         EnumDoorTypes.WARDROBE.setInteriorDoorModel(new WardrobeInteriorDoorModel());
         ClientRegistry.bindTileEntityRenderer(ValeTiles.exterior_organ.get(), OrganRender::new);

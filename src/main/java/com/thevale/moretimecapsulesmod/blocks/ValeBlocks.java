@@ -6,23 +6,12 @@ import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.ObjectHolder;
-import net.tardis.mod.blocks.ConsoleBlock;
-import net.tardis.mod.blocks.ExteriorBlock;
+import net.tardis.mod.blocks.exteriors.ExteriorBlock;
 import net.tardis.mod.itemgroups.TItemGroups;
-import net.tardis.mod.items.TItemProperties;
-import net.tardis.mod.items.TItems;
-import net.tardis.mod.misc.INeedItem;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.function.Supplier;
 
 public class ValeBlocks {
@@ -58,10 +47,6 @@ public class ValeBlocks {
 
     public static <T extends Block> RegistryObject<T> register(String id, Supplier<T> blockSupplier, boolean hasItem) {
         RegistryObject<T> registryObject = BLOCKS.register(id, blockSupplier);
-        if (hasItem && blockSupplier.get() instanceof INeedItem) {
-            ValeItems.ITEMS.register(id, () -> ((INeedItem)blockSupplier.get()).getItem());
-        }
-
         return registryObject;
     }
 }

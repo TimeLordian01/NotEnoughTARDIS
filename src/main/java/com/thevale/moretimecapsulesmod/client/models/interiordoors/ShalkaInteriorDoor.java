@@ -5,6 +5,7 @@ package com.thevale.moretimecapsulesmod.client.models.interiordoors;// Made with
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.thevale.moretimecapsulesmod.client.renders.exteriors.PtoredRender;
 import com.thevale.moretimecapsulesmod.client.renders.exteriors.ShalkaRender;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
 import net.minecraft.client.Minecraft;
@@ -124,26 +125,46 @@ public class ShalkaInteriorDoor extends EntityModel<Entity> implements IInterior
 		this.Frame.render(matrixStack, buffer, packedLight, packedOverlay);
 	}
 
+	@Override
+	public void renderBones(DoorEntity doorEntity, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1) {
+
+	}
+
+	@Override
+	public void renderBoti(DoorEntity doorEntity, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1) {
+
+	}
+
+	@Override
 	public ResourceLocation getTexture() {
 		ConsoleTile tile = TardisHelper.getConsoleInWorld(Minecraft.getInstance().world).orElse(null);
 		if (tile != null) {
 			int index = tile.getExteriorManager().getExteriorVariant();
-			TexVariant[] vars = tile.getExterior().getVariants();
+			TexVariant[] vars = tile.getTextureVariants();
 			if (vars != null && index < vars.length) {
 				return vars[index].getTexture();
 			}
 		}
-
 		return ShalkaRender.TEXTURE;
 	}
 
 	@Override
-	public void render(MatrixStack matrixStackIn, IVertexBuilder bufferIn, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float alpha) {
+	public void renderDoorWhenClosed(DoorEntity doorEntity, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, ModelRenderer modelRenderer) {
+
 	}
 
-	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-		modelRenderer.rotateAngleX = x;
-		modelRenderer.rotateAngleY = y;
-		modelRenderer.rotateAngleZ = z;
+	@Override
+	public void renderDoorWhenClosed(DoorEntity doorEntity, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, ModelRenderer... modelRenderers) {
+
+	}
+
+	@Override
+	public boolean doesDoorOpenIntoBotiWindow() {
+		return false;
+	}
+
+	@Override
+	public void render(MatrixStack matrixStackIn, IVertexBuilder bufferIn, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float alpha) {
+
 	}
 }

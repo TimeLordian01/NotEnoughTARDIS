@@ -1,0 +1,28 @@
+{
+  "tardis:tardis_mod": {
+    "criteria": {
+      "tardis_mod": "2022-02-06 23:27:19 +0000"
+    },
+    "done": true
+  },
+  "tardis:interior/traveler_interior": {
+    "criteria": {
+      "temple": "2022-02-06 23:25:53 +0000",
+      "mansion": "2022-02-06 23:25:53 +0000"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2022-02-06 23:25:53 +0000"
+    },
+    "done": false
+  },
+  "tardis:obtain_tardis": {
+    "criteria": {
+      "obtain_tardis": "2022-02-06 23:27:19 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 2586
+}

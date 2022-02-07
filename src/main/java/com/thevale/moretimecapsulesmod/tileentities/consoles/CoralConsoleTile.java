@@ -26,7 +26,6 @@ public class CoralConsoleTile extends ConsoleTile {
 
     public CoralConsoleTile(TileEntityType<?> type) {
         super(type);
-        this.registerControlEntry(ControlRegistry.MONITOR);
         this.controlOverrides.put(FacingControl.class, new ControlOverride(new Vector3d(0.919, 0.094, 0.528),EntitySize.flexible(0.25F, 0.25F)));
         this.controlOverrides.put(StabilizerControl.class, new ControlOverride(new Vector3d(1.029, 0.156, -0.441),EntitySize.flexible(0.25F, 0.25F)));
         this.controlOverrides.put(TelepathicControl.class, new ControlOverride(new Vector3d(0.832, 0.031, 0.086),EntitySize.flexible(0.375F, 0.375F)));

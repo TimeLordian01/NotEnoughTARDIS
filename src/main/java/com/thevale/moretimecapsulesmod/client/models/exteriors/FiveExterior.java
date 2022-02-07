@@ -436,17 +436,7 @@ public class FiveExterior extends ExteriorModel {
 		boti.render(matrixStack, buffer, packedLight, packedOverlay);
 		LeftWindow.render(matrixStack, buffer, packedLight, packedOverlay);
 		RightWindow.render(matrixStack, buffer, packedLight, packedOverlay);
-		ModelHelper.renderPartBrightness(matrixStack, buffer, packedLight, packedOverlay, tile.getLightLevel(), this.RightWindow);
-		ModelHelper.renderPartBrightness(matrixStack, buffer, packedLight, packedOverlay, tile.getLightLevel(), this.LeftWindow);
-		ModelHelper.renderPartBrightness(matrixStack, buffer, packedLight, packedOverlay, tile.getLightLevel(), this.Lamp);
-		ModelHelper.renderPartBrightness(matrixStack, buffer, packedLight, packedOverlay, tile.getLightLevel(), this.CallSignsLight);
-		ModelHelper.renderPartBrightness(matrixStack, buffer, packedLight, packedOverlay, tile.getLightLevel(), this.ShellWindows);
 		matrixStack.pop();
-	}
-
-	@Override
-	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-		//previously the render function, render code was moved to a method below
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
@@ -457,6 +447,11 @@ public class FiveExterior extends ExteriorModel {
 
 	@Override
 	public void render(MatrixStack matrixStackIn, IVertexBuilder bufferIn, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float alpha) {
+
+	}
+
+	@Override
+	public void renderBones(ExteriorTile exteriorTile, float v, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, float v1) {
 
 	}
 }

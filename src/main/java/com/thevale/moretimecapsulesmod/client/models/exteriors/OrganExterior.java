@@ -238,10 +238,6 @@ public class OrganExterior extends ExteriorModel {
 		bb_main2.setTextureOffset(100, 98).addBox(-6.0F, -31.0F, 6.125F, 13.0F, 29.0F, 1.0F, 0.0F, false);
 	}
 
-	@Override
-	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
-		//previously the render function, render code was moved to a method below
-	}
 
 	@Override
 	public void render(ExteriorTile tile, float v, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float v1){
@@ -261,7 +257,7 @@ public class OrganExterior extends ExteriorModel {
 		this.bb_main.render(matrixStack, buffer, packedLight, packedOverlay);
 		this.bb_main2.render(matrixStack, buffer, packedLight, packedOverlay);
 		this.Door.render(matrixStack, buffer, packedLight, packedOverlay);
-	    matrixStack.pop();
+		matrixStack.pop();
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
@@ -271,7 +267,7 @@ public class OrganExterior extends ExteriorModel {
 	}
 
 	@Override
-	public void render(MatrixStack matrixStackIn, IVertexBuilder bufferIn, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float alpha) {
+	public void renderBones(ExteriorTile exteriorTile, float v, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, float v1) {
 
 	}
 }

@@ -30,6 +30,7 @@ repositories{
         // location of the maven that hosts JEI files
         url "https://dvs1.progwml6.com/files/maven/"
     }
+    maven { url 'https://jitpack.io' }
     maven {
         // location of the maven that hosts IE files
         url "https://maven.blamejared.com/"
@@ -108,9 +109,7 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.16.5-36.0.0'
-    compileOnly fg.deobf("mezz.jei:jei-${jei_version}:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-${jei_version}")
-    implementation fg.deobf(group: 'net.tardis.mod', name: 'Tardis-Mod-1.16.5', version: '0.1')
+    implementation fg.deobf("com.gitlab.Spectre0987:TardisMod-1-14:${tm_tag}")
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
     // compile "some.group:artifact:version"

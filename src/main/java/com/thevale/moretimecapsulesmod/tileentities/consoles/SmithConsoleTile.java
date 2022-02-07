@@ -7,6 +7,7 @@ import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.vector.Vector3d;
 import net.tardis.mod.controls.*;
+import net.tardis.mod.registries.ControlRegistry;
 import net.tardis.mod.tileentities.ConsoleTile;
 import net.tardis.mod.tileentities.console.misc.ControlOverride;
 
@@ -26,7 +27,6 @@ public class SmithConsoleTile extends ConsoleTile {
 
     public SmithConsoleTile(TileEntityType<?> type) {
         super(type);
-        this.registerControlEntry(ControlRegistry.MONITOR);
         this.controlOverrides.put(FacingControl.class, new ControlOverride(new Vector3d(-0.51, 0.969, 0.01),EntitySize.flexible(0.25F, 0.25F)));          //Spin2 (Gyroscope)
         this.controlOverrides.put(StabilizerControl.class, new ControlOverride(new Vector3d(0.275, 0.438, -0.988),EntitySize.flexible(0.1875F, 0.1875F)));      //blueboringers
         this.controlOverrides.put(TelepathicControl.class, new ControlOverride(new Vector3d(0.631, 0.5, 0.802),EntitySize.flexible(0.3125F, 0.3125F)));      //typewriter

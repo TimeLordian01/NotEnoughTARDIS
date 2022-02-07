@@ -7,6 +7,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.thevale.moretimecapsulesmod.client.renders.exteriors.OrganRender;
+import com.thevale.moretimecapsulesmod.client.renders.exteriors.PtoredRender;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.model.EntityModel;
@@ -75,20 +76,45 @@ public class OrganInnerDoors extends EntityModel<Entity> implements IInteriorDoo
         matrixStack.pop();
     }
 
+    @Override
+    public void renderBones(DoorEntity doorEntity, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1) {
+
+    }
+
+    @Override
+    public void renderBoti(DoorEntity doorEntity, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1) {
+
+    }
+
+    @Override
     public ResourceLocation getTexture() {
         ConsoleTile tile = TardisHelper.getConsoleInWorld(Minecraft.getInstance().world).orElse(null);
         if (tile != null) {
             int index = tile.getExteriorManager().getExteriorVariant();
-            TexVariant[] vars = tile.getExterior().getVariants();
+            TexVariant[] vars = tile.getTextureVariants();
             if (vars != null && index < vars.length) {
                 return vars[index].getTexture();
             }
         }
-
         return OrganRender.TEXTURE;
+    }
+    @Override
+    public void renderDoorWhenClosed(DoorEntity doorEntity, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, ModelRenderer modelRenderer) {
+
+    }
+
+    @Override
+    public void renderDoorWhenClosed(DoorEntity doorEntity, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, ModelRenderer... modelRenderers) {
+
+    }
+
+    @Override
+    public boolean doesDoorOpenIntoBotiWindow() {
+        return false;
     }
 
     @Override
     public void render(MatrixStack matrixStackIn, IVertexBuilder bufferIn, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float alpha) {
+
     }
 }
