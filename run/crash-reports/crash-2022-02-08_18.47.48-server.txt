@@ -1,0 +1,73 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 08/02/22 18:47
+Description: Exception in server tick loop
+
+java.lang.NullPointerException: Exception in server tick loop
+	at net.tardis.mod.tileentities.ConsoleTile.removeControls(ConsoleTile.java:628) ~[TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar:1.5.4-TheUltimateAndSecondComing] {re:classloading}
+	at com.thevale.moretimecapsulesmod.tileentities.consoles.CoralConsoleTile.<init>(CoralConsoleTile.java:30) ~[main/:?] {re:classloading}
+	at com.thevale.moretimecapsulesmod.tileentities.consoles.CoralConsoleTile.<init>(CoralConsoleTile.java:24) ~[main/:?] {re:classloading}
+	at net.minecraft.tileentity.TileEntityType.create(TileEntityType.java:89) ~[forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading}
+	at net.tardis.mod.blocks.TileBlock.createTileEntity(TileBlock.java:33) ~[TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar:1.5.4-TheUltimateAndSecondComing] {re:classloading}
+	at net.minecraftforge.common.extensions.IForgeBlockState.createTileEntity(IForgeBlockState.java:120) ~[forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading}
+	at net.minecraft.world.chunk.Chunk.createNewTileEntity(Chunk.java:374) ~[forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading}
+	at net.minecraft.world.chunk.Chunk.getTileEntity(Chunk.java:401) ~[forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading}
+	at net.minecraft.world.World.getTileEntity(World.java:648) ~[forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.tardis.mod.helper.TardisHelper.getConsoleInWorld(TardisHelper.java:119) ~[TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar:1.5.4-TheUltimateAndSecondComing] {re:classloading}
+	at net.tardis.mod.cap.TardisWorldCapability.tick(TardisWorldCapability.java:110) ~[TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar:1.5.4-TheUltimateAndSecondComing] {re:classloading}
+	at net.minecraftforge.common.util.LazyOptional.ifPresent(LazyOptional.java:165) ~[forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar:?] {re:classloading}
+	at net.tardis.mod.events.CommonEvents.onServerTick(CommonEvents.java:404) ~[TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar:1.5.4-TheUltimateAndSecondComing] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_73_CommonEvents_onServerTick_ServerTickEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.hooks.BasicEventHooks.onPreServerTick(BasicEventHooks.java:115) ~[forge:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:819) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:84) ~[forge:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:664) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:233) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_312] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_312, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 122905648 bytes (117 MB) / 897056768 bytes (855 MB) up to 3784310784 bytes (3609 MB)
+	CPUs: 12
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 8.0.9+86+master.3cf110c
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.20
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.5              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201|Tardis Mod                    |tardis                        |1.5.4-TheUltimateAnd|DONE      |Manifest: NOSIGNATURE
+		main                                              |More Time Capsules Mod        |moretimecapsulesmod           |NONE                |DONE      |Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16|Forge                         |forge                         |36.2.20             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 981430c6-a3d9-4bd9-909a-b8262d69fa28
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/220, l='ServerLevel[New World]', x=2.52, y=128.00, z=-3.04]]
+	Data Packs: vanilla, mod:tardis, mod:moretimecapsulesmod, mod:forge
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

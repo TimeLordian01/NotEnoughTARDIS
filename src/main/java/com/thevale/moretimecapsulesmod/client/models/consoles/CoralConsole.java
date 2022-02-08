@@ -2628,7 +2628,7 @@ public class CoralConsole extends EntityModel<Entity> implements TileModel<Coral
 
 	@Override
 	public void render(CoralConsoleTile tile, float v, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, float v1, float v2, float v3, float v4) {
-		/*
+	/*
 		RandomiserControl randomiserControl = tile.getControl(RandomiserControl.class);
 		this.Wheel.rotateAngleX = (float) Math.toRadians(randomiserControl.getAnimationProgress() * 720.0F );
 

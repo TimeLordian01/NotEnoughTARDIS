@@ -7,6 +7,7 @@ import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.vector.Vector3d;
 import net.tardis.mod.controls.*;
+import net.tardis.mod.registries.ControlRegistry;
 import net.tardis.mod.tileentities.ConsoleTile;
 import net.tardis.mod.tileentities.console.misc.ControlOverride;
 
@@ -22,6 +23,7 @@ public class SmithConsoleTile extends ConsoleTile {
 
     public SmithConsoleTile() {
         this(ValeTiles.console_smith.get());
+        this.registerControlEntry(ControlRegistry.MONITOR.get());
   }
 
     public SmithConsoleTile(TileEntityType<?> type) {
@@ -43,8 +45,7 @@ public class SmithConsoleTile extends ConsoleTile {
         this.controlOverrides.put(ZControl.class, new ControlOverride(new Vector3d(-1.182, 0.406, 0.149),EntitySize.flexible(0.125F, 0.125F)));                //keyboard
         this.controlOverrides.put(ThrottleControl.class, new ControlOverride(new Vector3d(-0.792, 0.625, -0.601),EntitySize.flexible(0.1875F, 0.1875F)));         //throttle
         this.controlOverrides.put(FastReturnControl.class, new ControlOverride(new Vector3d(0.237, 0.281, -1.056),EntitySize.flexible(0.125F, 0.125F)));       //redbutton
-        this.controlOverrides.put(MonitorControl.class, new ControlOverride(new Vector3d(-0.165, 1.406, -0.895), EntitySize.flexible(0.5F, 0.5F)));          //monitor
+        this.controlOverrides.put(MonitorControl.class, new ControlOverride(new Vector3d(-0.165, 1.406, -0.895), EntitySize.flexible(0.5F, 0.5F)));
+
     }
-
-
 }

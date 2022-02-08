@@ -7,6 +7,7 @@ import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.vector.Vector3d;
 import net.tardis.mod.controls.*;
+import net.tardis.mod.registries.ControlRegistry;
 import net.tardis.mod.tileentities.ConsoleTile;
 import net.tardis.mod.tileentities.console.misc.ControlOverride;
 
@@ -18,15 +19,16 @@ public class ValeConsoleTile extends ConsoleTile {
     @Override
     public AxisAlignedBB getRenderBoundingBox() {
         return RENDER_BOX.offset(this.getPos());
+
     }
 
     public ValeConsoleTile() {
         this(ValeTiles.console_vale.get());
+        this.registerControlEntry(ControlRegistry.MONITOR.get());
   }
 
     public ValeConsoleTile(TileEntityType<?> type) {
         super(type);
-        //this.registerControlEntry(ControlRegistry.MONITOR);
         this.controlOverrides.put(FacingControl.class, new ControlOverride(new Vector3d(0.914339917660391, 0.40625, -0.10809723771288376),EntitySize.flexible(0.125F, 0.125F)));
         this.controlOverrides.put(StabilizerControl.class, new ControlOverride(new Vector3d(0.5124365364936225, 0.40625, -0.653795842474419),EntitySize.flexible(0.125F, 0.125F)));
         this.controlOverrides.put(TelepathicControl.class, new ControlOverride(new Vector3d(-0.7515661356650123, 0.4375, 0.22506574191719442),EntitySize.flexible(0.1875F, 0.1875F)));
