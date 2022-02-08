@@ -1,10 +1,11 @@
 {
-  "texvar.tardis.wardrobe.acaica": "Acacia",
-  "texvar.tardis.wardrobe.crimson": "Crimson",
-  "texvar.tardis.wardrobe.darkoak2": "DarkOak Panels, Spruce Log",
-  "texvar.tardis.wardrobe.darkoak": "Dark Oak",
-  "texvar.tardis.wardrobe.jungle": "Jungle",
-  "texvar.tardis.wardrobe.oak2": "Oak Panels, Spruce Log",
-  "texvar.tardis.wardrobe.spruce": "Spruce",
-  "texvar.tardis.wardrobe.warped": "Warped"
+  "texvar.moretimecapsulesmod.tardis.common.normal": "Normal",
+  "texvar.moretimecapsulesmod.wardrobe.acaica": "Acacia",
+  "texvar.moretimecapsulesmod.wardrobe.crimson": "Crimson",
+  "texvar.moretimecapsulesmod.wardrobe.darkoak2": "DarkOak Panels, Spruce Log",
+  "texvar.moretimecapsulesmod.wardrobe.darkoak": "Dark Oak",
+  "texvar.moretimecapsulesmod.wardrobe.jungle": "Jungle",
+  "texvar.moretimecapsulesmod.wardrobe.oak2": "Oak Panels, Spruce Log",
+  "texvar.moretimecapsulesmod.wardrobe.spruce": "Spruce",
+  "texvar.moretimecapsulesmod.wardrobe.warped": "Warped"
 }

@@ -77,7 +77,7 @@ public class PTORed extends ExteriorModel {
 	}
 
 	@Override
-	public void render(ExteriorTile tile, float v, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float v1) {
+	public void render(ExteriorTile tile, float scale, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float alpha) {
 		EnumDoorState state = tile.getOpen();
 		matrixStack.push();
 		matrixStack.translate(0.0D, 0.55, 0.0D);
@@ -95,7 +95,7 @@ public class PTORed extends ExteriorModel {
 				this.DoorR.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.CLOSED));
 				this.DoorL.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.PTORED.getRotationForState(EnumDoorState.CLOSED));
 		}
-		Chassis.render(matrixStack, buffer, packedLight, packedOverlay);
+		Chassis.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
 		matrixStack.pop();
 	}
 

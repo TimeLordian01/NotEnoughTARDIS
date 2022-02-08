@@ -22,10 +22,10 @@ mouseSensitivity:0.5
 fov:1.0
 screenEffectScale:1.0
 fovEffectScale:1.0
-gamma:1.0
+gamma:0.0
 renderDistance:12
 entityDistanceScaling:1.0
-guiScale:2
+guiScale:3
 particles:0
 maxFps:120
 difficulty:2
@@ -33,7 +33,7 @@ graphicsMode:1
 ao:2
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:[]
+resourcePacks:["vanilla","mod_resources"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -103,7 +103,7 @@ key_key.hotbar.9:key.keyboard.9
 key_key.tardis.snap:key.keyboard.h
 key_key.tardis.reload_laser_gun:key.keyboard.left.alt
 soundCategory_master:1.0
-soundCategory_music:0.0
+soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

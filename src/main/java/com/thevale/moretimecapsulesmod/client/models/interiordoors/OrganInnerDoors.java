@@ -60,6 +60,7 @@ public class OrganInnerDoors extends EntityModel<Entity> implements IInteriorDoo
         matrixStack.push();
         matrixStack.rotate(Vector3f.YP.rotationDegrees(180));
         matrixStack.scale(1.0F, 1.0F, 1.0F);
+        matrixStack.translate(0F,0F,1F);
         switch(state) {
             case ONE:
                 this.Door.rotateAngleY = (float)Math.toRadians(EnumDoorTypes.ORGAN.getRotationForState(EnumDoorState.ONE));

@@ -5,6 +5,7 @@ package com.thevale.moretimecapsulesmod.client.models.interiordoors;// Made with
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.thevale.moretimecapsulesmod.Moretimecapsulesmod;
 import com.thevale.moretimecapsulesmod.client.renders.exteriors.PtoredRender;
 import com.thevale.moretimecapsulesmod.client.renders.exteriors.ShalkaRender;
 import com.thevale.moretimecapsulesmod.util.EnumDoorTypes;
@@ -138,14 +139,8 @@ public class ShalkaInteriorDoor extends EntityModel<Entity> implements IInterior
 	@Override
 	public ResourceLocation getTexture() {
 		ConsoleTile tile = TardisHelper.getConsoleInWorld(Minecraft.getInstance().world).orElse(null);
-		if (tile != null) {
-			int index = tile.getExteriorManager().getExteriorVariant();
-			TexVariant[] vars = tile.getTextureVariants();
-			if (vars != null && index < vars.length) {
-				return vars[index].getTexture();
-			}
-		}
-		return ShalkaRender.TEXTURE;
+		ResourceLocation TEXTURE = new ResourceLocation(Moretimecapsulesmod.MODID, "textures/interiordoor/shalkadoor.png");
+		return TEXTURE;
 	}
 
 	@Override
