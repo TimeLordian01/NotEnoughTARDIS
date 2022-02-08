@@ -259,11 +259,10 @@ public class FiveInteriorDoor extends EntityModel<Entity> implements IInteriorDo
 		ConsoleTile tile = TardisHelper.getConsoleInWorld(Minecraft.getInstance().world).orElse(null);
 		if (tile != null) {
 			int index = tile.getExteriorManager().getExteriorVariant();
-			TexVariant[] vars = tile.getTextureVariants();
-			if (vars != null && index < vars.length) {
-				return vars[index].getTexture();
-			}
+			if (tile.getExteriorType().getVariants() != null && index < tile.getExteriorType().getVariants().length)
+				return tile.getExteriorType().getVariants()[index].getTexture();
 		}
+
 		return FiveRender.TEXTURE;
 	}
 

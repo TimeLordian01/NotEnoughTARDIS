@@ -123,8 +123,8 @@ public class WardrobeInteriorDoorModel extends EntityModel<Entity> implements II
 			int index = tile.getExteriorManager().getExteriorVariant();
 			if (tile.getExteriorType().getVariants() != null && index < tile.getExteriorType().getVariants().length)
 				return tile.getExteriorType().getVariants()[index].getTexture();
-
 		}
+
 		return WardrobeRender.TEXTURE;
 	}
 
