@@ -1,27 +1,7 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
-
-# idea
-out
-*.ipr
-*.iws
-*.iml
 .idea
-
-# gradle
 build
 .gradle
-
-# other
-eclipse
 run
-runOther
-# Files from Forge MDK
-forge*changelog.txt
+
 
 #all of this is from tardismod. 
