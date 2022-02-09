@@ -1,10 +1,10 @@
-[09Feb2022 00:45:18.486] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.2.20, --assetIndex, 1.16, --assetsDir, C:\Users\haydn\.gradle\caches\forge_gradle\assets, --version, MOD_DEV, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[09Feb2022 00:45:18.491] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.9+86+master.3cf110c starting: java version 1.8.0_312 by Temurin
-[09Feb2022 00:45:18.786] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[09Feb2022 00:45:18.827] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/C:/Users/haydn/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.4/4ec7d77d9ab32596ca0b78bb123956734767e3a/mixin-0.8.4.jar Service=ModLauncher Env=CLIENT
-[09Feb2022 00:45:21.803] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\haydn\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[09Feb2022 00:45:29.757] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[09Feb2022 00:45:30.263] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
+[09Feb2022 16:12:11.759] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.2.20, --assetIndex, 1.16, --assetsDir, C:\Users\haydn\.gradle\caches\forge_gradle\assets, --version, MOD_DEV, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[09Feb2022 16:12:11.762] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.9+86+master.3cf110c starting: java version 1.8.0_312 by Temurin
+[09Feb2022 16:12:12.048] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[09Feb2022 16:12:12.093] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/C:/Users/haydn/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.4/4ec7d77d9ab32596ca0b78bb123956734767e3a/mixin-0.8.4.jar Service=ModLauncher Env=CLIENT
+[09Feb2022 16:12:13.733] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\haydn\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[09Feb2022 16:12:20.982] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[09Feb2022 16:12:21.563] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
 com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:97) ~[authlib-2.1.28.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:40) ~[authlib-2.1.28.jar:?]
@@ -23,15 +23,15 @@ com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?]
 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?]
 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:108) [forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
-[09Feb2022 00:45:30.277] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[09Feb2022 00:45:30.418] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
-[09Feb2022 00:45:31.694] [modloading-worker-4/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.20, for MC 1.16.5 with MCP 20210115.111550
-[09Feb2022 00:45:31.695] [modloading-worker-4/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.20 Initialized
-[09Feb2022 00:45:35.329] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
-[09Feb2022 00:45:35.406] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
-[09Feb2022 00:45:35.525] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moretimecapsulesmod] Starting version check at https://github.com/TimeLordian01/MoreTimeCapsulesMod
-[09Feb2022 00:45:35.798] [Worker-Main-10/INFO] [com.thevale.moretimecapsulesmod.Moretimecapsulesmod/]: Got game settings net.minecraft.client.GameSettings@718c86d
-[09Feb2022 00:45:36.205] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+[09Feb2022 16:12:21.574] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[09Feb2022 16:12:21.727] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[09Feb2022 16:12:22.877] [modloading-worker-4/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.20, for MC 1.16.5 with MCP 20210115.111550
+[09Feb2022 16:12:22.879] [modloading-worker-4/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.20 Initialized
+[09Feb2022 16:12:26.246] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[09Feb2022 16:12:26.304] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[09Feb2022 16:12:26.489] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [notenoughtardis] Starting version check at https://github.com/TimeLordian01/notenoughtardis
+[09Feb2022 16:12:26.687] [Worker-Main-11/INFO] [com.thevale.notenoughtardis.NotEnoughTardis/]: Got game settings net.minecraft.client.GameSettings@160dfcf9
+[09Feb2022 16:12:27.256] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 7 column 1 path $
 	at com.google.gson.Gson.fromJson(Gson.java:899) ~[gson-2.8.0.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:852) ~[gson-2.8.0.jar:?]
@@ -46,562 +46,738 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[gson-2.8.0.jar:?]
 	at com.google.gson.Gson.fromJson(Gson.java:887) ~[gson-2.8.0.jar:?]
 	... 6 more
-[09Feb2022 00:45:36.206] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[09Feb2022 00:45:36.611] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 36.2.20 Target: null
-[09Feb2022 00:45:40.576] [Worker-Main-11/WARN] [net.minecraft.client.renderer.texture.AtlasTexture/]: Texture tardis:item/space_helmet with size 36x36 limits mip level from 4 to 2
-[09Feb2022 00:45:42.064] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
-[09Feb2022 00:45:42.065] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
-[09Feb2022 00:45:42.272] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[09Feb2022 00:45:42.320] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[09Feb2022 00:45:42.320] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[09Feb2022 00:45:42.321] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[09Feb2022 00:45:42.322] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[09Feb2022 00:45:42.322] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[09Feb2022 00:45:42.322] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[09Feb2022 00:45:42.834] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x0 minecraft:textures/atlas/particles.png-atlas
-[09Feb2022 00:45:42.836] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[09Feb2022 00:45:42.837] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[09Feb2022 00:45:43.851] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[09Feb2022 00:46:11.457] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, interior, players] and [tardis, interior, tardis] with inputs: [0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[09Feb2022 00:46:11.465] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, console] and [tardis, unlock, player] with inputs: [console]
-[09Feb2022 00:46:11.466] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, exterior] and [tardis, unlock, player] with inputs: [exterior]
-[09Feb2022 00:46:11.466] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, interior] and [tardis, unlock, player] with inputs: [interior]
-[09Feb2022 00:46:11.470] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[09Feb2022 00:46:11.471] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Feb2022 00:46:11.472] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Feb2022 00:46:11.472] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[09Feb2022 00:46:11.473] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Feb2022 00:46:11.477] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar, main, forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar
-[09Feb2022 00:46:11.555] [Worker-Main-15/INFO] [tardis/]: Beginning loading of data for data loader: unlock_schematics
-[09Feb2022 00:46:11.568] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/coral
-[09Feb2022 00:46:11.569] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/galvanic
-[09Feb2022 00:46:11.569] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/hartnell
-[09Feb2022 00:46:11.569] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/nemo
-[09Feb2022 00:46:11.569] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/neutron
-[09Feb2022 00:46:11.570] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/polymedical
-[09Feb2022 00:46:11.570] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/steam
-[09Feb2022 00:46:11.570] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/toyota
-[09Feb2022 00:46:11.570] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/xion
-[09Feb2022 00:46:11.570] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/aperture
-[09Feb2022 00:46:11.571] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/bokkusu
-[09Feb2022 00:46:11.571] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/clock
-[09Feb2022 00:46:11.571] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/disguise
-[09Feb2022 00:46:11.571] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/fortune
-[09Feb2022 00:46:11.571] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/modern_police_box
-[09Feb2022 00:46:11.571] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/police_box
-[09Feb2022 00:46:11.571] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/safe
-[09Feb2022 00:46:11.571] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/steampunk
-[09Feb2022 00:46:11.571] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/telephone
-[09Feb2022 00:46:11.572] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/trunk
-[09Feb2022 00:46:11.572] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_2020
-[09Feb2022 00:46:11.572] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_capsule
-[09Feb2022 00:46:11.572] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_alabaster
-[09Feb2022 00:46:11.572] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_imperial
-[09Feb2022 00:46:11.572] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_jade
-[09Feb2022 00:46:11.572] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_nautilus
-[09Feb2022 00:46:11.572] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_panamax
-[09Feb2022 00:46:11.573] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_steam
-[09Feb2022 00:46:11.573] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/alabaster
-[09Feb2022 00:46:11.573] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/amethyst
-[09Feb2022 00:46:11.573] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/architect
-[09Feb2022 00:46:11.573] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/coral
-[09Feb2022 00:46:11.573] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/debug
-[09Feb2022 00:46:11.573] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/envoy
-[09Feb2022 00:46:11.573] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/imperial
-[09Feb2022 00:46:11.573] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/jade
-[09Feb2022 00:46:11.574] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/nautilus
-[09Feb2022 00:46:11.574] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/omega
-[09Feb2022 00:46:11.574] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/panamax
-[09Feb2022 00:46:11.574] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/steam
-[09Feb2022 00:46:11.574] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/toyota
-[09Feb2022 00:46:11.574] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/traveler
-[09Feb2022 00:46:11.574] [Worker-Main-15/INFO] [tardis/]: Data loader for unlock_schematics loaded 42 entries
-[09Feb2022 00:46:12.025] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 11 recipes
-[09Feb2022 00:46:12.548] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 934 advancements
-[09Feb2022 00:46:12.550] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: console_rooms
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Cleared ConsoleRoom Registry!
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:toyota
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_panamax
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_jade
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_alabaster
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:omega
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:alabaster
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:imperial
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_steam
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_nautilus
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:nautilus
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:architect
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:jade
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:traveler
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:amethyst
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:debug
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_imperial
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:coral
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:panamax
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:steam
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:envoy
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Data loader for console_rooms loaded 20 entries
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: ars_pieces
-[09Feb2022 00:46:12.551] [Render thread/INFO] [tardis/]: Cleared ARS Registry!
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_right
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/long
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/short
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_left
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/short
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/library
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/short
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/long
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/large_room
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics_large
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/fourway
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/ars_tree
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/cloister
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_left
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_right
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/lab
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/long
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/archives
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/fourway
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_right
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/t_junction
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_down
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_up
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/fourway
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/t_junction
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_3
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_2
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_1
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/storeroom
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_left
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/machinery_workshop
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/t_junction
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Data loader for ars_pieces loaded 33 entries
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: tardis_likes
-[09Feb2022 00:46:12.552] [Render thread/INFO] [tardis/]: Cleared Tardis Like Registry!
-[09Feb2022 00:46:12.553] [Render thread/INFO] [tardis/]: Registered default Tardis Likes
-[09Feb2022 00:46:12.553] [Render thread/INFO] [tardis/]: Data loader for tardis_likes loaded 6 entries
-[09Feb2022 00:46:14.726] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, interior, players] and [tardis, interior, tardis] with inputs: [0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[09Feb2022 00:46:14.726] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, console] and [tardis, unlock, player] with inputs: [console]
-[09Feb2022 00:46:14.727] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, exterior] and [tardis, unlock, player] with inputs: [exterior]
-[09Feb2022 00:46:14.727] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, interior] and [tardis, unlock, player] with inputs: [interior]
-[09Feb2022 00:46:14.728] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[09Feb2022 00:46:14.728] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Feb2022 00:46:14.728] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Feb2022 00:46:14.729] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[09Feb2022 00:46:14.729] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Feb2022 00:46:14.730] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar, main, forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar
-[09Feb2022 00:46:14.791] [Worker-Main-16/INFO] [tardis/]: Beginning loading of data for data loader: unlock_schematics
-[09Feb2022 00:46:14.802] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:consoles/coral
-[09Feb2022 00:46:14.802] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:consoles/galvanic
-[09Feb2022 00:46:14.802] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:consoles/hartnell
-[09Feb2022 00:46:14.802] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:consoles/nemo
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:consoles/neutron
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:consoles/polymedical
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:consoles/steam
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:consoles/toyota
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:consoles/xion
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/aperture
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/bokkusu
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/clock
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/disguise
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/fortune
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/modern_police_box
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/police_box
-[09Feb2022 00:46:14.803] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/safe
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/steampunk
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/telephone
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/trunk
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_2020
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_capsule
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_alabaster
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_imperial
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_jade
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_nautilus
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_panamax
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_steam
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/alabaster
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/amethyst
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/architect
-[09Feb2022 00:46:14.804] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/coral
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/debug
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/envoy
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/imperial
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/jade
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/nautilus
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/omega
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/panamax
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/steam
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/toyota
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Added schematic: tardis:interiors/traveler
-[09Feb2022 00:46:14.805] [Worker-Main-16/INFO] [tardis/]: Data loader for unlock_schematics loaded 42 entries
-[09Feb2022 00:46:15.210] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 11 recipes
-[09Feb2022 00:46:15.583] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 934 advancements
-[09Feb2022 00:46:15.583] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: console_rooms
-[09Feb2022 00:46:15.583] [Render thread/INFO] [tardis/]: Cleared ConsoleRoom Registry!
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:toyota
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_panamax
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_jade
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_alabaster
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:omega
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:alabaster
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:imperial
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_steam
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_nautilus
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:nautilus
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:architect
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:jade
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:traveler
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:amethyst
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:debug
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_imperial
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:coral
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:panamax
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:steam
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:envoy
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Data loader for console_rooms loaded 20 entries
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: ars_pieces
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Cleared ARS Registry!
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_right
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/long
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/short
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_left
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/short
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/library
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/short
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/long
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/large_room
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics_large
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/fourway
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/ars_tree
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/cloister
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_left
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_right
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/lab
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/long
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/archives
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/fourway
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_right
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/t_junction
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_down
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_up
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/fourway
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/t_junction
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_3
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_2
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_1
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/storeroom
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_left
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/machinery_workshop
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/t_junction
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Data loader for ars_pieces loaded 33 entries
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: tardis_likes
-[09Feb2022 00:46:15.584] [Render thread/INFO] [tardis/]: Cleared Tardis Like Registry!
-[09Feb2022 00:46:15.585] [Render thread/INFO] [tardis/]: Registered default Tardis Likes
-[09Feb2022 00:46:15.585] [Render thread/INFO] [tardis/]: Data loader for tardis_likes loaded 6 entries
-[09Feb2022 00:46:16.086] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[09Feb2022 00:46:16.121] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.5
-[09Feb2022 00:46:16.121] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[09Feb2022 00:46:16.187] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World\serverconfig\forge-server.toml is not correct. Correcting
-[09Feb2022 00:46:16.188] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.189] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
-[09Feb2022 00:46:16.189] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringTileEntities was corrected from null to its default, false. 
-[09Feb2022 00:46:16.189] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
-[09Feb2022 00:46:16.189] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
-[09Feb2022 00:46:16.189] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
-[09Feb2022 00:46:16.189] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.logCascadingWorldGeneration was corrected from null to its default, true. 
-[09Feb2022 00:46:16.189] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fixVanillaCascading was corrected from null to its default, false. 
-[09Feb2022 00:46:16.189] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.dimensionUnloadQueueDelay was corrected from null to its default, 0. 
-[09Feb2022 00:46:16.189] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.treatEmptyTagsAsAir was corrected from null to its default, false. 
-[09Feb2022 00:46:16.189] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fixAdvancementLoading was corrected from null to its default, true. 
-[09Feb2022 00:46:16.191] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World\serverconfig\tardis-server.toml is not correct. Correcting
-[09Feb2022 00:46:16.191] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.192] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations.blacklistedDims was corrected from null to its default, [minecraft:the_end]. 
-[09Feb2022 00:46:16.192] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations.blacklistedDimTypes was corrected from null to its default, [rftoolsdim:fixed_day, rftools:fixed_night, hyperbox:hyperbox]. 
-[09Feb2022 00:46:16.192] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations.collisionRange was corrected from null to its default, 16. 
-[09Feb2022 00:46:16.192] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations.dimsToHandleTardisVoidTeleport was corrected from null to its default, [tardis:space]. 
-[09Feb2022 00:46:16.192] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations.exteriorEnergyTransferRate was corrected from null to its default, 10. 
-[09Feb2022 00:46:16.192] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations.tardisAbandonmentTimer was corrected from null to its default, 1. 
-[09Feb2022 00:46:16.192] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations.tardisDimEntitySpawnBlacklist was corrected from null to its default, [rats:demon_rat, minecraft:enderman]. 
-[09Feb2022 00:46:16.192] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations.botiBlacklistedBlocks was corrected from null to its default, []. 
-[09Feb2022 00:46:16.192] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations.botiBlacklistedEntities was corrected from null to its default, []. 
-[09Feb2022 00:46:16.192] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Tardis Configurations.flight_event_time was corrected from null to its default, 3. 
-[09Feb2022 00:46:16.193] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Interior Change Configuration was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.193] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Interior Change Configuration.interiorChangeProcessTime was corrected from null to its default, 300. 
-[09Feb2022 00:46:16.193] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Interior Change Configuration.interiorChangeCooldownTime was corrected from null to its default, 60. 
-[09Feb2022 00:46:16.193] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Interior Change Configuration.interiorChangeArtronUse was corrected from null to its default, 100. 
-[09Feb2022 00:46:16.193] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Machines Configuration was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.193] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Machines Configuration.artronPylonRiftDrainRate was corrected from null to its default, 10.0. 
-[09Feb2022 00:46:16.193] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Machines Configuration.artronCollectorBatteryChargeRate was corrected from null to its default, 50.0. 
-[09Feb2022 00:46:16.194] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Machines Configuration.transductionDrainAmount was corrected from null to its default, 500. 
-[09Feb2022 00:46:16.194] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Machines Configuration.transductionEnergyMaxCapacity was corrected from null to its default, 10000. 
-[09Feb2022 00:46:16.194] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Machines Configuration.transductionEffectiveRange was corrected from null to its default, 32. 
-[09Feb2022 00:46:16.194] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Machines Configuration.roundelTapEnergyTransferRate was corrected from null to its default, 10. 
-[09Feb2022 00:46:16.194] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.194] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Travel Configurations was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.194] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Travel Configurations.toggleVMWhitelistDims was corrected from null to its default, false. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Travel Configurations.whitelistedVMDims was corrected from null to its default, [minecraft:overworld, minecraft:the_nether, minecraft:the_end]. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Travel Configurations.blacklistedVMDims was corrected from null to its default, [modID:dimensionName]. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Travel Configurations.vmTeleportRange was corrected from null to its default, 5000. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Limitations was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Limitations.vmCooldownTime was corrected from null to its default, 10. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Limitations.vmSideEffects was corrected from null to its default, [minecraft:nausea, minecraft:blindness, minecraft:weakness]. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Limitations.vmSideEffectTime was corrected from null to its default, [5, 5, 10]. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Fuel Control was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Fuel Control.vmBaseFuelUsage was corrected from null to its default, 5. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Fuel Control.vmFuelUsageMultiplier was corrected from null to its default, 0.1. 
-[09Feb2022 00:46:16.195] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Vortex Manipulator (VM) Configurations.Fuel Control.vmFuelUsageTime was corrected from null to its default, 1. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Block Interactions was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Block Interactions.detonate_tnt was corrected from null to its default, true. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Block Interactions.redstone_lamps was corrected from null to its default, true. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Block Interactions.open_doors was corrected from null to its default, true. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Block Interactions.open_trapdoors was corrected from null to its default, true. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Entity Interactions was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Entity Interactions.detonate_creeper was corrected from null to its default, true. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Entity Interactions.shear_sheep was corrected from null to its default, true. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Entity Interactions.dismantle_skeletons was corrected from null to its default, true. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Entity Interactions.ink_squid was corrected from null to its default, true. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Tardis was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.196] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Sonic Screwdriver.Tardis.coordinate_tardis was corrected from null to its default, true. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks was corrected from null to its default, SimpleCommentedConfig:{}. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks.dalekBlockGrief was corrected from null to its default, true. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks.dalekImmuneToProjectiles was corrected from null to its default, true. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks.specialWeaponsAlwaysExplode was corrected from null to its default, true. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks.specialWeaponExplosionRadius was corrected from null to its default, 3. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks.dalekTargetAllLiving was corrected from null to its default, true. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks.dalekTargetHostileOnly was corrected from null to its default, false. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks.dalekTargetAnimals was corrected from null to its default, true. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks.dalekTargetVillagers was corrected from null to its default, true. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks.dalekTargetPlayers was corrected from null to its default, true. 
-[09Feb2022 00:46:16.197] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Mob Entity Configurations.Daleks.dalekShieldDisableChance was corrected from null to its default, 0.1. 
-[09Feb2022 00:46:18.270] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[09Feb2022 00:46:18.317] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[09Feb2022 00:46:18.816] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 1%
-[09Feb2022 00:46:19.318] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 5%
-[09Feb2022 00:46:19.817] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 12%
-[09Feb2022 00:46:20.300] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 17%
-[09Feb2022 00:46:20.800] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 24%
-[09Feb2022 00:46:21.300] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 35%
-[09Feb2022 00:46:21.800] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 35%
-[09Feb2022 00:46:22.299] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 49%
-[09Feb2022 00:46:22.800] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 49%
-[09Feb2022 00:46:23.317] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 61%
-[09Feb2022 00:46:23.950] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 61%
-[09Feb2022 00:46:24.316] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 77%
-[09Feb2022 00:46:24.818] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 85%
-[09Feb2022 00:46:25.316] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 93%
-[09Feb2022 00:46:25.704] [Server thread/INFO] [com.thevale.moretimecapsulesmod.Moretimecapsulesmod/]: HELLO from server starting
-[09Feb2022 00:46:25.716] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 7432 ms
-[09Feb2022 00:46:25.839] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
-[09Feb2022 00:46:26.975] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
-[09Feb2022 00:46:27.002] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@47ce2775
-[09Feb2022 00:46:27.012] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:7c7beef6] logged in with entity id 200 at (-10.5, 68.0, -148.5)
-[09Feb2022 00:46:27.045] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[09Feb2022 00:46:27.225] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/upgrades/time_link
-[09Feb2022 00:46:27.228] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/architect
-[09Feb2022 00:46:27.228] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/coral
-[09Feb2022 00:46:27.228] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/monitor_remote
-[09Feb2022 00:46:27.228] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/demat_repair
-[09Feb2022 00:46:27.228] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/bokkusu
-[09Feb2022 00:46:27.228] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/steam
-[09Feb2022 00:46:27.228] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/neutron
-[09Feb2022 00:46:27.228] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_mutton
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/trunk
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_battery_high
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_battery_basic
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/ars_egg
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/amethyst
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/stabilizer_repair
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/shield_generator
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/sonic_activator
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/sonic_emitter
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/envoy
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/galvanic
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:alembic/tardis:alembic/mercury
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/ars_tablet
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/pocket_watch
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/nav_com_repair
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/stabilizer
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/fluid_link_repair
-[09Feb2022 00:46:27.229] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/fluid_link
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/chameleon_circuit
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/steampunk
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_chicken
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/shield_generator_repair
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/jade
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_capacitor
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/tardis_diagnostic
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/xion
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/sonic_end
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/upgrades/atrium
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/telephone
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/interstitial_antenna
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/fortune
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/chameleon_circuit_repair
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/traveler
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/upgrades/key_fob
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/safe
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/polymedical
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_battery_medium
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/clock
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_capacitor_high
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/sonic
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_salmon
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/omega
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/temporal_grace_repair
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/aperture
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/interstitial_antenna_repair
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_capacitor_mid
-[09Feb2022 00:46:27.230] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/steam
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/data_crystal
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/nav_com
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/alabaster
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_cod
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/nautilus
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:alembic/tardis:alembic/glass_bottle
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/circuits
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/upgrades/electro_convert
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_rabbit
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/upgrades/zero_room
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/panamax
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/temporal_grace
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/coral
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/sonic_handle
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/timeship_backdoor
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_beef
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_porkchop
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:alembic/tardis:alembic/circuit_paste
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/imperial
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/nemo
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/roundel_tap
-[09Feb2022 00:46:27.231] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/demat
-[09Feb2022 00:46:27.233] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[09Feb2022 00:46:27.245] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Cleared ConsoleRoom Registry!
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:toyota
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_panamax
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_jade
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_alabaster
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:omega
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:alabaster
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:imperial
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_steam
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_nautilus
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:nautilus
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:architect
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:jade
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:traveler
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:amethyst
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:debug
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_imperial
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:coral
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:panamax
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:steam
-[09Feb2022 00:46:27.403] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:envoy
-[09Feb2022 00:46:27.404] [Render thread/INFO] [tardis/]: Cleared ARS Registry!
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_right
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/long
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/short
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_left
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/short
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/library
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/short
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/long
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/large_room
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics_large
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/fourway
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/ars_tree
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/cloister
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_left
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_right
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/lab
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/long
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/archives
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/fourway
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_right
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/t_junction
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_down
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_up
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/fourway
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/t_junction
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_3
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_2
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_1
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/storeroom
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_left
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/machinery_workshop
-[09Feb2022 00:46:27.405] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/t_junction
-[09Feb2022 00:46:27.407] [Render thread/INFO] [tardis/]: Cleared Tardis Like Registry!
-[09Feb2022 00:46:27.408] [Render thread/INFO] [tardis/]: Registered default Tardis Likes
-[09Feb2022 00:46:27.409] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 0 advancements
-[09Feb2022 00:46:27.736] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[09Feb2022 00:46:27.737] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[09Feb2022 00:46:27.738] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:moon
-[09Feb2022 00:46:27.739] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:space
-[09Feb2022 00:46:27.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:vortex
-[09Feb2022 00:46:33.988] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Unknown or incomplete command, see below for error
-[09Feb2022 00:46:33.989] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] ...dis create<--[HERE]
-[09Feb2022 00:46:36.709] [Server thread/INFO] [STDOUT/]: [net.tardis.mod.helper.DimensionHelper:createAndRegisterWorldAndDimension:176]: Registered new dimension of: tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba
-[09Feb2022 00:46:37.032] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Created Tardis [tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba] of Exterior [exterior.tardis.organ], Console Room [Abandoned Alabaster Interior], Console Unit [console.moretimecapsulesmod.coral2]]
-[09Feb2022 00:46:37.037] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Created Tardis [tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba] of Exterior [exterior.tardis.organ], Console Room [Abandoned Alabaster Interior], Console Unit [console.moretimecapsulesmod.coral2]
-[09Feb2022 00:46:39.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has reached the goal [11D Euclidean Geometry]
-[09Feb2022 00:46:39.765] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[09Feb2022 00:46:39.774] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[09Feb2022 00:46:39.810] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev has reached the goal [11D Euclidean Geometry]
-[09Feb2022 00:46:40.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[09Feb2022 00:46:40.090] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[09Feb2022 00:46:40.090] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:moon
-[09Feb2022 00:46:40.091] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:space
-[09Feb2022 00:46:40.091] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:vortex
-[09Feb2022 00:46:40.092] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba
-[09Feb2022 00:46:40.143] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 7 advancements
-[09Feb2022 00:46:51.369] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Unlocked All Interiors for tardis [tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba]]
-[09Feb2022 00:46:51.370] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Unlocked All Interiors for tardis [tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba]
-[09Feb2022 00:46:54.252] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Unlocked All Exteriors for tardis [tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba]]
-[09Feb2022 00:46:54.253] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Unlocked All Exteriors for tardis [tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba]
-[09Feb2022 00:46:58.153] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Unlocked All Consoles for tardis [tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba]]
-[09Feb2022 00:46:58.153] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Unlocked All Consoles for tardis [tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba]
-[09Feb2022 00:47:14.139] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Successfully setup Tardis Components, Artron and Key for tardis [tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba]]
-[09Feb2022 00:47:14.153] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Successfully setup Tardis Components, Artron and Key for tardis [tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba]
-[09Feb2022 00:47:18.870] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] [Debug]: Hitboxes: shown
-[09Feb2022 00:48:31.908] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[09Feb2022 00:48:31.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[09Feb2022 00:48:32.000] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[09Feb2022 00:48:32.001] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[09Feb2022 00:48:32.001] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:moon
-[09Feb2022 00:48:32.001] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:space
-[09Feb2022 00:48:32.002] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:vortex
-[09Feb2022 00:48:32.002] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba
-[09Feb2022 00:48:32.562] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
-[09Feb2022 00:48:32.562] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[09Feb2022 00:48:32.569] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
-[09Feb2022 00:48:32.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[09Feb2022 00:48:32.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[09Feb2022 00:48:32.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[09Feb2022 00:48:32.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[09Feb2022 00:48:32.715] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[09Feb2022 00:48:32.715] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[09Feb2022 00:48:32.716] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[09Feb2022 00:48:32.716] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[09Feb2022 00:48:32.716] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[09Feb2022 00:48:32.716] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:moon
-[09Feb2022 00:48:32.716] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (moon): All chunks are saved
-[09Feb2022 00:48:32.716] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:space
-[09Feb2022 00:48:32.717] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (space): All chunks are saved
-[09Feb2022 00:48:32.717] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:vortex
-[09Feb2022 00:48:32.717] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (vortex): All chunks are saved
-[09Feb2022 00:48:32.717] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba
-[09Feb2022 00:48:33.219] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba): All chunks are saved
-[09Feb2022 00:48:33.235] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
-[09Feb2022 00:48:33.240] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[09Feb2022 00:48:33.240] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[09Feb2022 00:48:33.240] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (moon): All chunks are saved
-[09Feb2022 00:48:33.240] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (space): All chunks are saved
-[09Feb2022 00:48:33.240] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (vortex): All chunks are saved
-[09Feb2022 00:48:33.241] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (ee6f2f19-f7f0-4ed9-9df7-459ad1f1dbba): All chunks are saved
-[09Feb2022 00:48:35.474] [Render thread/INFO] [net.minecraft.world.storage.SaveFormat/]: Attempt 1...
-[09Feb2022 00:48:36.590] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[09Feb2022 16:12:27.257] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[09Feb2022 16:12:27.647] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 36.2.20 Target: null
+[09Feb2022 16:12:30.831] [Worker-Main-13/WARN] [net.minecraft.client.renderer.texture.AtlasTexture/]: Texture tardis:item/space_helmet with size 36x36 limits mip level from 4 to 2
+[09Feb2022 16:12:31.895] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[09Feb2022 16:12:31.896] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[09Feb2022 16:12:32.146] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[09Feb2022 16:12:32.199] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[09Feb2022 16:12:32.200] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[09Feb2022 16:12:32.200] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[09Feb2022 16:12:32.201] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[09Feb2022 16:12:32.201] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[09Feb2022 16:12:32.202] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[09Feb2022 16:12:32.640] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x0 minecraft:textures/atlas/particles.png-atlas
+[09Feb2022 16:12:32.642] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[09Feb2022 16:12:32.643] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[09Feb2022 16:12:33.165] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[09Feb2022 16:13:05.074] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, interior, players] and [tardis, interior, tardis] with inputs: [0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:05.083] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, console] and [tardis, unlock, player] with inputs: [console]
+[09Feb2022 16:13:05.083] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, exterior] and [tardis, unlock, player] with inputs: [exterior]
+[09Feb2022 16:13:05.084] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, interior] and [tardis, unlock, player] with inputs: [interior]
+[09Feb2022 16:13:05.087] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:05.088] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:05.089] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:05.089] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:05.090] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:05.096] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar, main, forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar
+[09Feb2022 16:13:05.174] [Worker-Main-11/INFO] [tardis/]: Beginning loading of data for data loader: unlock_schematics
+[09Feb2022 16:13:05.184] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:consoles/coral
+[09Feb2022 16:13:05.184] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:consoles/galvanic
+[09Feb2022 16:13:05.185] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:consoles/hartnell
+[09Feb2022 16:13:05.185] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:consoles/nemo
+[09Feb2022 16:13:05.185] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:consoles/neutron
+[09Feb2022 16:13:05.185] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:consoles/polymedical
+[09Feb2022 16:13:05.185] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:consoles/steam
+[09Feb2022 16:13:05.185] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:consoles/toyota
+[09Feb2022 16:13:05.185] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:consoles/xion
+[09Feb2022 16:13:05.185] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/aperture
+[09Feb2022 16:13:05.185] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/bokkusu
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/clock
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/disguise
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/fortune
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/modern_police_box
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/police_box
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/safe
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/steampunk
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/telephone
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/trunk
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_2020
+[09Feb2022 16:13:05.186] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_capsule
+[09Feb2022 16:13:05.187] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_alabaster
+[09Feb2022 16:13:05.187] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_imperial
+[09Feb2022 16:13:05.187] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_jade
+[09Feb2022 16:13:05.187] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_nautilus
+[09Feb2022 16:13:05.187] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_panamax
+[09Feb2022 16:13:05.187] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_steam
+[09Feb2022 16:13:05.187] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/alabaster
+[09Feb2022 16:13:05.187] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/amethyst
+[09Feb2022 16:13:05.187] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/architect
+[09Feb2022 16:13:05.188] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/coral
+[09Feb2022 16:13:05.188] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/debug
+[09Feb2022 16:13:05.188] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/envoy
+[09Feb2022 16:13:05.188] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/imperial
+[09Feb2022 16:13:05.188] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/jade
+[09Feb2022 16:13:05.188] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/nautilus
+[09Feb2022 16:13:05.188] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/omega
+[09Feb2022 16:13:05.188] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/panamax
+[09Feb2022 16:13:05.188] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/steam
+[09Feb2022 16:13:05.188] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/toyota
+[09Feb2022 16:13:05.189] [Worker-Main-11/INFO] [tardis/]: Added schematic: tardis:interiors/traveler
+[09Feb2022 16:13:05.189] [Worker-Main-11/INFO] [tardis/]: Data loader for unlock_schematics loaded 42 entries
+[09Feb2022 16:13:05.684] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 11 recipes
+[09Feb2022 16:13:06.254] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 934 advancements
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: console_rooms
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Cleared ConsoleRoom Registry!
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:toyota
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_panamax
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_jade
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_alabaster
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:omega
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:alabaster
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:imperial
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_steam
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_nautilus
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:nautilus
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:architect
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:jade
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:traveler
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:amethyst
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:debug
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_imperial
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:coral
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:panamax
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:steam
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:envoy
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Data loader for console_rooms loaded 20 entries
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: ars_pieces
+[09Feb2022 16:13:06.257] [Render thread/INFO] [tardis/]: Cleared ARS Registry!
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_right
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/long
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/short
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_left
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/short
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/library
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/short
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/long
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/large_room
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics_large
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/fourway
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/ars_tree
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/cloister
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_left
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_right
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/lab
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/long
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/archives
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/fourway
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_right
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/t_junction
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_down
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_up
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/fourway
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/t_junction
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_3
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_2
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_1
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/storeroom
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_left
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/machinery_workshop
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/t_junction
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Data loader for ars_pieces loaded 33 entries
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: tardis_likes
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Cleared Tardis Like Registry!
+[09Feb2022 16:13:06.258] [Render thread/INFO] [tardis/]: Registered default Tardis Likes
+[09Feb2022 16:13:06.259] [Render thread/INFO] [tardis/]: Data loader for tardis_likes loaded 6 entries
+[09Feb2022 16:13:06.482] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[09Feb2022 16:13:07.014] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, interior, players] and [tardis, interior, tardis] with inputs: [0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:07.015] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, console] and [tardis, unlock, player] with inputs: [console]
+[09Feb2022 16:13:07.015] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, exterior] and [tardis, unlock, player] with inputs: [exterior]
+[09Feb2022 16:13:07.016] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, interior] and [tardis, unlock, player] with inputs: [interior]
+[09Feb2022 16:13:07.016] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:07.017] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:07.017] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:07.018] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:07.018] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:07.019] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar, main, forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar
+[09Feb2022 16:13:07.084] [Worker-Main-18/INFO] [tardis/]: Beginning loading of data for data loader: unlock_schematics
+[09Feb2022 16:13:07.094] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:consoles/coral
+[09Feb2022 16:13:07.094] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:consoles/galvanic
+[09Feb2022 16:13:07.094] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:consoles/hartnell
+[09Feb2022 16:13:07.094] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:consoles/nemo
+[09Feb2022 16:13:07.094] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:consoles/neutron
+[09Feb2022 16:13:07.094] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:consoles/polymedical
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:consoles/steam
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:consoles/toyota
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:consoles/xion
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/aperture
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/bokkusu
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/clock
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/disguise
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/fortune
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/modern_police_box
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/police_box
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/safe
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/steampunk
+[09Feb2022 16:13:07.095] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/telephone
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/trunk
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_2020
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_capsule
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_alabaster
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_imperial
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_jade
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_nautilus
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_panamax
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_steam
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/alabaster
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/amethyst
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/architect
+[09Feb2022 16:13:07.096] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/coral
+[09Feb2022 16:13:07.097] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/debug
+[09Feb2022 16:13:07.097] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/envoy
+[09Feb2022 16:13:07.097] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/imperial
+[09Feb2022 16:13:07.097] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/jade
+[09Feb2022 16:13:07.097] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/nautilus
+[09Feb2022 16:13:07.097] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/omega
+[09Feb2022 16:13:07.097] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/panamax
+[09Feb2022 16:13:07.097] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/steam
+[09Feb2022 16:13:07.098] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/toyota
+[09Feb2022 16:13:07.098] [Worker-Main-18/INFO] [tardis/]: Added schematic: tardis:interiors/traveler
+[09Feb2022 16:13:07.098] [Worker-Main-18/INFO] [tardis/]: Data loader for unlock_schematics loaded 42 entries
+[09Feb2022 16:13:07.528] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 11 recipes
+[09Feb2022 16:13:07.948] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 934 advancements
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: console_rooms
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Cleared ConsoleRoom Registry!
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:toyota
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_panamax
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_jade
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_alabaster
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:omega
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:alabaster
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:imperial
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_steam
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_nautilus
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:nautilus
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:architect
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:jade
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:traveler
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:amethyst
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:debug
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_imperial
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:coral
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:panamax
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:steam
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:envoy
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Data loader for console_rooms loaded 20 entries
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: ars_pieces
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Cleared ARS Registry!
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_right
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/long
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/short
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_left
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/short
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/library
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/short
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/long
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/large_room
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics_large
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/fourway
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/ars_tree
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/cloister
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_left
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_right
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/lab
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/long
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/archives
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/fourway
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_right
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/t_junction
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_down
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_up
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/fourway
+[09Feb2022 16:13:07.949] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/t_junction
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_3
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_2
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_1
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/storeroom
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_left
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/machinery_workshop
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/t_junction
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Data loader for ars_pieces loaded 33 entries
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: tardis_likes
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Cleared Tardis Like Registry!
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Registered default Tardis Likes
+[09Feb2022 16:13:07.950] [Render thread/INFO] [tardis/]: Data loader for tardis_likes loaded 6 entries
+[09Feb2022 16:13:08.050] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[09Feb2022 16:13:10.448] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, interior, players] and [tardis, interior, tardis] with inputs: [0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:10.449] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, console] and [tardis, unlock, player] with inputs: [console]
+[09Feb2022 16:13:10.450] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, exterior] and [tardis, unlock, player] with inputs: [exterior]
+[09Feb2022 16:13:10.450] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, interior] and [tardis, unlock, player] with inputs: [interior]
+[09Feb2022 16:13:10.451] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:10.451] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:10.452] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:10.452] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:10.453] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:10.453] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar, main, forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar
+[09Feb2022 16:13:10.514] [Worker-Main-15/INFO] [tardis/]: Beginning loading of data for data loader: unlock_schematics
+[09Feb2022 16:13:10.523] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/coral
+[09Feb2022 16:13:10.523] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/galvanic
+[09Feb2022 16:13:10.523] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/hartnell
+[09Feb2022 16:13:10.523] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/nemo
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/neutron
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/polymedical
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/steam
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/toyota
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:consoles/xion
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/aperture
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/bokkusu
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/clock
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/disguise
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/fortune
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/modern_police_box
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/police_box
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/safe
+[09Feb2022 16:13:10.524] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/steampunk
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/telephone
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/trunk
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_2020
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_capsule
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_alabaster
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_imperial
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_jade
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_nautilus
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_panamax
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_steam
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/alabaster
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/amethyst
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/architect
+[09Feb2022 16:13:10.525] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/coral
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/debug
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/envoy
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/imperial
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/jade
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/nautilus
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/omega
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/panamax
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/steam
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/toyota
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Added schematic: tardis:interiors/traveler
+[09Feb2022 16:13:10.526] [Worker-Main-15/INFO] [tardis/]: Data loader for unlock_schematics loaded 42 entries
+[09Feb2022 16:13:10.952] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 11 recipes
+[09Feb2022 16:13:11.357] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 934 advancements
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: console_rooms
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Cleared ConsoleRoom Registry!
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:toyota
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_panamax
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_jade
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_alabaster
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:omega
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:alabaster
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:imperial
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_steam
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_nautilus
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:nautilus
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:architect
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:jade
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:traveler
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:amethyst
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:debug
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_imperial
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:coral
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:panamax
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:steam
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:envoy
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Data loader for console_rooms loaded 20 entries
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: ars_pieces
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Cleared ARS Registry!
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_right
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/long
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/short
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_left
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/short
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/library
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/short
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/long
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/large_room
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics_large
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/fourway
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/ars_tree
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/cloister
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_left
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_right
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/lab
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/long
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/archives
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/fourway
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_right
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/t_junction
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_down
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_up
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/fourway
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/t_junction
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_3
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_2
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_1
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/storeroom
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_left
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/machinery_workshop
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/t_junction
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Data loader for ars_pieces loaded 33 entries
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: tardis_likes
+[09Feb2022 16:13:11.358] [Render thread/INFO] [tardis/]: Cleared Tardis Like Registry!
+[09Feb2022 16:13:11.359] [Render thread/INFO] [tardis/]: Registered default Tardis Likes
+[09Feb2022 16:13:11.359] [Render thread/INFO] [tardis/]: Data loader for tardis_likes loaded 6 entries
+[09Feb2022 16:13:11.443] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[09Feb2022 16:13:11.961] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, interior, players] and [tardis, interior, tardis] with inputs: [0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:11.962] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, console] and [tardis, unlock, player] with inputs: [console]
+[09Feb2022 16:13:11.962] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, exterior] and [tardis, unlock, player] with inputs: [exterior]
+[09Feb2022 16:13:11.963] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [tardis, unlock, interior] and [tardis, unlock, player] with inputs: [interior]
+[09Feb2022 16:13:11.963] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:11.964] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:11.964] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:11.965] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[09Feb2022 16:13:11.965] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[09Feb2022 16:13:11.965] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, TardisMod-1-14-1.16-SNAPSHOT_mapped_snapshot_20201028-1.16.3.jar, main, forge-1.16.5-36.2.20_mapped_snapshot_20201028-1.16.3-recomp.jar
+[09Feb2022 16:13:12.025] [Worker-Main-17/INFO] [tardis/]: Beginning loading of data for data loader: unlock_schematics
+[09Feb2022 16:13:12.037] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:consoles/coral
+[09Feb2022 16:13:12.037] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:consoles/galvanic
+[09Feb2022 16:13:12.037] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:consoles/hartnell
+[09Feb2022 16:13:12.037] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:consoles/nemo
+[09Feb2022 16:13:12.037] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:consoles/neutron
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:consoles/polymedical
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:consoles/steam
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:consoles/toyota
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:consoles/xion
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/aperture
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/bokkusu
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/clock
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/disguise
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/fortune
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/modern_police_box
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/police_box
+[09Feb2022 16:13:12.038] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/safe
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/steampunk
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/telephone
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/trunk
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_2020
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:exteriors/tt_capsule
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_alabaster
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_imperial
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_jade
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_nautilus
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_panamax
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/abandoned_steam
+[09Feb2022 16:13:12.039] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/alabaster
+[09Feb2022 16:13:12.040] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/amethyst
+[09Feb2022 16:13:12.040] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/architect
+[09Feb2022 16:13:12.040] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/coral
+[09Feb2022 16:13:12.040] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/debug
+[09Feb2022 16:13:12.040] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/envoy
+[09Feb2022 16:13:12.040] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/imperial
+[09Feb2022 16:13:12.040] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/jade
+[09Feb2022 16:13:12.040] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/nautilus
+[09Feb2022 16:13:12.040] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/omega
+[09Feb2022 16:13:12.040] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/panamax
+[09Feb2022 16:13:12.041] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/steam
+[09Feb2022 16:13:12.041] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/toyota
+[09Feb2022 16:13:12.041] [Worker-Main-17/INFO] [tardis/]: Added schematic: tardis:interiors/traveler
+[09Feb2022 16:13:12.041] [Worker-Main-17/INFO] [tardis/]: Data loader for unlock_schematics loaded 42 entries
+[09Feb2022 16:13:12.464] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 11 recipes
+[09Feb2022 16:13:12.859] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 934 advancements
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: console_rooms
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Cleared ConsoleRoom Registry!
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:toyota
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_panamax
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_jade
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_alabaster
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:omega
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:alabaster
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:imperial
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_steam
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_nautilus
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:nautilus
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:architect
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:jade
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:traveler
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:amethyst
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:debug
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_imperial
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:coral
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:panamax
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:steam
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:envoy
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Data loader for console_rooms loaded 20 entries
+[09Feb2022 16:13:12.859] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: ars_pieces
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Cleared ARS Registry!
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_right
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/long
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/short
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_left
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/short
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/library
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/short
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/long
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/large_room
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics_large
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/fourway
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/ars_tree
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/cloister
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_left
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_right
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/lab
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/long
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/archives
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/fourway
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_right
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/t_junction
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_down
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_up
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/fourway
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/t_junction
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_3
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_2
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_1
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/storeroom
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_left
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/machinery_workshop
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/t_junction
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Data loader for ars_pieces loaded 33 entries
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Beginning loading of data for data loader: tardis_likes
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Cleared Tardis Like Registry!
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Registered default Tardis Likes
+[09Feb2022 16:13:12.860] [Render thread/INFO] [tardis/]: Data loader for tardis_likes loaded 6 entries
+[09Feb2022 16:13:12.937] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[09Feb2022 16:13:13.737] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[09Feb2022 16:13:13.769] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.5
+[09Feb2022 16:13:13.769] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[09Feb2022 16:13:13.841] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file .\saves\New World\serverconfig\tardis-server.toml is not correct. Correcting
+[09Feb2022 16:13:13.842] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Machines Configuration.artronPylonRiftDrainRate was corrected from 10.0 to its default, 10.0. 
+[09Feb2022 16:13:13.842] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Machines Configuration.artronCollectorBatteryChargeRate was corrected from 50.0 to its default, 50.0. 
+[09Feb2022 16:13:13.853] [Thread-1/WARN] [net.minecraftforge.fml.config.ConfigFileTypeHandler/CONFIG]: Configuration file A:\Modding\NotEnoughTARDIS-1.16\run\.\saves\New World\serverconfig\tardis-server.toml is not correct. Correcting
+[09Feb2022 16:13:14.006] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[09Feb2022 16:13:14.827] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[09Feb2022 16:13:14.827] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[09Feb2022 16:13:15.061] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 36%
+[09Feb2022 16:13:16.194] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09Feb2022 16:13:16.194] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[09Feb2022 16:13:16.560] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 95%
+[09Feb2022 16:13:17.028] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 96%
+[09Feb2022 16:13:17.275] [Server thread/INFO] [com.thevale.notenoughtardis.NotEnoughTardis/]: HELLO from server starting
+[09Feb2022 16:13:17.295] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 3268 ms
+[09Feb2022 16:13:17.767] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
+[09Feb2022 16:13:18.695] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[09Feb2022 16:13:18.805] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@6e25ac1e
+[09Feb2022 16:13:18.817] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:ecf4fd4c] logged in with entity id 275 at (-23.5, 71.0, -199.5)
+[09Feb2022 16:13:18.839] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[09Feb2022 16:13:19.032] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/steam
+[09Feb2022 16:13:19.032] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/panamax
+[09Feb2022 16:13:19.032] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:alembic/tardis:alembic/circuit_paste
+[09Feb2022 16:13:19.032] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/bokkusu
+[09Feb2022 16:13:19.032] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/fluid_link
+[09Feb2022 16:13:19.032] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/galvanic
+[09Feb2022 16:13:19.032] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/nav_com
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/tardis_diagnostic
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/temporal_grace
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/nautilus
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/amethyst
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/data_crystal
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_rabbit
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_capacitor
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_capacitor_mid
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/timeship_backdoor
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/sonic_end
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/jade
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/nav_com_repair
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/trunk
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_capacitor_high
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/pocket_watch
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_beef
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/roundel_tap
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/fluid_link_repair
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/sonic_handle
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/temporal_grace_repair
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/chameleon_circuit_repair
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/chameleon_circuit
+[09Feb2022 16:13:19.033] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_battery_basic
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/fortune
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/nemo
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/clock
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/interstitial_antenna
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/telephone
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/upgrades/electro_convert
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/demat
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/upgrades/atrium
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/monitor_remote
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_mutton
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_salmon
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/neutron
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/sonic
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/envoy
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/architect
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/aperture
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/omega
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_cod
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/stabilizer_repair
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/upgrades/time_link
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/circuits
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/steam
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:alembic/tardis:alembic/glass_bottle
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/alabaster
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/polymedical
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/traveler
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/safe
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:alembic/tardis:alembic/mercury
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_porkchop
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/imperial
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/interiors/coral
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/ars_egg
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_battery_medium
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/demat_repair
+[09Feb2022 16:13:19.034] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/ars_tablet
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/sonic_activator
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/upgrades/key_fob
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/shield_generator_repair
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/shield_generator
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/upgrades/zero_room
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/artron_battery_high
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/coral
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/exteriors/steampunk
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/sonic_emitter
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:spectrometer/tardis:spectrometer/consoles/xion
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:attunable/minecraft:attunable/cooked_chicken
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/stabilizer
+[09Feb2022 16:13:19.035] [Render thread/WARN] [net.minecraft.client.util.ClientRecipeBook/]: Unknown recipe category: tardis:quantiscope/tardis:quantiscope/subsystem/interstitial_antenna_repair
+[09Feb2022 16:13:19.040] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[09Feb2022 16:13:19.048] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Cleared ConsoleRoom Registry!
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:toyota
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_panamax
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_jade
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_alabaster
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:omega
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:alabaster
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:imperial
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_steam
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_nautilus
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:nautilus
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:architect
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:jade
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:traveler
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:amethyst
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:debug
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:abandoned_imperial
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:coral
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:panamax
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:steam
+[09Feb2022 16:13:19.227] [Render thread/INFO] [tardis/]: Registered core Console Room: tardis:envoy
+[09Feb2022 16:13:19.228] [Render thread/INFO] [tardis/]: Cleared ARS Registry!
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_right
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/long
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/short
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/turn_left
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/short
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/library
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/short
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/long
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/large_room
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics_large
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/fourway
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/ars_tree
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/cloister
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_left
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/turn_right
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/lab
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/long
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/archives
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/fourway
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_right
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/alabaster/t_junction
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_down
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/hydroponics
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/gravity_shaft_up
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/fourway
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/t_junction
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_3
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_2
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/workroom_1
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/storeroom
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/dark/turn_left
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:room/machinery_workshop
+[09Feb2022 16:13:19.229] [Render thread/INFO] [tardis/]: Registered core ARSPiece: tardis:corridor/steam/t_junction
+[09Feb2022 16:13:19.231] [Render thread/INFO] [tardis/]: Cleared Tardis Like Registry!
+[09Feb2022 16:13:19.231] [Render thread/INFO] [tardis/]: Registered default Tardis Likes
+[09Feb2022 16:13:19.231] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 0 advancements
+[09Feb2022 16:13:19.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Feb2022 16:13:19.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Feb2022 16:13:19.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:moon
+[09Feb2022 16:13:19.361] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:space
+[09Feb2022 16:13:19.362] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:vortex
+[09Feb2022 16:13:39.329] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[09Feb2022 16:13:39.336] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Feb2022 16:13:39.489] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Feb2022 16:13:39.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Feb2022 16:13:39.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:moon
+[09Feb2022 16:13:39.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:space
+[09Feb2022 16:13:39.491] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:vortex
+[09Feb2022 16:14:06.695] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 3 advancements
+[09Feb2022 16:14:24.946] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 24 advancements
+[09Feb2022 16:14:36.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Suit Up]
+[09Feb2022 16:14:36.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Acquire Hardware]
+[09Feb2022 16:14:36.739] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev has made the advancement [Suit Up]
+[09Feb2022 16:14:36.739] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev has made the advancement [Acquire Hardware]
+[09Feb2022 16:14:36.741] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 59 advancements
+[09Feb2022 16:14:44.578] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[09Feb2022 16:14:44.587] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Feb2022 16:14:44.828] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Feb2022 16:14:44.828] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Feb2022 16:14:44.828] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:moon
+[09Feb2022 16:14:44.829] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:space
+[09Feb2022 16:14:44.829] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:vortex
+[09Feb2022 16:15:17.001] [Server thread/INFO] [STDOUT/]: [net.tardis.mod.helper.DimensionHelper:createAndRegisterWorldAndDimension:176]: Registered new dimension of: tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9
+[09Feb2022 16:15:17.236] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Created Tardis [tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9] of Exterior [exterior.tardis.2005exterior], Console Room [Coralised Interior], Console Unit [console.notenoughtardis.coral2]]
+[09Feb2022 16:15:17.242] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Created Tardis [tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9] of Exterior [exterior.tardis.2005exterior], Console Room [Coralised Interior], Console Unit [console.notenoughtardis.coral2]
+[09Feb2022 16:15:23.751] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has reached the goal [11D Euclidean Geometry]
+[09Feb2022 16:15:23.786] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[09Feb2022 16:15:23.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Feb2022 16:15:23.835] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev has reached the goal [11D Euclidean Geometry]
+[09Feb2022 16:15:24.045] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Feb2022 16:15:24.046] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Feb2022 16:15:24.047] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:moon
+[09Feb2022 16:15:24.047] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:space
+[09Feb2022 16:15:24.048] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:vortex
+[09Feb2022 16:15:24.048] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9
+[09Feb2022 16:15:24.099] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 66 advancements
+[09Feb2022 16:15:28.223] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] [Debug]: Hitboxes: shown
+[09Feb2022 16:15:33.637] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Successfully setup Tardis Components, Artron and Key for tardis [tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9]]
+[09Feb2022 16:15:33.645] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Successfully setup Tardis Components, Artron and Key for tardis [tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9]
+[09Feb2022 16:15:38.621] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Unlocked All Exteriors for tardis [tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9]]
+[09Feb2022 16:15:38.624] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Unlocked All Exteriors for tardis [tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9]
+[09Feb2022 16:15:41.612] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Unlocked All Interiors for tardis [tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9]]
+[09Feb2022 16:15:41.614] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Unlocked All Interiors for tardis [tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9]
+[09Feb2022 16:15:46.797] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Unlocked All Consoles for tardis [tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9]]
+[09Feb2022 16:15:46.797] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Unlocked All Consoles for tardis [tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9]
+[09Feb2022 16:15:56.711] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Spectator Mode]
+[09Feb2022 16:15:56.718] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Set own game mode to Spectator Mode
+[09Feb2022 16:24:19.204] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[09Feb2022 16:24:19.233] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[09Feb2022 16:24:19.233] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[09Feb2022 16:24:19.239] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[09Feb2022 16:24:19.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[09Feb2022 16:24:19.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[09Feb2022 16:24:19.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[09Feb2022 16:24:19.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[09Feb2022 16:24:19.433] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[09Feb2022 16:24:19.434] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[09Feb2022 16:24:19.435] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09Feb2022 16:24:19.435] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[09Feb2022 16:24:19.435] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09Feb2022 16:24:19.435] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:moon
+[09Feb2022 16:24:19.436] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (moon): All chunks are saved
+[09Feb2022 16:24:19.436] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:space
+[09Feb2022 16:24:19.436] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (space): All chunks are saved
+[09Feb2022 16:24:19.436] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:vortex
+[09Feb2022 16:24:19.436] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (vortex): All chunks are saved
+[09Feb2022 16:24:19.436] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/tardis:5a48569f-af65-4bf9-9f6f-8957f4c307c9
+[09Feb2022 16:24:20.202] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (5a48569f-af65-4bf9-9f6f-8957f4c307c9): All chunks are saved
+[09Feb2022 16:24:20.218] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[09Feb2022 16:24:20.228] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09Feb2022 16:24:20.228] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09Feb2022 16:24:20.229] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (moon): All chunks are saved
+[09Feb2022 16:24:20.229] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (space): All chunks are saved
+[09Feb2022 16:24:20.229] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (vortex): All chunks are saved
+[09Feb2022 16:24:20.229] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (5a48569f-af65-4bf9-9f6f-8957f4c307c9): All chunks are saved
