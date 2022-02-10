@@ -8,6 +8,7 @@ import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.thevale.notenoughtardis.client.renders.exteriors.WardrobeRender;
 import com.thevale.notenoughtardis.util.EnumDoorTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.vector.Vector3f;
@@ -16,6 +17,7 @@ import net.tardis.mod.client.models.exteriors.ExteriorModel;
 import net.tardis.mod.client.renderers.boti.BOTIRenderer;
 import net.tardis.mod.client.renderers.boti.PortalInfo;
 import net.tardis.mod.client.renderers.exteriors.ExteriorRenderer;
+import net.tardis.mod.client.renderers.exteriors.ModernPoliceBoxExteriorRenderer;
 import net.tardis.mod.enums.EnumDoorState;
 import net.tardis.mod.enums.EnumMatterState;
 import net.tardis.mod.helper.Helper;
@@ -92,7 +94,7 @@ public class WardrobeExterior extends ExteriorModel {
 
 		boti = new ModelRenderer(this);
 		boti.setRotationPoint(0.0F, 24.0F, 0.0F);
-		boti.setTextureOffset(0, 0).addBox(-7.0F, -25.0F, -3.0F, 13.0F, 23.0F, 1.0F, 0.0F, false);
+		boti.setTextureOffset(0, 0).addBox(-6.0F, -25.0F, -3.0F, 12.0F, 23.0F, 1.0F, 0.0F, false);
 	}
 
 	@Override
@@ -120,56 +122,37 @@ public class WardrobeExterior extends ExteriorModel {
 		boti.render(matrixStack, buffer, packedLight, packedOverlay, 1, 1, 1, alpha);
 		matrixStack.pop();
 	}
-	/*
-	@Override
-	public void renderBoti(ExteriorTile exterior, float scale, MatrixStack matrixStack, IVertexBuilder buffer,
-						   int packedLight, int packedOverlay, float alpha) {
-		if(exterior.getBotiWorld() != null && exterior.getMatterState() == EnumMatterState.SOLID && exterior.getOpen() != EnumDoorState.CLOSED) {
-
-			PortalInfo info = new PortalInfo();
-
-			info.setPosition(exterior.getPos());
-			info.setWorldShell(exterior.getBotiWorld());
-
-			info.setTranslate(matrix -> {
-				matrix.translate(-0.5, 0, -0.5);
-				ExteriorRenderer.applyTransforms(matrix, exterior);
-				matrix.translate(0, 0.125, 0);
-			});
-
-			info.setTranslatePortal(matrix -> {
-				matrix.rotate(Vector3f.ZN.rotationDegrees(180));
-				matrix.rotate(Vector3f.YP.rotationDegrees(WorldHelper.getAngleFromFacing(exterior.getBotiWorld().getPortalDirection())));
-				matrix.translate(-0.5, -0.21875, -0.6);
-			});
-
-			info.setRenderPortal((matrix, buf) -> {
-				matrix.push();
-				matrix.scale(0.25F, 0.25F, 0.25F);
-				this.boti.render(matrix, buf.getBuffer(TRenderTypes.getTardis(Helper.getVariantTextureOr(exterior.getVariant(), WardrobeRender.TEXTURE))), packedLight, packedOverlay);
-				matrix.pop();
-			});
-
-			info.setRenderDoor((matrix, buf) -> {
-				matrix.push();
-				matrix.scale(0.25F, 0.25F, 0.25F);
-				this.boti.render(matrix, buf.getBuffer(TRenderTypes.getTardis(Helper.getVariantTextureOr(exterior.getVariant(), WardrobeRender.TEXTURE))), packedLight, packedOverlay);
-				matrix.pop();
-			});
-			BOTIRenderer.addPortal(info);
-		}
-	}
-	*/
-
-	@Override
-	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
-		//previously the render function, render code was moved to a method below
-	}
 
 	@Override
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha){
 	}
 
+	public void renderBoti(ExteriorTile exterior, float scale, MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float alpha) {
+		if (exterior.getBotiWorld() != null && exterior.getMatterState() == EnumMatterState.SOLID && exterior.getOpen() != EnumDoorState.CLOSED) {
+			PortalInfo info = new PortalInfo();
+			info.setPosition(exterior.getPos());
+			info.setWorldShell(exterior.getBotiWorld());
+			info.setTranslate((matrix) -> {
+				matrix.translate(-0.5D, 1.1D, -0.5D);
+				ExteriorRenderer.applyTransforms(matrix, exterior);
+			});
+			info.setTranslatePortal((matrix) -> {
+				matrix.translate(0.0D, 1.0D, 0.0D);
+				matrix.rotate(Vector3f.XP.rotationDegrees(180.0F));
+				matrix.rotate(Vector3f.YP.rotationDegrees(180.0F));
+				matrix.rotate(Vector3f.YP.rotationDegrees(WorldHelper.getAngleFromFacing(exterior.getBotiWorld().getPortalDirection())));
+				matrix.translate(-0.5D, -0.5D, -0.5D);
+			});
+			info.setRenderPortal((matrix, buf) -> {
+				matrix.push();
+				matrix.scale(1.1F, 1.1F, 1.1F);
+				this.boti.render(matrix, buf.getBuffer(RenderType.getEntityCutout(WardrobeRender.TEXTURE)), packedLight, packedOverlay);
+				matrix.pop();
+			});
+			BOTIRenderer.addPortal(info);
+		}
+
+	}
 	@Override
 	public void renderBones(ExteriorTile exteriorTile, float v, MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, float v1) {
 

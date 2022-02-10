@@ -11,9 +11,6 @@ public class SmithMonitorScreen extends BaseMonitorScreen {
 
     public static final ResourceLocation TEXTURE = new ResourceLocation("notenoughtardis", "textures/gui/monitors/smithconsole.png");
 
-    public SmithMonitorScreen() {
-    }
-
     protected void init() {
         super.init();
         Minecraft.getInstance().getSoundHandler().play(SimpleSound.master(TSounds.EYE_MONITOR_INTERACT.get(), 1.0F));

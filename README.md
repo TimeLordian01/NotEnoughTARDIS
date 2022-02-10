@@ -30,6 +30,10 @@ Expand your exterior collection and travel through time in style!
     <td>MisterSir</td>
     <td>Organ Exterior</td>
   </tr>
+ <tr>
+    <td>Loqor</td>
+    <td>Shalka Exterior/Code</td>
+  </tr>
 </table>
 
 ## Screenshots

@@ -11,9 +11,6 @@ public class CoralMonitorScreen extends BaseMonitorScreen {
 
     public static final ResourceLocation TEXTURE = new ResourceLocation("notenoughtardis", "textures/gui/monitors/coralconsole.png");
 
-    public CoralMonitorScreen() {
-    }
-
     protected void init() {
         super.init();
         Minecraft.getInstance().getSoundHandler().play(SimpleSound.master(TSounds.EYE_MONITOR_INTERACT.get(), 1.0F));
