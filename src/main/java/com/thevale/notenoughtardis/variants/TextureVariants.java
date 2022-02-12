@@ -1,4 +1,4 @@
-package com.thevale.notenoughtardis.texturevariants;
+package com.thevale.notenoughtardis.variants;
 
 import net.minecraft.util.ResourceLocation;
 import net.tardis.mod.misc.TexVariant;

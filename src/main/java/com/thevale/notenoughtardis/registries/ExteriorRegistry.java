@@ -1,6 +1,6 @@
 package com.thevale.notenoughtardis.registries;
 
-import com.thevale.notenoughtardis.texturevariants.TextureVariants;
+import com.thevale.notenoughtardis.variants.TextureVariants;
 import com.thevale.notenoughtardis.util.EnumDoorTypes;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;

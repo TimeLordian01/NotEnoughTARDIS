@@ -1,7 +1,7 @@
 package com.thevale.notenoughtardis.tileentities.exteriors;
 
 import com.thevale.notenoughtardis.registries.ValeTiles;
-import com.thevale.notenoughtardis.texturevariants.TextureVariants;
+import com.thevale.notenoughtardis.variants.TextureVariants;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.math.AxisAlignedBB;
