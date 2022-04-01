@@ -2,7 +2,7 @@ package com.thevale.notenoughtardis.registries;
 
 
 import com.google.common.base.Supplier;
-import com.thevale.notenoughtardis.tileentities.consoles.CoralConsoleTile;
+import com.thevale.notenoughtardis.tileentities.consoles.VToyotaConsoleTile;
 import com.thevale.notenoughtardis.tileentities.consoles.SmithConsoleTile;
 import com.thevale.notenoughtardis.tileentities.consoles.ValeConsoleTile;
 import com.thevale.notenoughtardis.tileentities.exteriors.*;
@@ -24,7 +24,7 @@ public class ValeTiles {
     public static RegistryObject<TileEntityType<WardrobeTile>> exterior_wardrobe = TILES.register("exterior_wardrobe", () -> registerTiles(WardrobeTile::new, ValeBlocks.exterior_wardrobe.get()));
     //Consoles
     public static RegistryObject<TileEntityType<ValeConsoleTile>> console_vale = TILES.register("console_vale", () -> registerTiles(ValeConsoleTile::new, ValeBlocks.console_vale.get()));
-    public static RegistryObject<TileEntityType<CoralConsoleTile>> console_coral2 = TILES.register("console_coral2", () -> registerTiles(CoralConsoleTile::new, ValeBlocks.console_coral2.get()));
+    public static RegistryObject<TileEntityType<VToyotaConsoleTile>> cosnsole_vtoyota = TILES.register("console_vtoyota", () -> registerTiles(VToyotaConsoleTile::new, ValeBlocks.console_vtoyota.get()));
     public static RegistryObject<TileEntityType<SmithConsoleTile>> console_smith = TILES.register("console_smith", () -> registerTiles(SmithConsoleTile::new, ValeBlocks.console_smith.get()));
 
     private static <T extends TileEntity> TileEntityType<T> registerTiles(Supplier<T> tile, Block... validBlock) {

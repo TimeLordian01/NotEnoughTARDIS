@@ -17,4 +17,9 @@ public class TextureVariants {
             new TexVariant(new ResourceLocation(com.thevale.notenoughtardis.NotEnoughTardis.MODID,"textures/exteriors/wardrobe_spruce_variant.png"), "wardrobe.spruce"),
             new TexVariant(new ResourceLocation(com.thevale.notenoughtardis.NotEnoughTardis.MODID,"textures/exteriors/wardrobe_warped_variant.png"), "wardrobe.warped")
     };
+    public static final TexVariant[] VTOYOTA = {
+            new TexVariant(
+                    new ResourceLocation(com.thevale.notenoughtardis.NotEnoughTardis.MODID,"textures/consoles/toyota_smith.png"), "tardis.common.normal"),
+            new TexVariant(new ResourceLocation(com.thevale.notenoughtardis.NotEnoughTardis.MODID,"textures/consoles/toyota_capaldi.png"), "vtoyota.capaldi"),
+    };
 }

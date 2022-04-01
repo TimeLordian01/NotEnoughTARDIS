@@ -1,11 +1,10 @@
 package com.thevale.notenoughtardis.registries;
 
 import com.thevale.notenoughtardis.client.models.interiordoors.*;
-import com.thevale.notenoughtardis.client.renders.consoles.CoralConsoleRender;
+import com.thevale.notenoughtardis.client.renders.consoles.VToyotaConsoleRender;
 import com.thevale.notenoughtardis.client.renders.consoles.SmithConsoleRender;
 import com.thevale.notenoughtardis.client.renders.consoles.ValeConsoleRender;
 import com.thevale.notenoughtardis.client.renders.exteriors.*;
-import com.thevale.notenoughtardis.tileentities.*;
 import com.thevale.notenoughtardis.util.EnumDoorTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -25,7 +24,7 @@ public class ModelRegistry {
         event.enqueueWork(() -> {
             RenderTypeLookup.setRenderLayer(ValeBlocks.console_vale.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ValeBlocks.console_smith.get(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(ValeBlocks.console_coral2.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(ValeBlocks.console_vtoyota.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(ValeBlocks.exterior_wardrobe.get(), TRenderTypes.getTranslucent());
             RenderTypeLookup.setRenderLayer(ValeBlocks.exterior_shalka.get(), TRenderTypes.getTranslucent());
             RenderTypeLookup.setRenderLayer(ValeBlocks.exterior_ptored.get(), TRenderTypes.getTranslucent());
@@ -46,7 +45,7 @@ public class ModelRegistry {
 
         //Consoles
         ClientRegistry.bindTileEntityRenderer(ValeTiles.console_vale.get(), ValeConsoleRender::new);
-        ClientRegistry.bindTileEntityRenderer(ValeTiles.console_coral2.get(), CoralConsoleRender::new);
+        ClientRegistry.bindTileEntityRenderer(ValeTiles.cosnsole_vtoyota.get(), VToyotaConsoleRender::new);
         ClientRegistry.bindTileEntityRenderer(ValeTiles.console_smith.get(), SmithConsoleRender::new);
     }
 

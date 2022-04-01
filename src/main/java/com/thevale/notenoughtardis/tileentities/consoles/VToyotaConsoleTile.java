@@ -11,7 +11,7 @@ import net.tardis.mod.tileentities.ConsoleTile;
 import net.tardis.mod.tileentities.console.misc.ControlOverride;
 
 
-public class CoralConsoleTile extends ConsoleTile {
+public class VToyotaConsoleTile extends ConsoleTile {
 
        public static final AxisAlignedBB RENDER_BOX = new AxisAlignedBB(-2, -1, -2, 2, 2.5, 2);
 
@@ -20,13 +20,13 @@ public class CoralConsoleTile extends ConsoleTile {
         return RENDER_BOX.offset(this.getPos());
     }
 
-    public CoralConsoleTile() {
-        this(ValeTiles.console_coral2.get());
+    public VToyotaConsoleTile() {
+        this(ValeTiles.cosnsole_vtoyota.get());
         this.registerControlEntry(ControlRegistry.MONITOR.get());
   }
 
 
-    public CoralConsoleTile(TileEntityType<?> type) {
+    public VToyotaConsoleTile(TileEntityType<?> type) {
         super(type);
         this.controlOverrides.put(FacingControl.class, new ControlOverride(new Vector3d(0.919, 0.094, 0.528),EntitySize.flexible(0.25F, 0.25F)));
         this.controlOverrides.put(StabilizerControl.class, new ControlOverride(new Vector3d(1.029, 0.156, -0.441),EntitySize.flexible(0.25F, 0.25F)));
