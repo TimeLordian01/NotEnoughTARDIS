@@ -25,8 +25,7 @@ public class ValeBlocks {
 
     //Consoles
     public static RegistryObject<Block> console_vale = register("console_vale", () -> setUpBlock(new ConsoleBlock()), false);
-    public static RegistryObject<Block> console_vtoyota = register("console_vtoyota", () -> setUpBlock(new ConsoleBlock()), false);
-    public static RegistryObject<Block> console_smith = register("console_smith", () -> setUpBlock(new ConsoleBlock()), false);
+   public static RegistryObject<Block> console_smith = register("console_smith", () -> setUpBlock(new ConsoleBlock()), false);
 
     private static Block setUpBlock(Block block) {
         return block;

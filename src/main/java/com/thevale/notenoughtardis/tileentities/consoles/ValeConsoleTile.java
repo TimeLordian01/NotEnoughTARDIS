@@ -23,7 +23,6 @@ public class ValeConsoleTile extends ConsoleTile {
 
     public ValeConsoleTile() {
         this(ValeTiles.console_vale.get());
-        this.registerControlEntry(ControlRegistry.MONITOR.get());
   }
 
     public ValeConsoleTile(TileEntityType<?> type) {
