@@ -1,96 +1,124 @@
 
-["Tardis Configurations"]
-	#List of dimensions Tardis cannot travel to, everything else is allowed
-	#Seperate every entry except the last one with commas
-	blacklistedDims = ["minecraft:the_end"]
-	#Adjusts cooldown time in seconds after deleting a room using the ARS Tablet
-	#Recommend minimum 10 seconds to reduce unintended issues
-	arsDeleteRoomCooldown = 11
-	#If two TARDISes are closer than this number, they are considered 'colliding'
-	#When they collide, a Time Ram event is initiated
-	collisionRange = 16
+["World Generation"]
+	#The chance for Cinnabar Ore to spawn in the world
+	#This must be a whole number, no decimals
+	#The final spawn chance is equal to 1 divided by this config value
+	#Example: Value = 2, Spawn Chance = 1/2
+	#Use 1 to always generate this ore, 1001 to disable generation
+	#Range: 1 ~ 1001
+	cinnabarOreSpawnChance = 2
+	#The chance for Xion Crystals to spawn in the world
+	#This option does not allow decimal points
+	#This value is divided by 100 to form the final probability
+	#Example: Value = 1, Spawn Chance = 1/100
+	xionCrystalSpawnChance = 30
+	#This value is divided by 100 to form the final probability
+	#Example: Value = 1, Spawn Chance = 1/100
+	tardisSpawnProbability = 10
+	#The list of dimension ids that a Broken Tardis Exterior cannot spawn in
+	#Example. tardis:moon
+	#Add an asterisk after the mod id to blacklist all dimensions.
+	#Example. tardis:*
+	tardisSpawnDimBlacklist = ["twilightforest:twilightforest", "twilightforest:skylight_forest", "regen:*"]
 
-["Entities to Kill when changing TARDIS interior"]
-	things_to_kill = [""]
+	["World Generation"."Space Station"]
+		#The chunk radius around a potential spawn location in which this structure can spawn.
+		#Structure Spacing value must be larger than Structure Seperation
+		#This option does not allow decimal points
+		spaceStationMissionSpacing = 100
+		#The chance for a Space Station Structure and its mission, to spawn in the world
+		#This option allows does allow decimal points
+		#This structure only spawns in the Space Dimension
+		#This value is divided by 100 to form the final probability
+		#Example: Value = 1, Spawn Chance = 1/100
+		spaceStationMissionSpawnChance = 5
+		#The number of chunks that can seperate two instances of this structure
+		#This option does not allow decimal points
+		spaceStationMissionSeperation = 40
 
-["Interior Change Configuration"]
-	#Sets the seconds of cooldown time between each changing of the Tardis Interior
-	interiorChangeCooldownTime = 60
-	#Sets the amount of Artron fuel required between each changing of the Tardis Interior
-	interiorChangeArtronUse = 100
+	["World Generation"."Moon Lander"]
+		#The chunk radius around a potential spawn location in which this structure can spawn.
+		#Structure Spacing value must be larger than Structure Seperation
+		#This option does not allow decimal points
+		moonLanderSpacing = 15
+		#The chance for Moon Lander Structure to spawn in the world
+		#This option does not allow decimal points
+		#This structure only spawns in the Moon Dimension
+		#This value is divided by 100 to form the final probability
+		#Example: Value = 1, Spawn Chance = 1/100
+		moonLanderSpawnChance = 35
+		#The number of chunks that can seperate two instances of this structure
+		#This option does not allow decimal points
+		moonLanderSeperation = 10
 
-["Vortex Manipulator (VM) Configurations"]
+	["World Generation"."Abandoned Spaceship"]
+		#The chance for Abandoned Spaceship Structure, to spawn in the world
+		#This option does not allow decimal points
+		#This value is divided by 100 to form the final probability
+		#Example: Value = 1, Spawn Chance = 1/100
+		abandonedSpaceshipSpawnChance = 8
+		#The chunk radius around a potential spawn location in which this structure can spawn.
+		#Structure Spacing value must be larger than Structure Seperation
+		#This option does not allow decimal points
+		abandonedSpaceshipSpacing = 70
+		#The number of chunks that can seperate two instances of this structure
+		#This option does not allow decimal points
+		abandonedSpaceshipSeperation = 20
 
-	["Vortex Manipulator (VM) Configurations"."Fuel Control"]
-		#Sets the base value that scales for how much fuel is used by the VM
-		#Fuel Usage = YourInputValue + (YourMultiplier * TeleportDistance)
-		#E.g. If you want the fuel usage to be 20 charge per 100 blocks, you would set the base value to 20 - (0.005 * 100)
-		vmBaseFuelUsage = 5
-		#Sets the seconds of time that must elapse before the VM uses up fuel
-		vmFuelUsageTime = 1
-		#Sets the figure that scales how much fuel is used by the VM per amount of seconds set by user
-		#Fuel Usage = YourBaseInputValue + (YourMultiplier * TeleportDistance)
-		#E.g. If you want the fuel usage to be 20 charge per 100 blocks, you would set the base value to 20 - (0.005 * 100)
-		vmFuelUsageMultiplier = 0.1
+	["World Generation"."Crashed Structure"]
+		#This value is divided by 100 to form the final probability
+		#Example: Value = 1, Spawn Chance = 1/100
+		crashedStructureSpawnChance = 10
+		#The chunk radius around a potential spawn location in which this structure can spawn.
+		#Structure Spacing value must be larger than Structure Seperation
+		#This option does not allow decimal points
+		crashedStructureSpacing = 100
+		#The number of chunks that can seperate two instances of this structure
+		#This option does not allow decimal points
+		crashedStructureSeperation = 60
 
-	["Vortex Manipulator (VM) Configurations".Limitations]
-		#Sets the duration in seconds for each effect in the above value
-		#The order of the numbers should match the effect you are setting the duration for.
-		vmSideEffectTime = [5, 5, 10]
-		#Sets the seconds of cooldown time needed between uses of the Vortex Manipulator
-		vmCooldownTime = 10
-		#Sets the effect side effects experienced after using the Vortex Manipulator
-		vmSideEffects = ["minecraft:nausea", "minecraft:blindness", "minecraft:weakness"]
+	["World Generation"."Dalek Saucer"]
+		#The chance for a Dalek Saucer Structure to spawn in the world
+		#This option does not allow decimal points
+		#This value is divided by 100 to form the final probability
+		#Example: Value = 1, Spawn Chance = 1/100
+		dalekSaucerSpawnChance = 3
+		#The chunk radius around a potential spawn location in which this structure can spawn.
+		#Structure Spacing value must be larger than Structure Seperation
+		#This option does not allow decimal points
+		dalekSaucerSpacing = 200
+		#The number of chunks that can seperate two instances of this structure
+		#This option does not allow decimal points
+		dalekSaucerSeperation = 50
 
-	["Vortex Manipulator (VM) Configurations"."Travel Configurations"]
-		#List of dimensions the VM cannot travel to, everything else is allowed
-		#Seperate every entry except the last one with commas
-		blacklistedVMDims = ["modID:DimensionTypeName"]
-		#List of dimensions the VM can travel to, anything else is not allowed
-		#Seperate every entry except the last one with commas
-		whitelistedVMDims = ["minecraft:overworld", "minecraft:nether", "minecraft:the_end"]
-		#Sets the maximum Teleport Range the Vortex Manipulator can teleport to
-		vmTeleportRange = 1000
-		#Toggle whether to use the Whitelist. By default, uses the Blacklist
-		toggleVMWhitelistDims = false
+	["World Generation".Observatory]
 
-["Sonic Screwdriver"]
+		["World Generation".Observatory.Plains]
+			#The spawn weight of the village street which can spawn this structure in villages.
+			#Higher weight means number of times it can spawn, so more chance of spawning
+			#Cannot contain decimal points
+			#Range: 1 ~ 50
+			observatorySpawnWeightPlains = 7
 
-	["Sonic Screwdriver".Laser]
-		#Toggle where the Laser setting burns things
-		laser_fire = true
+		["World Generation".Observatory.Desert]
+			#The spawn weight of the village street which can spawn this structure in villages.
+			#Higher weight means number of times it can spawn, so more chance of spawning
+			#Cannot contain decimal points
+			#Range: 1 ~ 50
+			observatorySpawnWeightDesert = 7
 
-	["Sonic Screwdriver"."Block Interactions"]
-		#Toggle whether sonics can open Trap doors
-		open_trapdoors = true
-		#Toggle whether sonics can detonate TNT
-		detonate_tnt = true
-		#Toggle whether sonics can toggle Lamps
-		redstone_lamps = true
-		#Toggle whether sonics can open doors
-		open_doors = true
+		["World Generation".Observatory.Savanna]
+			#The spawn weight of the village street which can spawn this structure in villages.
+			#Higher weight means number of times it can spawn, so more chance of spawning
+			#Cannot contain decimal points
+			#Range: 1 ~ 50
+			observatorySpawnWeightSavanna = 6
 
-	["Sonic Screwdriver".Tardis]
-		#Toggle whether sonics can tell the Tardis where to land
-		coordinate_tardis = true
-
-	["Sonic Screwdriver"."Entity Interactions"]
-		#Toggle whether sonics can detonate Creepers
-		detonate_creeper = true
-		#Toggle whether sonics can Shear Sheep
-		shear_sheep = true
-		#Toggle whether sonics can dismantle Skeleton like entities
-		dismantle_skeletons = true
-		#Toggle whether sonics can ink Squids
-		ink_squid = true
-
-["World Gen"]
-	#Chance config
-	tardis_chance = 100
-
-["Machines Configuration"]
-	#Defines how much Forge Energy is needed for 1 Artron Unit
-	#Used to balance out the Artron Converter Block
-	#This is a float value, allows for decimals
-	FEtoAURate = 1000.0
+["Entity Spawns"]
+	#Number of Daleks that should spawn in each Village Raid Wave
+	#The index of the number determines which raid you are setting
+	#E.g. A list of {0,1,3,5,6,7,8} means the 1st wave will contain 0 Daleks, 2nd wave contains 1 Dalek, 3rd wave contains 3 Daleks, etc.
+	dalekVillageRaidSpawnCount = [0, 1, 3, 5, 6, 7, 8]
+	#Toggle if Daleks should spawn in each Village Raid Wave
+	dalekJoinVillageRaid = true
 

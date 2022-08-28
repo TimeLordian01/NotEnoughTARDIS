@@ -1,0 +1,50 @@
+package com.thevale.notenoughtardis.registries;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.tardis.mod.blocks.ConsoleBlock;
+import net.tardis.mod.blocks.exteriors.ExteriorBlock;
+import net.tardis.mod.itemgroups.TItemGroups;
+
+import java.util.function.Supplier;
+
+public class ValeBlocks {
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, com.thevale.notenoughtardis.NotEnoughTardis.MODID);
+
+    //Exteriors
+    public static RegistryObject<Block> exterior_shalka = register("exterior_shalka", () -> setUpBlock(new ExteriorBlock()), false);
+    public static RegistryObject<Block> exterior_ptored = register("exterior_ptored", () -> setUpBlock(new ExteriorBlock()), false);
+    public static RegistryObject<Block> exterior_wardrobe = register("exterior_wardrobe", () -> setUpBlock(new ExteriorBlock()), false);
+    public static RegistryObject<Block> exterior_organ = register("exterior_organ", () -> setUpBlock(new ExteriorBlock()), false);
+    public static RegistryObject<Block> exterior_canon05 = register("exterior_canon05", () -> setUpBlock(new ExteriorBlock()), false);
+
+    //Consoles
+    public static RegistryObject<Block> console_vale = register("console_vale", () -> setUpBlock(new ConsoleBlock()), false);
+   public static RegistryObject<Block> console_smith = register("console_smith", () -> setUpBlock(new ConsoleBlock()), false);
+
+    private static Block setUpBlock(Block block) {
+        return block;
+    }
+
+    public static <T extends Block> RegistryObject<T> register(String id, Supplier<T> blockSupplier, ItemGroup itemGroup) {
+        RegistryObject<T> registryObject = BLOCKS.register(id, blockSupplier);
+        ValeItems.ITEMS.register(id, () -> new BlockItem(registryObject.get(), (new Item.Properties()).group(itemGroup)));
+        return registryObject;
+    }
+
+    public static <T extends Block> RegistryObject<T> register(String id, Supplier<T> blockSupplier) {
+        RegistryObject<T> registryObject = BLOCKS.register(id, blockSupplier);
+        ValeItems.ITEMS.register(id, () -> new BlockItem(registryObject.get(), (new Item.Properties()).group(TItemGroups.FUTURE)));
+        return registryObject;
+    }
+
+    public static <T extends Block> RegistryObject<T> register(String id, Supplier<T> blockSupplier, boolean hasItem) {
+        RegistryObject<T> registryObject = BLOCKS.register(id, blockSupplier);
+        return registryObject;
+    }
+}
